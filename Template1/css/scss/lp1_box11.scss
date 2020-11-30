@@ -1,0 +1,227 @@
+@import "var.scss";
+
+#lp1_box11 {
+    background: #2d2d2d;
+    color: #e5e5e5;
+}
+
+.footer-top {
+
+    padding: 37px 0;
+
+    .social {
+        display: inline-block;
+        margin-left: 10px;
+
+        a {
+            display: inline-block;
+            background: #fff;
+            margin-left: 10px;
+            height: 25px;
+            width: 25px;
+            line-height: 25px;
+            text-align: center;
+            border-radius: 50%;
+
+            .fa-instagram,
+            .fa-youtube-play {
+                font-size: 14px;
+                vertical-align: text-top;
+                margin-top: 3px;
+            }
+        }
+    }
+
+    .col-left {
+        .logo {
+            display: inline-block;
+        }
+
+        .send-mail {
+            .form-group {
+                margin-bottom: 10px;
+            }
+
+            .form-control {
+                width: 260px;
+                border: 0;
+                height: 32px;
+                font-size: 12px;
+                margin-right: 15px;
+            }
+
+            .btn {
+                background-color: #e0ad1f;
+                color: #fff;
+                padding: 3px 20px;
+                height: 32px;
+            }
+
+            a {
+                color: #fff;
+                font-size: 12px;
+            }
+
+            @media (max-width: 1199px) {
+                .form-control {
+                    width: calc(100% - 112px);
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+
+            .logo,
+            .social {
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .col-right {
+        justify-content: space-between;
+
+        .social {
+            display: none;
+        }
+
+        .nav {
+            ul {
+                padding-left: 30px;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+
+            li {
+                margin-bottom: 5px;
+
+                a {
+                    color: var(--yellow);
+                }
+            }
+        }
+
+        .address {
+            color: #efefef;
+            padding-left: 20px;
+
+            a {
+                color: #efefef;
+            }
+
+            h3 {
+                color: var(--yellow);
+                font-size: 14px;
+                line-height: 1.6;
+            }
+
+            p {
+                margin-bottom: 5px;
+                font-size: 12px;
+
+                i {
+                    width: 15px;
+                }
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .nav {
+                ul {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        @media (max-width: 991px) {
+            .nav {
+                width: 100%;
+            }
+
+            .address {
+                padding-left: 0;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .nav {
+                justify-content: center;
+            }
+
+            .address {
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .social {
+            display: none;
+        }
+
+        .col-right {
+            .social {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+
+                a {
+                    margin: 0 6px 0 6px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 18px;
+
+                    .fa-instagram,
+                    .fa-youtube-play {
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.copy_right {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0 15px 0;
+
+    h3 {
+        margin-bottom: 5px;
+    }
+
+    .logo {
+        margin-top: -25px;
+        width: 122px;
+    }
+
+    .txt_12 {
+        width: calc(100% - 130px);
+    }
+
+    .flex {
+        justify-content: space-between;
+    }
+
+    @media (max-width: 767px) {
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .txt_12 {
+            padding-right: 15px;
+        }
+
+        .logo {
+            margin-top: -10px;
+        }
+    }
+}

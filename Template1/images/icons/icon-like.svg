@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50.434" height="48.333" viewBox="0 0 50.434 48.333">
+    <defs>
+        <style>
+            .cls-1{fill:#e0ad1f}
+        </style>
+    </defs>
+    <g id="like" transform="translate(0 -10.667)">
+        <g id="Group_3914" data-name="Group 3914" transform="translate(0 31.681)">
+            <g id="Group_3913" data-name="Group 3913">
+                <path id="Path_63" d="M5.253 224A5.261 5.261 0 0 0 0 229.253v16.811a5.261 5.261 0 0 0 5.253 5.253h6.3a5.216 5.216 0 0 0 3.152-1.063V224z" class="cls-1" data-name="Path 63" transform="translate(0 -224)"/>
+            </g>
+        </g>
+        <g id="Group_3916" data-name="Group 3916" transform="translate(16.811 10.667)">
+            <g id="Group_3915" data-name="Group 3915">
+                <path id="Path_64" d="M204.289 39.561a4.66 4.66 0 0 0-1.368-3.308 5.217 5.217 0 0 0 1.345-4.012 5.432 5.432 0 0 0-5.48-4.764h-12.98a30.214 30.214 0 0 0 1.673-8.406c0-4.558-3.873-8.406-6.3-8.406a6.61 6.61 0 0 0-3.81 1.28 1.056 1.056 0 0 0-.393.822v7.126L170.919 33l-.252.128v22.528a13.768 13.768 0 0 0 5.253 1.244h19.289a4.834 4.834 0 0 0 4.762-3.671 4.727 4.727 0 0 0-.38-3.156 4.707 4.707 0 0 0 2.1-6.306 4.7 4.7 0 0 0 2.598-4.206z" class="cls-1" data-name="Path 64" transform="translate(-170.667 -10.667)"/>
+            </g>
+        </g>
+    </g>
+</svg>

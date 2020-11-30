@@ -1,0 +1,174 @@
+<!-- build:title -->Website Phú Quốc
+<!-- /build:title -->
+<!-- build:content -->
+<div class="clearfix" style="margin: 100px 0">
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+        </button>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog2">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">THÔNG TIN ĐẶT PHÒNG</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 form-group">
+                                <label for="exampleInputEmail1">Nhận phòng - Trả phòng <span
+                                        style="color:#e0ad1f">*</span></label>
+                                <div class="wrap relative">
+                                    <i class="fa fa-calendar"></i>
+                                    <!-- <select class="form-control icon">
+                                        <option>8 . Jun . 2019 - 10.Jun.2019</option>
+                                        <option>Bình thường</option>
+                                    </select> -->
+                                    <div class="datepicker-wrap form-control icon">
+                                        <input class="form-control" type="text" name="daterange"
+                                            value="01/01/2018 - 01/15/2018" />
+                                    </div>
+                                    <span class="down"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 form-group">
+                                <label for="exampleInputEmail1">Người lớn - Trẻ em <span
+                                        style="color:#e0ad1f">*</span></label>
+                                <div class="wrap relative">
+                                    <i class="fa fa-users"></i>
+                                    <div class="dropdown form-control icon">
+                                        <div class="dropbtn">2 người lớn - 1 trẻ em
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <div class="number-voucher mb15">
+                                                <label>Người lớn</label>
+                                                <div class="flex">
+                                                    <span class="minus bg">-</span>
+                                                    <input type="number" class="count" name="qty" value="1" disabled="">
+                                                    <span class="plus bg">+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="down"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 form-group">
+                                <label for="exampleInputEmail1">Số lượng phòng <span
+                                        style="color:#e0ad1f">*</span></label>
+                                <div class="wrap relative">
+                                    <select class="form-control">
+                                        <option>01</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                    <span class="down"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 form-group">
+                                <label for="exampleInputEmail1">Họ và tên <span style="color:#e0ad1f">*</span></label>
+                                <div class="wrap relative">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" class="form-control icon" id="" placeholder="Hoàng Hào Hiệp">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 form-group">
+                                <label for="exampleInputEmail1">Email <span style="color:#e0ad1f">*</span></label>
+                                <div class="wrap relative">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <input type="text" class="form-control icon" id="" placeholder="haohiep@begodi.com">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 form-group">
+                                <label for="exampleInputEmail1">Số điện thoại <span
+                                        style="color:#e0ad1f">*</span></label>
+                                <div class="wrap relative">
+                                    <i class="fa fa-phone"></i>
+                                    <input type="text" class="form-control icon" id="" placeholder="0989 088 688">
+                                </div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="exampleInputEmail1">Chọn điểm khởi hành <span
+                                        style="color:#e0ad1f">*</span></label>
+                                <div class="wrap relative">
+                                    <i class="fa fa-map-marker"></i>
+                                    <select class="form-control icon">
+                                        <option>Chọn điểm khởi hành</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                    <span class="down"></span>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group">
+                                <label for="exampleInputEmail1">Chọn chuyên viên tư vấn từ: <span
+                                        style="color:#e0ad1f">*</span></label>
+                                <div class="row row-padding text-center">
+                                    <div class="col-4 mb10">
+                                        <label class="radio mb0 ml5">
+                                            <input type="radio" name="optradio">
+                                            <span class="checkmark"></span>
+                                            Amazon
+                                        </label>
+                                    </div>
+                                    <div class="col-4 mb10">
+                                        <label class="radio mb0 ml5">
+                                            <input type="radio" name="optradio">
+                                            <span class="checkmark"></span>
+                                            Costco
+                                        </label>
+                                    </div>
+                                    <div class="col-4 mb10">
+                                        <label class="radio mb0 ml5">
+                                            <input type="radio" name="optradio">
+                                            <span class="checkmark"></span>
+                                            Fado
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 form-group mb10">
+                                <label for="exampleInputEmail1">Tin nhắn</label>
+                                <div class="wrap relative">
+                                    <textarea class="form-control" style="height: 80px"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb20 text-center">
+                            <p><span style="color:#e0ad1f">*</span> Mã ưu đãi (nếu có) sẽ được áp dụng trực tiếp khi bạn
+                                thực hiện thanh toán booking với Begodi Vietnam</p>
+                            <button type="submit" class="btn">Gửi thông tin</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /build:content -->
+<!-- build:script2 -->
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/daterangepicker.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.count').prop('disabled', true);
+        $(document).on('click', '.plus', function () {
+            $('.count').val(parseInt($('.count').val()) + 1);
+        });
+        $(document).on('click', '.minus', function () {
+            $('.count').val(parseInt($('.count').val()) - 1);
+            if ($('.count').val() == 0) {
+                $('.count').val(1);
+            }
+        });
+        $('input[name="daterange"]').daterangepicker({
+            linkedCalendars: false,
+            opens: 'left'
+        });
+    });
+</script>
+<!-- /build:script2 -->
