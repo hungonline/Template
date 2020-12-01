@@ -1,6 +1,6 @@
-.topnav {
+.tp1-topnav {
     background-color: #fff;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -20,8 +20,6 @@
         align-items: center;
 
         .item {
-            display: flex;
-            align-items: center;
             padding: .29411765em .41176471em;
 
             &>i {
@@ -43,7 +41,7 @@
     }
 
     .search-mobile {
-        display: none !important;
+        display: none;
         margin-right: 0 !important;
 
         &>i {
@@ -133,6 +131,7 @@
             color: rgba(75, 75, 75, 0.5);
             margin: 0px 12px 0 5px;
             font-size: 16px;
+            line-height: 30px;
         }
     }
 
@@ -223,8 +222,6 @@
 
     @media (max-width: 991px) {
         padding: 0 15px;
-
-
         .item.search {
             display: none !important
         }
@@ -244,6 +241,8 @@
         .ui.text.menu {
             padding: .7rem 0 !important;
             height: 60px;
+            max-width: 720px;
+            margin: 0 auto;
 
             .item {
                 padding: 0

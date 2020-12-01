@@ -1,4 +1,4 @@
-.u-footer {
+.tp1-footer {
     position: relative;
     background-color: #2f2f2f;
     margin-top: 100px;
@@ -54,6 +54,7 @@
         justify-content: space-between;
 
         &-item {
+            padding: 0 10px;
             .u-menu-item {
                 &__title {
                     font-size: 17px;
@@ -98,18 +99,41 @@
     }
 
     @media (max-width: 1199px) {
-        .container {
-            max-width: 100%;
+        &__wrapper{
+            flex-wrap: wrap;
         }
-
         &--left {
-            min-width: 250px;
+            min-width: 100%;
+            text-align: center;
 
             .u-logo {
+                margin-bottom: 40px;
                 img {
-                    width: 120px;
+                    width: 150px;
                 }
             }
+            .u-socials{            
+                justify-content: center;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .container{
+            max-width: 720px;
+        } 
+    }
+    @media (max-width: 576px) {
+        .container{
+            max-width: 540px;
+        } 
+        &__menu{
+            flex-wrap: wrap;
+            &-item{
+                width: 50%;margin-top: 20px;
+            }
+        }
+        &__copyright{
+            text-align: center;margin-top: 30px;
         }
     }
 }

@@ -1,0 +1,129 @@
+.tp1-box1{
+    height: 600px;
+    margin-top: -2px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(images/graphics/banner.jpg);
+    @media (min-width: 768px) {
+        height: 650px;
+    }
+    @media (min-width: 992px) {
+        height: 700px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background: #000;
+        background: linear-gradient(to bottom,rgba(36,30,102,.8) 25%,rgba(122,23,61,.55) 80%,rgba(0,0,0,.5) 100%);
+    }
+    video{
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+    &__content{
+        position: relative;
+        padding-top: 5em;
+        text-align: left;
+        z-index: 1;
+        height: 100%;
+        .leading{
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1{
+            color: #fff;
+            font-size: 38px;
+            margin-bottom: 0;
+            font-weight: 700;
+            text-transform: capitalize;
+            line-height: 125%;
+            position: relative;
+            margin-top: 0;
+        }
+        .big{
+            text-align: center;
+            .card{
+                width: 150px;
+                height: 150px;
+                line-height: 150px;
+                display: inline-block;
+                background-color: transparent;
+                border: 3px dotted #fff;
+                border-radius: 50%;
+                img{
+                    width: 110px;
+                }
+                &:not(:last-child){
+                    margin-right: 20px;
+                }
+                p{
+                    color: #fff!important;
+                    font-weight: 300!important;
+                    margin-top: 10px;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .cta{
+            position: absolute;
+            bottom: 7em;
+            h4{
+                font-weight: 400;font-size: 18px;
+                color: #fff;
+                text-align: left;
+            }
+            .pills{
+                .pill{
+                    padding: 1em 1.5em!important;
+                    display: inline-block;
+                    margin-right: .75em;
+                    background-color: rgba(255,255,255,.3);
+                    font-weight: 400;
+                    color: #fff;
+                    border: 1px solid rgba(255,255,255,.3);
+                    border-radius: 2rem!important;
+                    box-shadow: rgba(0,0,0,.05) 0 1px 6px, rgba(0,0,0,.1) 0 2px 15px;
+                    &:hover{
+                        background-color: transparent;
+                        border: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom{
+        height: 90px;
+        bottom: -40px;
+        background-image: url(images/graphics/intro_bottom_black.svg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+}

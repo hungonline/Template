@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 @import "var.scss";
 @import "reset.scss";
+@import "common.scss";
 
 //Plugin
 @import "modal.scss";
@@ -10,4 +11,7 @@
 //Layout
 @import "header.scss";
 @import "footer.scss";
+@import "tp1-box1.scss";
+
+
 @import "responsive.scss";
