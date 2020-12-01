@@ -16,15 +16,97 @@
     <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
         rel="shortcut icon" />
     <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="all" /> -->
-    <link rel="stylesheet" href="css/style.min.css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.css" media="all" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
     <!-- build:head2 -->
     <!-- build:head -->
 </head>
 
 <body class="homepage">
 
-    <section id="lp1_box1" class="section wrap-main-nav sticky">
+    <section id="navbar" class="topnav">
+        <div class="ui text menu">
+            <div class="item">
+                <a href="https://vibeji.com/vi" class="u-logo">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="images/graphics/logo-color.svg">
+                        <img src="images/graphics/logo-color.svg" alt="">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="item search open">
+                <input type="search" placeholder="Try &quot;photo&quot;">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="right menu">
+                <a href="javascript:;" onclick="$('.search-mobile.results').fadeIn()" class="item search-mobile">
+                    <i class="fa fa-search"></i></a>
+                <div class="item locale" style="margin: 0px 1em !important;"><a href="javascript:;"
+                        class="active">VI</a> <span style="margin: 0px 0.5em;">/</span> <a href="javascript:;">EN</a>
+                </div>
+                <a href="javascript:;" class="currencies-languages browse item hiden-mobile">
+                    <i class="fa fa-globe"></i>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <a href="https://vibeji.com/vi/host-now" class="item hiden-mobile">Tạo hoạt động</a>
+                <a href="" class="item login hiden-mobile" style="margin-right: 0.5em !important;"> Đăng nhập</a>
+                <a href="javascript:;" id="vibeji-ham" class="item"><span></span> <span></span> <span></span></a>
+            </div>
+        </div>
+        <div class="currencies-languages-selection">
+            <div class="grid flex">
+                <div class="column">
+                    <h5>Ngôn ngữ</h5>
+                    <div class="divider"></div>
+                    <div class="language selection"><a href="javascript:void(0);" class="item">English</a> <a
+                            href="javascript:void(0);" class="item">Tiếng Việt</a></div>
+                </div>
+                <div class="column">
+                    <h5>Tiền tệ</h5>
+                    <div class="divider"></div>
+                    <div class="currency selection"><a href="javascript:void(0);" class="item">USD</a> <a
+                            href="javascript:void(0);" class="item">VND</a> <a href="javascript:void(0);"
+                            class="item">SGD</a> <a href="javascript:void(0);" class="item">AUD</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-mobile results">
+            <div class="ui search">
+                <div class="ui icon input">
+                    <input type="search" placeholder="Try &quot;photo&quot;..." class="prompt">
+                    <i class="fa fa-search search icon"></i>
+                </div>
+                <a href="javascript:;" onclick="$(this).closest('.results').fadeOut()" class="search-close">×</a>
+            </div>
+            <div class="no-results">
+                <p class="center">Có 6 kết quả</p>
+                <div class="list two-columns">
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <div class="topnav-mobile">
+            <ul class="topnav-mobile-accordion">
+                <li>
+                    <a class="title">Ngôn ngữ và tiền tệ</a>
+                </li>
+                <li>
+                    <a class="title">Về Vibeji và liên hệ</a>
+                </li>
+            </ul>
+            <div class="login">
+                <a href="" class="black button">Đăng nhập </a>
+                <a href="" class="primary button">Đăng ký </a>
+            </div>
+        </div>
 
     </section>
 
@@ -32,11 +114,71 @@
     <!-- build:content -->
 
     <!--Footer-->
-    <footer id="lp1_box11" class="footer">
-
-
+    <footer id="u_footer" class="u-footer">
+        <div class="ui container">
+            <div class="u-footer__wrapper">
+                <div class="u-footer--left">
+                    <a href="#" class="u-logo">
+                        <img src="images/graphics/logo-light.svg" alt="logo">
+                    </a>
+                    <div class="u-socials">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="u-footer--right">
+                    <div class="u-footer__menu">
+                        <div class="u-footer__menu-item">
+                            <div class="u-menu-item__title">Sử dụng Vibeji</div>
+                            <div class="u-menu-item__link">
+                                <a href="/">Trang chủ</a>
+                                <a href="#">Trở thành host</a>
+                                <a href="#">Câu hỏi thường gặp</a>
+                                <a href="#">Liên hệ Vibeji</a>
+                            </div>
+                        </div>
+                        <div class="u-footer__menu-item">
+                            <div class="u-menu-item__title">Về chúng tôi</div>
+                            <div class="u-menu-item__link">
+                                <a href="#">Câu chuyện và team</a>
+                                <a href="#" target="_blank">Truyền thông</a>
+                                <a href="#">Photos credit</a>
+                            </div>
+                        </div>
+                        <div class="u-footer__menu-item">
+                            <div class="u-menu-item__title">Ngoài ra</div>
+                            <div class="u-menu-item__link">
+                                <a href="#" target="_blank">Vibeji cho Teams</a>
+                                <a href="#" target="_blank">Blog</a>
+                                <a href="#" target="_blank">Podcast</a>
+                            </div>
+                        </div>
+                        <div class="u-footer__menu-item">
+                            <div class="u-menu-item__title">Chính sách</div>
+                            <div class="u-menu-item__link">
+                                <a href="#">Điều khoản sử dụng</a>
+                                <a href="#">Chính sách bảo mật</a>
+                                <a href="#">Điều khoản hủy &amp; hoàn tiền</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="u-footer__copyright">© Bản quyền Vibeji 2020</div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!--End Footer-->
+
+
+
+
 
 
     <div class="overlay-bg"></div>
@@ -55,9 +197,6 @@
     <!-- build:script -->
     <!-- build:script2 -->
     <div class="clearfix"></div>
-    <script>
-
-    </script>
 </body>
 
 </html>

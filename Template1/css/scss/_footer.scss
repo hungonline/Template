@@ -1,0 +1,115 @@
+.u-footer {
+    position: relative;
+    background-color: #2f2f2f;
+    margin-top: 100px;
+
+    &__wrapper {
+        padding: 100px 0 70px;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0 40px;
+        border-top: 1px solid #707070;
+    }
+
+    &--left {
+        min-width: 300px;
+
+        @media (min-width: 1900px) {
+            min-width: 440px;
+        }
+
+        .u-logo {
+            margin-bottom: 80px;
+            display: block;
+
+            img {
+                width: 230px;
+            }
+        }
+
+        .u-socials {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+
+            &>a {
+                display: inline-block;
+                font-size: 24px;
+                color: #636363;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+            }
+        }
+    }
+
+    &--right {
+        width: 100%;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            .u-menu-item {
+                &__title {
+                    font-size: 17px;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    position: relative;
+                    color: #fff;
+                    font-weight: 700;
+                    display: block;
+
+                    &::after {
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        content: '';
+                        width: 20px;
+                        height: 2px;
+                        background-color: #ffcf48;
+                    }
+                }
+
+                &__link {
+                    a {
+                        padding: 7px 0;
+                        color: #cbcbcb;
+                        display: block;
+
+                        &:hover {
+                            color: #7e6fda;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    &__copyright {
+        color: #606165;
+        margin-top: 60px;
+    }
+
+    @media (max-width: 1199px) {
+        .container {
+            max-width: 100%;
+        }
+
+        &--left {
+            min-width: 250px;
+
+            .u-logo {
+                img {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}

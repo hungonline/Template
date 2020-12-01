@@ -63,69 +63,16 @@
     }
     //onCLick
     function onCLick() {
-        $(".all-menu-tablet").click(function () {
-            $(this).toggleClass("close-menu-tablet");
-        });
-        $(".all-menu").click(function () {
-            $(".overlay-bg").toggle();
-            $(".main-nav").toggleClass("show-all-menu");
-        });
-        $(".overlay-bg").click(function () {
-            $(this).hide();
-            $(".all-menu").removeClass("close-menu-tablet");
-            $(".main-nav").removeClass("show-all-menu");
-        });
-        $('.sub_menu').click(function () {
-            if ($(this).next('.level2').css('display') == 'none') {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
-            };
-            $(this).next('.level2').slideToggle("slow", function () {});
-        });
-        $(".dropdown").find(".dropbtn").click(function () {
-            $(".dropdown").find('.dropdown-content').slideUp();
-            if ($(this).next().css('display') == 'none') {
-                $('.dropdown-content').slideUp();
-                $(this).next().stop(true, true).slideDown();
-                $('.dropdown').removeClass('active');
-                $(this).parent().addClass('active');
-                $(".form_suggest .input_search").focus();
-            } else {
-                $(this).parent().find('.dropdown-content').slideUp();
-                $('.dropdown').removeClass('active');
-            }
+        $('#vibeji-ham').off('click').on('click', function () {
+            $(this).toggleClass('open');
+            $('.topnav-mobile').toggleClass('open');
+            $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
         });
     }
-    //slide Gallery
-    function slideGallery() {
-        var galleryThumbs2 = new Swiper('.slideshow2 .slideshow2__thumbs .swiper-container', {
-            spaceBetween: 8,
-            slidesPerView: 5,
-            freeMode: true,
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-            speed: 500,
-            navigation: {
-                nextEl: '.swiper-thumbs-next',
-                prevEl: '.swiper-thumbs-prev',
-            },
-            breakpoints: {
-                576: {
-                    slidesPerView: 3,
-                }
-            }
-        });
-        var galleryTop2 = new Swiper('.slideshow2 .slideshow2__gallery .swiper-container', {
-            speed: 700,
-            thumbs: {
-                swiper: galleryThumbs2,
-            },
-            navigation: {
-                nextEl: '.swiper-gallery-next',
-                prevEl: '.swiper-gallery-prev',
-            },
-        });
+
+    //Hover
+    function hover() {
+
     }
 
     //slide Gallery
@@ -169,7 +116,7 @@
         backToTop();
         scrollBar();
         onCLick();
-        slideGallery();
+        hover();
         swiper();
     });
     $(window).on('load resize', function () {
