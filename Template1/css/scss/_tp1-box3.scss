@@ -10,8 +10,11 @@
         color: #4b4b4b;
     }
 
-    .relative {
-        padding: 0 10px;
+    .swiper-button-next{
+        right: -10px;
+    }
+    .swiper-button-prev{
+        left: -10px;
     }
 
     .swiper-container {
@@ -142,6 +145,29 @@
                 &:hover {
                     background-color: #444;
                 }
+            }
+        }
+    }
+    @media (max-width: 991px){
+        padding-bottom: 0;
+        .heading-tile{
+            font-size: 25px;
+        }
+    }
+    @media (max-width: 767px){
+        .swiper-container{
+            padding-right: 0;
+        }
+    }
+    @media (max-width: 576px){
+        .heading-tile{
+            font-size: 20px;
+        }
+        .swiper-slide{
+            .image,.content{width: 100%;}
+            .image{
+                padding-left: 0;
+                &::before{border-radius: 0;left: 0;}
             }
         }
     }

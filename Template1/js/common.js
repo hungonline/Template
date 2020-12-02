@@ -27,8 +27,10 @@
         $(window).scroll(function () {
             if ($(window).scrollTop() >= 200) {
                 $('#to_top').fadeIn();
+                $('.tp1-topnav').addClass('sticky');
             } else {
                 $('#to_top').fadeOut();
+                $('.tp1-topnav').removeClass('sticky');
             }
         });
 
@@ -68,6 +70,17 @@
             $('.topnav-mobile').toggleClass('open');
             $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
         });
+
+        $('.topnav-mobile-accordion').find('.title').click(function(){
+            $('.topnav-mobile-accordion').find('.title').removeClass("active");
+            if(!$(this).hasClass("active")){
+              $(this).addClass("active");
+            }
+            else{
+              $(this).removeClass("active");
+            }       
+          }); 
+
     }
 
     //Hover
@@ -89,11 +102,8 @@
                 prevEl: '.swiper-box3-prev',
             },
             breakpoints: {
-                480: {
+                1199: {
                     slidesPerView: 1,
-                },
-                991: {
-                    slidesPerView: 2,
                 }
             }
         });
@@ -106,7 +116,7 @@
                 prevEl: '.swiper-box5-prev',
             },
             breakpoints: {
-                480: {
+                576: {
                     slidesPerView: 1,
                 },
                 991: {

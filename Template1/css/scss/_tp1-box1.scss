@@ -144,4 +144,33 @@
         right: 0;
         z-index: 1;
     }
+
+    @media (max-width: 991px){
+        &__content{
+            h1{
+                font-size: 28px;
+            }
+            .cta{
+                position: static;
+                margin-top: 30px;
+            }
+        }
+    }
+    @media (max-width: 576px){
+        height: 550px;
+        &__content{
+            padding-top: 40px;
+            h1{
+                font-size: 22px;
+            }
+            .big {
+                .card {
+                    
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
 }

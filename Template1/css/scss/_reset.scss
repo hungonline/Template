@@ -186,3 +186,13 @@ a {
 .pr-40 {
     padding-right: 40px;
 }
+@media (max-width: 991px){
+    .nav-scroll{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}

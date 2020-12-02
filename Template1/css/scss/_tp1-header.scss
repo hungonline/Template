@@ -281,10 +281,60 @@
             padding: .85rem !important;
             padding-left: 1.5em !important;
             border-bottom: 1px solid #222;
-
+            margin: .47058824em 0;
             .title {
                 color: #4b4b4b;
-                font-weight: 600
+                font-weight: 600;
+                &.active{
+                    color: #7e6fda;
+                    & +.level2{
+                        height: auto;padding-top: 15px;
+                    }
+                }
+            }
+        }
+        .level2{
+            overflow: hidden;
+            height: 0;
+            transition: height 250ms;
+            transition: padding 250ms, background-color 500ms;    
+            h5{font-size: 14px;}
+            a{
+                display: block;
+                margin-bottom: .5rem;
+            }
+        }
+        .grid {
+            margin: 0 -10px;
+        }
+        .column {
+            width: 50%;
+            padding: 0 10px;
+
+            h5 {
+                font-weight: 600;
+                font-size: 15px;
+                margin-bottom: 15px;
+                i{margin-right: 5px;}
+            }
+
+            .language {
+                a {
+                    font-weight: 400;
+                    display: block;
+                    margin-bottom: 1em;
+                    color: #222;
+                }
+            }
+
+            .currency {
+                a {
+                    font-weight: 400;
+                    display: inline-block;
+                    margin-bottom: 1em;
+                    margin-right: .75em !important;
+                    color: #222;
+                }
             }
         }
     }

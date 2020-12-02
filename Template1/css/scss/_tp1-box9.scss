@@ -50,4 +50,16 @@
         padding-top: 6rem;
         padding-bottom: 2rem;
     }
+    @media (max-width: 991px){
+        .content{
+            padding: 35px 40px;
+            .link{
+                font-size: 18px;
+            }
+        }
+        .home-ft-heading{
+            font-size: 25px;
+            padding-top: 4rem;
+        }
+    }
 }
