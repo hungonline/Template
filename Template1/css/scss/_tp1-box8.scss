@@ -1,0 +1,35 @@
+.tp1-box8 {
+    font-size: 16px;
+    background-color: #f2f2f2;
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+
+    .heading-tile {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #4b4b4b;
+        margin-bottom: 20px;
+    }
+
+    [class*="col-"] {
+        text-align: center;
+
+        img {
+            border-radius: 12px;
+        }
+    }
+
+    .button {
+        background-color: #222;
+        color: #fff;
+        text-shadow: none;
+        background-image: none;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 40px;
+        padding: 10px 40px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+}

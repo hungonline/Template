@@ -16,7 +16,7 @@
     .ui.text.menu {
         display: flex;
         flex-wrap: wrap;
-        padding: .5rem 0 !important;
+        padding: 4.5px 0 !important;
         align-items: center;
 
         .item {
@@ -222,6 +222,7 @@
 
     @media (max-width: 991px) {
         padding: 0 15px;
+
         .item.search {
             display: none !important
         }

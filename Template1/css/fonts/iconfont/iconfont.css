@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1594114349803');
-	src: url('iconfont.eot?#iefix-1594114349803') format('embedded-opentype'),
-		url('iconfont.woff2?1594114349803') format('woff2'),
-		url('iconfont.woff?1594114349803') format('woff'),
-		url('iconfont.ttf?1594114349803') format('truetype');
+	src: url('iconfont.eot?1606896862077');
+	src: url('iconfont.eot?#iefix-1606896862077') format('embedded-opentype'),
+		url('iconfont.woff2?1606896862077') format('woff2'),
+		url('iconfont.woff?1606896862077') format('woff'),
+		url('iconfont.ttf?1606896862077') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -188,36 +188,40 @@ Glyphs list
 			content: '\ea27';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-save:before {
 			content: '\ea28';
 		}
 
-		 .iconfont-share-alt1:before {
+		 .iconfont-search:before {
 			content: '\ea29';
 		}
 
-		 .iconfont-shield-check1:before {
+		 .iconfont-share-alt1:before {
 			content: '\ea2a';
 		}
 
-		 .iconfont-square:before {
+		 .iconfont-shield-check1:before {
 			content: '\ea2b';
 		}
 
-		 .iconfont-star1:before {
+		 .iconfont-square:before {
 			content: '\ea2c';
 		}
 
-		 .iconfont-twiter:before {
+		 .iconfont-star1:before {
 			content: '\ea2d';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-twiter:before {
 			content: '\ea2e';
 		}
 
-		 .iconfont-youtube:before {
+		 .iconfont-user:before {
 			content: '\ea2f';
+		}
+
+		 .iconfont-youtube:before {
+			content: '\ea30';
 		}
 
 		

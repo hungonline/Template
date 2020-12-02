@@ -1,0 +1,53 @@
+.tp1-box9 {
+    margin-bottom: 40px;
+
+    .heading-tile {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #4b4b4b;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        border-radius: 15px;
+        background-size: 80px;
+        background-position: bottom right 25px;
+        background-repeat: no-repeat;
+        background-image: url(images/icons/hand-corner-2-full.svg);
+        padding: 82px 100px;
+        box-shadow: 0 29px 59px rgba(21, 19, 114, .56);
+        font-size: 16px;
+
+        .title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+
+            a {
+                color: #4d4d4d;
+            }
+        }
+
+        .link {
+            color: #7e6fda;
+            font-size: 22px;
+            font-weight: 600;
+
+            i {
+                color: #ffcf48;
+                margin-right: 5px;
+                vertical-align: text-bottom;
+            }
+        }
+    }
+
+    .home-ft-heading {
+        color: #7e6fda;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+}

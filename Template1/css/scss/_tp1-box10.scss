@@ -1,0 +1,24 @@
+.tp1-box10 {
+    position: relative;
+    background: linear-gradient(0deg, #2e2d33 0, #685dba 50%, #867ade 100%);
+    padding-bottom: 170px;
+    margin-top: 0px;
+    padding-top: 4rem;
+
+    .button {
+        background-color: #fff;
+        color: #7e6fda;
+        text-shadow: none;
+        background-image: none;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 40px;
+        padding: 10px 40px;
+        display: inline-block;
+        margin-top: 20px;
+
+        i {
+            color: #ffcf48;
+        }
+    }
+}

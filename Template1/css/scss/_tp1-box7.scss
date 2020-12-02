@@ -1,0 +1,54 @@
+.tp1-box7 {
+    margin-bottom: 40px;
+
+    .leading {
+        margin-bottom: .25em;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: rgba(34, 34, 34, .6);
+        letter-spacing: 1px;
+    }
+
+    .heading-tile {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #4b4b4b;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        background-color: #222;
+        color: #fff;
+        text-shadow: none;
+        background-image: none;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 40px;
+        padding: 14px 30px;
+        display: inline-block
+    }
+
+    .brands-link {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        .item {
+            width: 25%;
+            text-align: center;
+            padding: 0 20px;
+            margin: 10px 0;
+
+            img {
+                height: 30px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}

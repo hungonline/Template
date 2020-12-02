@@ -1,0 +1,70 @@
+.tp1-box5 {
+    margin-bottom: 40px;
+
+    .heading-tile {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.4;
+        color: #4b4b4b;
+        margin-bottom: 20px;
+    }
+
+    .wrap.relative {
+        padding: 0 10px;
+    }
+
+    .swiper-container {
+        padding: 10px 5px;
+    }
+
+    .content {
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 #dedede;
+        cursor: pointer;
+        padding: 20px;
+
+        .user-summary {
+            display: flex;
+            margin-bottom: 1rem;
+
+            img {
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                -o-object-position: center;
+                object-position: center;
+            }
+
+            .name {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                line-height: .75;
+
+                p {
+                    font-weight: 600;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .star {
+                &>div {
+                    margin: 0 2px;
+                    color: #face54;
+                }
+            }
+        }
+
+        .text {
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            font-family: arial;
+            font-size: 15px;
+        }
+
+        .target {
+            font-weight: 600
+        }
+    }
+}

@@ -77,12 +77,16 @@
 
     //slide Gallery
     function swiper() {
-        var swiperCustomer = new Swiper('#lp1_box8 .swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 32,
+        var swipertp1box3 = new Swiper('#tp1-box3-slide', {
+            slidesPerView: 2,
+            spaceBetween: 20,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-box3-next',
+                prevEl: '.swiper-box3-prev',
             },
             breakpoints: {
                 480: {
@@ -93,12 +97,13 @@
                 }
             }
         });
-        var swiperService = new Swiper('.service-tour .swiper-container', {
-            slidesPerView: 4,
-            spaceBetween: 16,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+
+        var swipertp1box5 = new Swiper('#tp1-box5-slide', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-box5-next',
+                prevEl: '.swiper-box5-prev',
             },
             breakpoints: {
                 480: {
@@ -108,6 +113,14 @@
                     slidesPerView: 2,
                 }
             }
+        });
+
+        var swipertp1box6 = new Swiper('#tp1-box6-slide', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-box6-next',
+                prevEl: '.swiper-box6-prev',
+            },
         });
     }
 
