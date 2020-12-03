@@ -35,18 +35,12 @@ li {
     list-style-type: none;
 }
 
-.icon-svg {
-    width: 14px;
-    height: 14px;
-    fill: currentColor;
-    vertical-align: middle;
-}
 
-.ic {
+
+.icon-svg {
     width: 16px;
     height: 16px;
-    fill: #757575;
-    display: inline-block;
+    fill: currentColor;
     vertical-align: middle;
 }
 
@@ -77,6 +71,14 @@ a {
         content: "";
         display: table;
     }
+}
+
+.medium {
+    font-weight: 600
+}
+
+.bold {
+    font-weight: bold
 }
 
 .mb0 {
@@ -186,8 +188,9 @@ a {
 .pr-40 {
     padding-right: 40px;
 }
-@media (max-width: 991px){
-    .nav-scroll{
+
+@media (max-width: 991px) {
+    .nav-scroll {
         overflow-x: scroll;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;

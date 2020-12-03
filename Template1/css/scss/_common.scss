@@ -2,6 +2,11 @@
     position: relative;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap
@@ -13,6 +18,22 @@
 
 .space-between {
     justify-content: space-between;
+}
+
+.radius5 {
+    border-radius: 5px
+}
+
+.radius10 {
+    border-radius: 10px
+}
+
+.radius20 {
+    border-radius: 20px
+}
+
+.radius50 {
+    border-radius: 50%
 }
 
 .thumb_img {

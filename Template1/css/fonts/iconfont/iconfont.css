@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1606896862077');
-	src: url('iconfont.eot?#iefix-1606896862077') format('embedded-opentype'),
-		url('iconfont.woff2?1606896862077') format('woff2'),
-		url('iconfont.woff?1606896862077') format('woff'),
-		url('iconfont.ttf?1606896862077') format('truetype');
+	src: url('iconfont.eot?1606984103648');
+	src: url('iconfont.eot?#iefix-1606984103648') format('embedded-opentype'),
+		url('iconfont.woff2?1606984103648') format('woff2'),
+		url('iconfont.woff?1606984103648') format('woff'),
+		url('iconfont.ttf?1606984103648') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -172,56 +172,64 @@ Glyphs list
 			content: '\ea23';
 		}
 
-		 .iconfont-notes1:before {
+		 .iconfont-next:before {
 			content: '\ea24';
 		}
 
-		 .iconfont-phone1:before {
+		 .iconfont-notes1:before {
 			content: '\ea25';
 		}
 
-		 .iconfont-plus-circle1:before {
+		 .iconfont-phone1:before {
 			content: '\ea26';
 		}
 
-		 .iconfont-plus1:before {
+		 .iconfont-plus-circle1:before {
 			content: '\ea27';
 		}
 
-		 .iconfont-save:before {
+		 .iconfont-plus1:before {
 			content: '\ea28';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-prev:before {
 			content: '\ea29';
 		}
 
-		 .iconfont-share-alt1:before {
+		 .iconfont-save:before {
 			content: '\ea2a';
 		}
 
-		 .iconfont-shield-check1:before {
+		 .iconfont-search:before {
 			content: '\ea2b';
 		}
 
-		 .iconfont-square:before {
+		 .iconfont-share-alt1:before {
 			content: '\ea2c';
 		}
 
-		 .iconfont-star1:before {
+		 .iconfont-shield-check1:before {
 			content: '\ea2d';
 		}
 
-		 .iconfont-twiter:before {
+		 .iconfont-square:before {
 			content: '\ea2e';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-star1:before {
 			content: '\ea2f';
 		}
 
-		 .iconfont-youtube:before {
+		 .iconfont-twiter:before {
 			content: '\ea30';
+		}
+
+		 .iconfont-user:before {
+			content: '\ea31';
+		}
+
+		 .iconfont-youtube:before {
+			content: '\ea32';
 		}
 
 		

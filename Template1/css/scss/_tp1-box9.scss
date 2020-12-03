@@ -50,16 +50,29 @@
         padding-top: 6rem;
         padding-bottom: 2rem;
     }
-    @media (max-width: 991px){
-        .content{
+
+    @media (max-width: 991px) {
+        .content {
             padding: 35px 40px;
-            .link{
+
+            .link {
                 font-size: 18px;
             }
         }
-        .home-ft-heading{
+
+        .home-ft-heading {
             font-size: 25px;
             padding-top: 4rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .content {
+            padding: 25px 20px;
+
+            .title {
+                font-size: 18px;
+            }
         }
     }
 }
