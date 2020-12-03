@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description" content="content">
+    <meta name="keywords" content="Việt Nam">
+    <title>
+        Template 1
+
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.css" media="all" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <!-- build:head2 -->
+    <!-- build:head -->
+</head>
+
+<body class="homepage">
+
+    <section id="navbar" class="tp1-topnav">
+        <div class="ui text menu">
+            <div class="item">
+                <a href="https://vibeji.com/vi" class="u-logo">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="images/graphics/logo-color.svg">
+                        <img src="images/graphics/logo-color.svg" alt="">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="item search open">
+                <input type="search" placeholder="Try &quot;photo&quot;">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="right menu">
+                <a href="javascript:;" onclick="$('.search-mobile.results').fadeIn()" class="item search-mobile">
+                    <i class="fa fa-search"></i></a>
+                <div class="item locale" style="margin: 0px 1em !important;"><a href="javascript:;"
+                        class="active">VI</a> <span style="margin: 0px 0.5em;">/</span> <a href="javascript:;">EN</a>
+                </div>
+                <a href="javascript:;" class="currencies-languages browse item hiden-mobile">
+                    <i class="fa fa-globe"></i>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <a href="https://vibeji.com/vi/host-now" class="item hiden-mobile">Tạo hoạt động</a>
+                <a href="" class="item login hiden-mobile" style="margin-right: 0.5em !important;"> Đăng nhập</a>
+                <a href="javascript:;" id="vibeji-ham" class="item"><span></span> <span></span> <span></span></a>
+            </div>
+        </div>
+        <div class="currencies-languages-selection">
+            <div class="grid flex">
+                <div class="column">
+                    <h5>Ngôn ngữ</h5>
+                    <div class="divider"></div>
+                    <div class="language selection"><a href="javascript:void(0);" class="item">English</a> <a
+                            href="javascript:void(0);" class="item">Tiếng Việt</a></div>
+                </div>
+                <div class="column">
+                    <h5>Tiền tệ</h5>
+                    <div class="divider"></div>
+                    <div class="currency selection"><a href="javascript:void(0);" class="item">USD</a> <a
+                            href="javascript:void(0);" class="item">VND</a> <a href="javascript:void(0);"
+                            class="item">SGD</a> <a href="javascript:void(0);" class="item">AUD</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-mobile results">
+            <div class="ui search">
+                <div class="ui icon input">
+                    <input type="search" placeholder="Try &quot;photo&quot;..." class="prompt">
+                    <i class="fa fa-search search icon"></i>
+                </div>
+                <a href="javascript:;" onclick="$(this).closest('.results').fadeOut()" class="search-close">×</a>
+            </div>
+            <div class="no-results">
+                <p class="center">Có 6 kết quả</p>
+                <div class="list two-columns">
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <div class="topnav-mobile">
+            <ul class="topnav-mobile-accordion">
+                <li>
+                    <a class="title">Ngôn ngữ và tiền tệ</a>
+                    <div class="level2 currencies-languages">
+                        <div class="grid flex">
+                            <div class="column">
+                                <h5><i class="fa fa-globe"></i>Ngôn ngữ</h5>
+                                <div class="language selection"><a href="javascript:void(0);" class="item">English</a>
+                                    <a href="javascript:void(0);" class="item">Tiếng Việt</a></div>
+                            </div>
+                            <div class="column">
+                                <h5><i class="fa fa-money"></i>Tiền tệ</h5>
+                                <div class="currency selection"><a href="javascript:void(0);" class="item">USD</a> <a
+                                        href="javascript:void(0);" class="item">VND</a> <a href="javascript:void(0);"
+                                        class="item">SGD</a> <a href="javascript:void(0);" class="item">AUD</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="title">Về Vibeji và liên hệ</a>
+                    <div class="level2">
+                        <h5>Về chúng tôi</h5>
+                        <a href="https://vibeji.com/vi/about" class="item">
+                            Câu chuyện và team</a>
+                        <a href="https://vibeji.com/vi/contact" class="item">
+                            Liên hệ Vibeji</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="login">
+                <a href="" class="black button">Đăng nhập </a>
+                <a href="" class="primary button">Đăng ký </a>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+
+<section class="tp1-box11 clearfix">
+    <div class="container">
+        <div class="city-hero">
+            <h1 class="header">Online, Mọi Nơi</h1>
+            <p>Các trải nghiệm online kết nối bạn với những người hosts mà không cần đi đâu cả. Khám phá thế giới ngay tại nhà.</p>
+        </div>
+    </div>
+    <div class="tp1-box11__bottom"></div>
+</section>
+
+
+<section id="tp1-pin-top" class="tp1-box12 clearfix">
+    <div class="container">
+        <div class="flex search-form">
+            <div class="criteria">
+                <div class="dropdown">
+                    <div class="dropbtn btn-default">Online, Mọi Nơi</div>
+                    <div class="dropdown-content" style="display: none;">
+                        <ul>
+                            <li>Sài Gòn</li>
+                            <li>Cần Thơ</li>
+                            <li>Đà Lạt</li>
+                            <li>Đà Nẵng</li>
+                            <li>Đà Lạt</li>
+                            <li>Đà Nẵng</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="criteria">
+                <a href="javascript:;" class="btn-default">Chọn lọc<span> · (1)</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="filters">
+        <div class="header">
+           <h5>Chọn lọc</h5>
+           <div class="control close"><a href="javascript:;"><img src="https://cdn.landedvibe.com/misc/close-outline.svg" style="width: 36px; margin-top: 0.55em;"></a></div>
+           <div class="control clear"><a href="javascript:;">Xóa</a></div>
+        </div>
+        <div class="content">
+           <div class="filter-item interests">
+              <p class="filter-header">
+                 Chủ đề – Điều gì hấp dẫn bạn?
+              </p>
+              <div class="columned three mobile-adaptive">
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Âm nhạc &amp; Nhảy múa
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Ăn uống
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Du lịch & Cảm hứng
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Chung chung
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Kiến thức chuyên ngành
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Nghệ thuật & Thủ công
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Âm nhạc &amp; Nhảy múa
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Ăn uống
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Du lịch & Cảm hứng
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Chung chung
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Kiến thức chuyên ngành
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 <div class="item interest">
+                    <label class="confir_res">
+                        Nghệ thuật & Thủ công
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                 </div>
+                 
+              </div>
+           </div>
+           <div class="filter-item prices">
+              <p class="filter-header">
+                 Giá mỗi người
+              </p>
+              <div class="price-filter-container">
+                 <div class="ui equal width grid">
+                    <div class="column">
+                       <div class="price-range-detail-box">
+                          <label>từ</label> 
+                          <p class="price-numb">100,000 VND</p>
+                       </div>
+                    </div>
+                    <div class="column">
+                       <div class="price-range-detail-box">
+                          <label>đến</label> 
+                          <p class="price-numb">2,000,000 VND</p>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="price-range-slider"><span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="display: none; left: 0%;">0</span><span class="irs-to" style="display: none; left: 0%;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 6.22137%; width: 92.4215%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-handle from type_last" style="left: 4.86429%;"><i></i><i></i><i></i></span><span class="irs-handle to" style="left: 97.2858%;"><i></i><i></i><i></i></span></span><input type="text" name="price_range" value="" readonly="" class="js-range-slider irs-hidden-input" tabindex="-1"></div>
+                 <div class="price-fake-label ui grid">
+                    <div class="left floated six wide column"><span>0 VND</span></div>
+                    <div class="right floated right aligned six wide column"><span>2,000,000 VND</span></div>
+                 </div>
+              </div>
+           </div>
+           <div class="filter-item languages">
+              <p class="filter-header">
+                 Ngôn ngữ dẫn dắt
+              </p>
+              <div class="columned three mobile-adaptive">
+                 <div class="item language">
+                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>English</label></div>
+                 </div>
+                 <div class="item language">
+                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Tiếng Việt</label></div>
+                 </div>
+              </div>
+           </div>
+           <div class="filter-item formats">
+              <p class="filter-header">
+                 Hình thức – Bạn thích nó thế nào?
+              </p>
+              <div class="columned three mobile-adaptive">
+                 <div class="item format">
+                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Hands on</label></div>
+                 </div>
+                 <div class="item format">
+                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Sit back &amp; enjoy</label></div>
+                 </div>
+                 <div class="item format">
+                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Conversational</label></div>
+                 </div>
+                 <div class="item format">
+                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Kids friendly</label></div>
+                 </div>
+                 <div class="item format">
+                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Private</label></div>
+                 </div>
+                 <div class="item format">
+                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Small group</label></div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="actions"><button class="button-default">Show results</button></div>
+     </div>
+
+</section>
+
+<section class="tp1-box4 mt30 clearfix">
+    <div class="container">
+        <div class="list row">
+            <div class="item col-lg-2dot4 col-sm-6">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                        <div class="u-card-online__mark">Sài Gòn</div>
+                        <div class="u-card__save">
+                            <a href="javascript:void(0)">
+                                <img src="images/icons/save.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3><a href="">DIY son môi thiên nhiên cùng Amber</a></h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3><a href="">LÀM NẾN - Tự tay làm nến thơm thiên nhiên trong 60 phút</a></h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3><a href="">DIY son môi thiên nhiên cùng Amber</a></h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3><a href="">LÀM NẾN - Tự tay làm nến thơm thiên nhiên trong 60 phút</a></h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3><a href="">DIY son môi thiên nhiên cùng Amber</a></h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6 box-placeholder">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-new"><a href="">LÀM NẾN - Tự tay làm nến thơm thiên nhiên trong 60 phút</a>
+                        </h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6 box-placeholder">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-new"><a href="">LÀM NẾN - Tự tay làm nến thơm thiên nhiên trong 60 phút</a>
+                        </h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6 box-placeholder">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-new"><a href="">LÀM NẾN - Tự tay làm nến thơm thiên nhiên trong 60 phút</a>
+                        </h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6 box-placeholder">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-new"><a href="">LÀM NẾN - Tự tay làm nến thơm thiên nhiên trong 60 phút</a>
+                        </h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-lg-2dot4 col-sm-6 box-placeholder">
+                <div class="wrap">
+                    <div class="image">
+                        <a href="" class="thumb_img thumb_5x5">
+                            <picture>
+                                <img src="images/graphics/thumb_5x3.jpeg" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <h3 class="title-new"><a href="">LÀM NẾN - Tự tay làm nến thơm thiên nhiên trong 60 phút</a>
+                        </h3>
+                        <div class="description">
+                            <div class="price">
+                                <span class="u-price">500k</span>
+                                <span class="u-price-per"><b>VND</b></span></div>
+                            <div class="rate"><i class="fa fa-star"></i> <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+    <!--Footer-->
+    <footer id="u_footer" class="tp1-footer">
+        <div class="ui container">
+            <div class="tp1-footer__wrapper">
+                <div class="tp1-footer--left">
+                    <a href="#" class="u-logo">
+                        <img src="images/graphics/logo-light.svg" alt="logo">
+                    </a>
+                    <div class="u-socials">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="tp1-footer--right">
+                    <div class="tp1-footer__menu">
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Sử dụng Vibeji</div>
+                            <div class="u-menu-item__link">
+                                <a href="/">Trang chủ</a>
+                                <a href="#">Trở thành host</a>
+                                <a href="#">Câu hỏi thường gặp</a>
+                                <a href="#">Liên hệ Vibeji</a>
+                            </div>
+                        </div>
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Về chúng tôi</div>
+                            <div class="u-menu-item__link">
+                                <a href="#">Câu chuyện và team</a>
+                                <a href="#" target="_blank">Truyền thông</a>
+                                <a href="#">Photos credit</a>
+                            </div>
+                        </div>
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Ngoài ra</div>
+                            <div class="u-menu-item__link">
+                                <a href="#" target="_blank">Vibeji cho Teams</a>
+                                <a href="#" target="_blank">Blog</a>
+                                <a href="#" target="_blank">Podcast</a>
+                            </div>
+                        </div>
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Chính sách</div>
+                            <div class="u-menu-item__link">
+                                <a href="#">Điều khoản sử dụng</a>
+                                <a href="#">Chính sách bảo mật</a>
+                                <a href="#">Điều khoản hủy &amp; hoàn tiền</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tp1-footer__copyright">© Bản quyền Vibeji 2020</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <div class="overlay-bg"></div>
+    <!--Back to top-->
+    <a href="javascript:;" id="to_top">
+        <i class="fa fa-long-arrow-up"></i>
+    </a>
+
+    <!--End Lightbox thông báo-->
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+
+    <div class="clearfix"></div>
+</body>
+
+</html>

@@ -65,6 +65,7 @@
     }
     //onCLick
     function onCLick() {
+
         $('#vibeji-ham').off('click').on('click', function () {
             $(this).toggleClass('open');
             $('.topnav-mobile').toggleClass('open');
@@ -79,6 +80,33 @@
                 $(this).removeClass("active");
             }
         });
+
+		$(".dropdown").find(".dropbtn").click(function () {
+			$(".dropdown").find('.dropdown-content').slideUp();
+			if ($(this).next().css('display') == 'none') {
+				$('.dropdown-content').slideUp();
+				$(this).next().stop(true, true).slideDown();
+				$('.dropdown').removeClass('active');
+				$(this).parent().addClass('active');
+				$(".form_suggest .input_search").focus();
+			} else {
+				$(this).parent().find('.dropdown-content').slideUp();
+				$('.dropdown').removeClass('active');
+			}
+		});
+		$(".dropdown-content").find("li").click(function () {
+			var html = $(this).html();
+			$(".dropbtn").html(html);
+		});
+		$(document).click(function () {
+			$(".onclick-togle, .dropdown .dropbtn,.down-up .onclick").removeClass('active');
+			$(".dropdown").find('.dropdown-content').slideUp();
+			$(".form-down").slideUp();
+		});
+		$(".onclick-togle, .dropdown .dropbtn,.down-up .onclick, .dropdown-content .form-default, .dropdown-content .input_search").click(function (event) {
+			event.stopPropagation();
+		});
+
 
     }
 
@@ -147,6 +175,16 @@
         });
     }
 
+    var header = document.getElementById("tp1-pin-top");
+    var sticky = header.offsetTop - 61;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("pin");
+        } else {
+            header.classList.remove("pin");
+        }
+    }
 
     $(function () {
         backToTop();
@@ -155,6 +193,9 @@
         hover();
         swiper();
     });
+    window.onscroll = function () {
+        myFunction()
+    };
     $(window).on('load resize', function () {
         resizeSite()
     });
