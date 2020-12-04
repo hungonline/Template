@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="css/bootstrap.css" media="all" />
     <link rel="stylesheet" href="css/style.css" media="all" />
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+
+
     <!-- build:head2 -->
     <!-- build:head -->
 </head>
@@ -130,6 +141,24 @@
                 <a href="" class="primary button">Đăng ký </a>
             </div>
         </div>
+
+        <script>
+            $('#vibeji-ham').off('click').on('click', function () {
+                $(this).toggleClass('open');
+                $('.topnav-mobile').toggleClass('open');
+                $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
+            });
+
+            $('.topnav-mobile-accordion').find('.title').click(function () {
+                $('.topnav-mobile-accordion').find('.title').removeClass("active");
+                if (!$(this).hasClass("active")) {
+                    $(this).addClass("active");
+                } else {
+                    $(this).removeClass("active");
+                }
+            });
+        </script>
+
 
     </section>
 
@@ -389,6 +418,26 @@
             <div class="swiper-button-prev swiper-box3-prev"><i class="fa fa-chevron-left"></i></div>
         </div>
     </div>
+    <script>
+        var swipertp1box3 = new Swiper('#tp1-box3-slide', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-box3-next',
+                prevEl: '.swiper-box3-prev',
+            },
+            breakpoints: {
+                1199: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+    </script>
+
 </section>
 
 <section class="mb20 clearfix"></section>
@@ -754,6 +803,25 @@
             <div class="swiper-button-prev swiper-box5-prev"><i class="fa fa-chevron-left"></i></div>
         </div>
     </div>
+    <script>
+        var swipertp1box5 = new Swiper('#tp1-box5-slide', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-box5-next',
+                prevEl: '.swiper-box5-prev',
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                },
+                991: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    </script>
+
 </section>
 
 <section class="tp1-box6 mt30 clearfix">
@@ -803,6 +871,16 @@
             <div class="swiper-button-prev swiper-box6-prev"><i class="fa fa-chevron-left"></i></div>
         </div>
     </div>
+    <script>
+        var swipertp1box6 = new Swiper('#tp1-box6-slide', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-box6-next',
+                prevEl: '.swiper-box6-prev',
+            },
+        });
+    </script>
+
 </section>
 
 <section class="tp1-box7 mt30 clearfix">
@@ -979,16 +1057,6 @@
     </a>
 
     <!--End Lightbox thông báo-->
-    <!--Jquery lib-->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <!-- build:script -->
-    
-
-    <div class="clearfix"></div>
 </body>
 
 </html>

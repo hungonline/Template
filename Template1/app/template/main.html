@@ -18,6 +18,16 @@
     <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="css/bootstrap.css" media="all" />
     <link rel="stylesheet" href="css/style.css" media="all" />
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    <!-- build:script2 -->
+
     <!-- build:head2 -->
     <!-- build:head -->
 </head>
@@ -130,6 +140,24 @@
             </div>
         </div>
 
+        <script>
+            $('#vibeji-ham').off('click').on('click', function () {
+                $(this).toggleClass('open');
+                $('.topnav-mobile').toggleClass('open');
+                $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
+            });
+
+            $('.topnav-mobile-accordion').find('.title').click(function () {
+                $('.topnav-mobile-accordion').find('.title').removeClass("active");
+                if (!$(this).hasClass("active")) {
+                    $(this).addClass("active");
+                } else {
+                    $(this).removeClass("active");
+                }
+            });
+        </script>
+
+
     </section>
 
     <!-- build:content -->
@@ -204,15 +232,6 @@
     </a>
 
     <!--End Lightbox thông báo-->
-    <!--Jquery lib-->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <!-- build:script -->
-    <!-- build:script2 -->
-    <div class="clearfix"></div>
 </body>
 
 </html>

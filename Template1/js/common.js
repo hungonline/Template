@@ -58,55 +58,8 @@
             scrollContainer.scrollbar();
         }
     }
-    //resizeSite
-    function resizeSite() {
-        var heightVideo = $('#player_playing').height() - 64;
-        $('.detail_right .scrollbar-inner').height(heightVideo);
-    }
     //onCLick
     function onCLick() {
-
-        $('#vibeji-ham').off('click').on('click', function () {
-            $(this).toggleClass('open');
-            $('.topnav-mobile').toggleClass('open');
-            $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
-        });
-
-        $('.topnav-mobile-accordion').find('.title').click(function () {
-            $('.topnav-mobile-accordion').find('.title').removeClass("active");
-            if (!$(this).hasClass("active")) {
-                $(this).addClass("active");
-            } else {
-                $(this).removeClass("active");
-            }
-        });
-
-		$(".dropdown").find(".dropbtn").click(function () {
-			$(".dropdown").find('.dropdown-content').slideUp();
-			if ($(this).next().css('display') == 'none') {
-				$('.dropdown-content').slideUp();
-				$(this).next().stop(true, true).slideDown();
-				$('.dropdown').removeClass('active');
-				$(this).parent().addClass('active');
-				$(".form_suggest .input_search").focus();
-			} else {
-				$(this).parent().find('.dropdown-content').slideUp();
-				$('.dropdown').removeClass('active');
-			}
-		});
-		$(".dropdown-content").find("li").click(function () {
-			var html = $(this).html();
-			$(".dropbtn").html(html);
-		});
-		$(document).click(function () {
-			$(".onclick-togle, .dropdown .dropbtn,.down-up .onclick").removeClass('active');
-			$(".dropdown").find('.dropdown-content').slideUp();
-			$(".form-down").slideUp();
-		});
-		$(".onclick-togle, .dropdown .dropbtn,.down-up .onclick, .dropdown-content .form-default, .dropdown-content .input_search").click(function (event) {
-			event.stopPropagation();
-		});
-
 
     }
 
@@ -117,73 +70,7 @@
 
     //slide Gallery
     function swiper() {
-        var swipertp1box3 = new Swiper('#tp1-box3-slide', {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-box3-next',
-                prevEl: '.swiper-box3-prev',
-            },
-            breakpoints: {
-                1199: {
-                    slidesPerView: 1,
-                }
-            }
-        });
 
-        var swipertp1box5 = new Swiper('#tp1-box5-slide', {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.swiper-box5-next',
-                prevEl: '.swiper-box5-prev',
-            },
-            breakpoints: {
-                576: {
-                    slidesPerView: 1,
-                },
-                991: {
-                    slidesPerView: 2,
-                }
-            }
-        });
-
-        var swipertp1box6 = new Swiper('#tp1-box6-slide', {
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.swiper-box6-next',
-                prevEl: '.swiper-box6-prev',
-            },
-        });
-
-        var swipertp1deal1 = new Swiper('.tp1-detail-s1 .swiper-container', {
-            effect: 'fade',
-            loop: true,
-            slidesPerView: 1,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-dt1-next',
-                prevEl: '.swiper-dt1-prev',
-            },
-        });
-    }
-
-    var header = document.getElementById("tp1-pin-top");
-    var sticky = header.offsetTop - 61;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("pin");
-        } else {
-            header.classList.remove("pin");
-        }
     }
 
     $(function () {
@@ -192,11 +79,5 @@
         onCLick();
         hover();
         swiper();
-    });
-    window.onscroll = function () {
-        myFunction()
-    };
-    $(window).on('load resize', function () {
-        resizeSite()
     });
 })(jQuery);

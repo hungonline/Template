@@ -1,0 +1,38 @@
+.tp1-box16 {
+    padding: 70px 0 50px;
+    position: relative;
+    font-size: 17px;
+
+    .button {
+        box-shadow: 0 0 0 0 #e4e8ec inset;
+        border: 1px solid #7e6fda;
+        padding: 7px 30px;
+        border-radius: 20px;
+        margin: 0 6px 10px 0;
+        display: inline-block;
+        color: #7e6fda;
+    }
+
+    .button-pill {
+        background: #7e6fda;
+        color: #fff;
+        font-weight: 600;
+
+        &:hover {
+            background-color: #5a46d0;
+        }
+    }
+
+    .rotage {
+        transform: scaleX(-1);
+
+    }
+
+    @media (max-width: 991px) {
+        padding: 40px 0 30px;
+
+        .title {
+            font-size: 25px
+        }
+    }
+}

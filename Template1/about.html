@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description" content="content">
+    <meta name="keywords" content="Việt Nam">
+    <title>
+        Template 1
+
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap" rel="stylesheet">
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.css" media="all" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+
+
+    <!-- build:head2 -->
+    <!-- build:head -->
+</head>
+
+<body class="homepage">
+
+    <section id="navbar" class="tp1-topnav">
+        <div class="ui text menu">
+            <div class="item">
+                <a href="https://vibeji.com/vi" class="u-logo">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="images/graphics/logo-color.svg">
+                        <img src="images/graphics/logo-color.svg" alt="">
+                    </picture>
+                </a>
+            </div>
+
+            <div class="item search open">
+                <input type="search" placeholder="Try &quot;photo&quot;">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="right menu">
+                <a href="javascript:;" onclick="$('.search-mobile.results').fadeIn()" class="item search-mobile">
+                    <i class="fa fa-search"></i></a>
+                <div class="item locale" style="margin: 0px 1em !important;"><a href="javascript:;"
+                        class="active">VI</a> <span style="margin: 0px 0.5em;">/</span> <a href="javascript:;">EN</a>
+                </div>
+                <a href="javascript:;" class="currencies-languages browse item hiden-mobile">
+                    <i class="fa fa-globe"></i>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <a href="https://vibeji.com/vi/host-now" class="item hiden-mobile">Tạo hoạt động</a>
+                <a href="" class="item login hiden-mobile" style="margin-right: 0.5em !important;"> Đăng nhập</a>
+                <a href="javascript:;" id="vibeji-ham" class="item"><span></span> <span></span> <span></span></a>
+            </div>
+        </div>
+        <div class="currencies-languages-selection">
+            <div class="grid flex">
+                <div class="column">
+                    <h5>Ngôn ngữ</h5>
+                    <div class="divider"></div>
+                    <div class="language selection"><a href="javascript:void(0);" class="item">English</a> <a
+                            href="javascript:void(0);" class="item">Tiếng Việt</a></div>
+                </div>
+                <div class="column">
+                    <h5>Tiền tệ</h5>
+                    <div class="divider"></div>
+                    <div class="currency selection"><a href="javascript:void(0);" class="item">USD</a> <a
+                            href="javascript:void(0);" class="item">VND</a> <a href="javascript:void(0);"
+                            class="item">SGD</a> <a href="javascript:void(0);" class="item">AUD</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-mobile results">
+            <div class="ui search">
+                <div class="ui icon input">
+                    <input type="search" placeholder="Try &quot;photo&quot;..." class="prompt">
+                    <i class="fa fa-search search icon"></i>
+                </div>
+                <a href="javascript:;" onclick="$(this).closest('.results').fadeOut()" class="search-close">×</a>
+            </div>
+            <div class="no-results">
+                <p class="center">Có 6 kết quả</p>
+                <div class="list two-columns">
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Sài Gòn</a>
+                    <a href="" class="item"><i class="fa fa-map-marker"></i>Hà Nội</a>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <div class="topnav-mobile">
+            <ul class="topnav-mobile-accordion">
+                <li>
+                    <a class="title">Ngôn ngữ và tiền tệ</a>
+                    <div class="level2 currencies-languages">
+                        <div class="grid flex">
+                            <div class="column">
+                                <h5><i class="fa fa-globe"></i>Ngôn ngữ</h5>
+                                <div class="language selection"><a href="javascript:void(0);" class="item">English</a>
+                                    <a href="javascript:void(0);" class="item">Tiếng Việt</a></div>
+                            </div>
+                            <div class="column">
+                                <h5><i class="fa fa-money"></i>Tiền tệ</h5>
+                                <div class="currency selection"><a href="javascript:void(0);" class="item">USD</a> <a
+                                        href="javascript:void(0);" class="item">VND</a> <a href="javascript:void(0);"
+                                        class="item">SGD</a> <a href="javascript:void(0);" class="item">AUD</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="title">Về Vibeji và liên hệ</a>
+                    <div class="level2">
+                        <h5>Về chúng tôi</h5>
+                        <a href="https://vibeji.com/vi/about" class="item">
+                            Câu chuyện và team</a>
+                        <a href="https://vibeji.com/vi/contact" class="item">
+                            Liên hệ Vibeji</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="login">
+                <a href="" class="black button">Đăng nhập </a>
+                <a href="" class="primary button">Đăng ký </a>
+            </div>
+        </div>
+
+        <script>
+            $('#vibeji-ham').off('click').on('click', function () {
+                $(this).toggleClass('open');
+                $('.topnav-mobile').toggleClass('open');
+                $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
+            });
+
+            $('.topnav-mobile-accordion').find('.title').click(function () {
+                $('.topnav-mobile-accordion').find('.title').removeClass("active");
+                if (!$(this).hasClass("active")) {
+                    $(this).addClass("active");
+                } else {
+                    $(this).removeClass("active");
+                }
+            });
+        </script>
+
+
+    </section>
+
+    
+
+
+<section class="tp1-box14 clearfix">
+    <div class="ui-container">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 u-banner--left">
+                    <h1 class="title">
+                        Learning from each other has never been easier. Skill-sharing is the future of our culture
+                    </h1>
+                    <p>Together, we will land closer to the better version of ourselves, one vibe at a time.</p>
+                </div>
+                <div class="col-lg-6 u-banner--right">
+                    <img src="images/graphics/hero-team.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-story">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 our-story--left">
+                    <h2 class="heading-tile">Our story</h2>
+                    <div class="max-content">
+                        <p>Vibeji originated from the founder’s own experience as a millennial who
+                            loves travelling and
+                            experiencing life differently. Tri spent most of his time living city by
+                            city in 2018 and
+                            observed a few things.</p>
+                        <p>Tri found out that there was lack of diversified entertainment activities
+                            when he’s living or
+                            travelling to in a city. Most of the time locals and expats would just
+                            go for a movie, attend
+                            weekend workshops or hanging out for a drink while in reality, they can
+                            opt for more interesting
+                            and/or indie activities hosted by other people.
+
+                            Tri also noticed most of his friends are capable of providing such
+                            activities, by sharing what
+                            they know from their hobby or profession, and earn money from that. Tri
+                            started hosting an
+                            activity himself and invited his friends to join; he realised there’s a
+                            market for this, slowly
+                            rising up. A truely millennial-oriented service, and an Airbnb for
+                            entertainment activities.</p>
+                    </div>
+                    <a href="" class="view-all"><i class="fa fa-long-arrow-right"></i> <span> Read more</span></a>
+                </div>
+                <div class="col-lg-6 our-story--right">
+                    <div class="rotage text-center">
+                        <img src="images/graphics/story-photo.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tp1-box15 clearfix">
+    <div class="container">
+        <div class="row mb40">
+            <div class="col-lg-6 text-center mb20">
+                <img height="180" src="images/graphics/banner-meetourteam.svg" alt="">
+            </div>
+            <div class="col-lg-6 ">
+                <h2 class="title bold">Meet our team</h2>
+                <p>Dedicated to empowering others and ourselves to come closer to who we aspire to be!</p>
+            </div>
+        </div>
+        <div class="list-team row">
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-tri.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-tri-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-len.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-len-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-hoang-2.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-hoang-2-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-tri.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-tri-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-len.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-len-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-hoang-2.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-hoang-2-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-tri.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-tri-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-len.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-len-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-hoang-2.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-hoang-2-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-tri.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-tri-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <div class="front">
+                        <img src="images/graphics/team-len.jpg" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="images/graphics/team-len-hover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="content text-center">
+                    <div class="header">Tri Lecao</div>
+                    <div class="meta">Founder &amp; CEO</div>
+                    <div class="description">
+                        <p>Muay Thai &amp; Skydiving Enthusiast, Product Guy, Saigonese &amp; Perthian</p>
+                    </div>
+                </div>
+                <div class="extra text-center">
+                    <a href="mailto:tri@vibeji.com" class="u-link">Email</a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/tri-lecao/" class="u-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tp1-box16 clearfix">
+    <div class="container">
+        <div class="row mb40">
+            <div class="col-lg-6 mb30">
+                <h2 class="title medium mb30">Join our team to empower others</h2>
+                <p>We currently don't have any role open for hiring, but we believe that talents can always fit in.
+                    Founded as a culture-centric startup company, we love to bring great personalities into the team, so
+                    if you feel like you are the one, please drop our founder a line :)</p>
+                <div class="actions">
+                    <a class="button button-pill" href="">See our culture guide</a>
+                    <a href="mailto:" class="button btn-say-hello">👋 Say hi to founder</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img class="rotage" src="images/graphics/join-team.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tp1-box17 clearfix">
+    <div class="container">
+        <h2 class="title medium mb30 text-center">A tour around our office</h2>
+        <div class="wrap relative">
+            <div id="tp1-box17-slide" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide thumb_img thumb_3x1"><img src="images/graphics/office-1.jpg" /></div>
+                    <div class="swiper-slide thumb_img thumb_3x1"><img src="images/graphics/office-2.jpg" /></div>
+                    <div class="swiper-slide thumb_img thumb_3x1"><img src="images/graphics/office-3.jpg" /></div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-box17-next">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev swiper-box17-next">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        var swipertp1box17 = new Swiper('#tp1-box17-slide', {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-box17-next',
+                prevEl: '.swiper-box17-prev',
+            },
+        });
+    </script>
+</section>
+
+<div class="tp1-box18 clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb30">
+                <h3 class="title bold mb30">Partner with us</h3>
+                <p>We can help you bring skills, laughter and memories to your team and community</p>
+                <div class="actions">
+                    <a href="mailto:hello@vibeji.com" class="pink button"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Get
+                        in touch</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="brands-link">
+                    <div class="item"><span class="image"><img src="images/graphics/logo-wework.png" alt=""></span>
+                    </div>
+                    <div class="item"><span class="image"><img src="images/graphics/logo-zalo.png" alt=""></span></div>
+                    <div class="item"><span class="image"><img src="images/graphics/logo-garena.png" alt=""></span>
+                    </div>
+                    <div class="item"><span class="image"><img src="images/graphics/the-hive.png" alt=""></span>
+                    </div>
+                    <div class="item"><span class="image"><img src="images/graphics/logo-wework.png" alt=""></span>
+                    </div>
+                    <div class="item"><span class="image"><img src="images/graphics/logo-zalo.png" alt=""></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--Footer-->
+    <footer id="u_footer" class="tp1-footer">
+        <div class="ui container">
+            <div class="tp1-footer__wrapper">
+                <div class="tp1-footer--left">
+                    <a href="#" class="u-logo">
+                        <img src="images/graphics/logo-light.svg" alt="logo">
+                    </a>
+                    <div class="u-socials">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="tp1-footer--right">
+                    <div class="tp1-footer__menu">
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Sử dụng Vibeji</div>
+                            <div class="u-menu-item__link">
+                                <a href="/">Trang chủ</a>
+                                <a href="#">Trở thành host</a>
+                                <a href="#">Câu hỏi thường gặp</a>
+                                <a href="#">Liên hệ Vibeji</a>
+                            </div>
+                        </div>
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Về chúng tôi</div>
+                            <div class="u-menu-item__link">
+                                <a href="#">Câu chuyện và team</a>
+                                <a href="#" target="_blank">Truyền thông</a>
+                                <a href="#">Photos credit</a>
+                            </div>
+                        </div>
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Ngoài ra</div>
+                            <div class="u-menu-item__link">
+                                <a href="#" target="_blank">Vibeji cho Teams</a>
+                                <a href="#" target="_blank">Blog</a>
+                                <a href="#" target="_blank">Podcast</a>
+                            </div>
+                        </div>
+                        <div class="tp1-footer__menu-item">
+                            <div class="u-menu-item__title">Chính sách</div>
+                            <div class="u-menu-item__link">
+                                <a href="#">Điều khoản sử dụng</a>
+                                <a href="#">Chính sách bảo mật</a>
+                                <a href="#">Điều khoản hủy &amp; hoàn tiền</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tp1-footer__copyright">© Bản quyền Vibeji 2020</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+    <div class="overlay-bg"></div>
+    <!--Back to top-->
+    <a href="javascript:;" id="to_top">
+        <i class="fa fa-long-arrow-up"></i>
+    </a>
+
+    <!--End Lightbox thông báo-->
+</body>
+
+</html>

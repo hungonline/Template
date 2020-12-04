@@ -1,3 +1,44 @@
-.tp1-box13{
-    
+.tp1-box13 {
+    background-color: #f6f6f6;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    font-size: 16px;
+
+    .heading-tile {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        line-height: 1.4;
+        color: #4b4b4b;
+    }
+
+    .item {
+        background-color: #face54;
+        min-height: 90px;
+        padding: 20px;
+        position: relative;
+        border-radius: 10px;
+
+        h4 {
+            font-weight: 600;
+            font-size: 14px
+        }
+
+        .illus-vibe-hand {
+            position: absolute;
+            bottom: 0;
+            right: 1em;
+            width: 35px;
+            height: 55px;
+            background-image: url(images/graphics/Illus-hand-corner-3-static.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+            transition: all .1s ease-in-out;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 2em;
+    }
 }

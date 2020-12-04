@@ -19,6 +19,18 @@
     <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="css/bootstrap.css" media="all" />
     <link rel="stylesheet" href="css/style.css" media="all" />
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+<script type="text/javascript" src="js/slider-range.js"></script>
+
+
     <!-- build:head2 -->
     <!-- build:head -->
 </head>
@@ -131,6 +143,24 @@
             </div>
         </div>
 
+        <script>
+            $('#vibeji-ham').off('click').on('click', function () {
+                $(this).toggleClass('open');
+                $('.topnav-mobile').toggleClass('open');
+                $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
+            });
+
+            $('.topnav-mobile-accordion').find('.title').click(function () {
+                $('.topnav-mobile-accordion').find('.title').removeClass("active");
+                if (!$(this).hasClass("active")) {
+                    $(this).addClass("active");
+                } else {
+                    $(this).removeClass("active");
+                }
+            });
+        </script>
+
+
     </section>
 
     
@@ -140,7 +170,8 @@
     <div class="container">
         <div class="city-hero">
             <h1 class="header">Online, Mọi Nơi</h1>
-            <p>Các trải nghiệm online kết nối bạn với những người hosts mà không cần đi đâu cả. Khám phá thế giới ngay tại nhà.</p>
+            <p>Các trải nghiệm online kết nối bạn với những người hosts mà không cần đi đâu cả. Khám phá thế giới ngay
+                tại nhà.</p>
         </div>
     </div>
     <div class="tp1-box11__bottom"></div>
@@ -166,176 +197,276 @@
                 </div>
             </div>
             <div class="criteria">
-                <a href="javascript:;" class="btn-default">Chọn lọc<span> · (1)</span></a>
+                <a href="javascript:;" class="btn-default filters-btn">Chọn lọc<span> · (1)</span></a>
             </div>
         </div>
     </div>
     <div class="filters">
         <div class="header">
-           <h5>Chọn lọc</h5>
-           <div class="control close"><a href="javascript:;"><img src="https://cdn.landedvibe.com/misc/close-outline.svg" style="width: 36px; margin-top: 0.55em;"></a></div>
-           <div class="control clear"><a href="javascript:;">Xóa</a></div>
+            <h5>Chọn lọc</h5>
+            <div class="control close">
+                <a href="javascript:;">
+                    <img src="images/icons/close-outline.svg" style="width: 36px; margin-top: 0.55em;">
+                </a>
+            </div>
+            <div class="control clear"><a href="javascript:;">Xóa</a></div>
         </div>
         <div class="content">
-           <div class="filter-item interests">
-              <p class="filter-header">
-                 Chủ đề – Điều gì hấp dẫn bạn?
-              </p>
-              <div class="columned three mobile-adaptive">
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Âm nhạc &amp; Nhảy múa
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Ăn uống
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Du lịch & Cảm hứng
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Chung chung
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Kiến thức chuyên ngành
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Nghệ thuật & Thủ công
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Âm nhạc &amp; Nhảy múa
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Ăn uống
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Du lịch & Cảm hứng
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Chung chung
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Kiến thức chuyên ngành
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 <div class="item interest">
-                    <label class="confir_res">
-                        Nghệ thuật & Thủ công
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                 </div>
-                 
-              </div>
-           </div>
-           <div class="filter-item prices">
-              <p class="filter-header">
-                 Giá mỗi người
-              </p>
-              <div class="price-filter-container">
-                 <div class="ui equal width grid">
-                    <div class="column">
-                       <div class="price-range-detail-box">
-                          <label>từ</label> 
-                          <p class="price-numb">100,000 VND</p>
-                       </div>
+            <div class="filter-item interests">
+                <p class="filter-header">
+                    Chủ đề – Điều gì hấp dẫn bạn?
+                </p>
+                <div class="columned three mobile-adaptive">
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Âm nhạc &amp; Nhảy múa
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
-                    <div class="column">
-                       <div class="price-range-detail-box">
-                          <label>đến</label> 
-                          <p class="price-numb">2,000,000 VND</p>
-                       </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Ăn uống
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
-                 </div>
-                 <div class="price-range-slider"><span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="display: none;">0</span><span class="irs-max" style="display: none;">1</span><span class="irs-from" style="display: none; left: 0%;">0</span><span class="irs-to" style="display: none; left: 0%;">0</span><span class="irs-single" style="display: none; left: 0%;">0</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 6.22137%; width: 92.4215%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-handle from type_last" style="left: 4.86429%;"><i></i><i></i><i></i></span><span class="irs-handle to" style="left: 97.2858%;"><i></i><i></i><i></i></span></span><input type="text" name="price_range" value="" readonly="" class="js-range-slider irs-hidden-input" tabindex="-1"></div>
-                 <div class="price-fake-label ui grid">
-                    <div class="left floated six wide column"><span>0 VND</span></div>
-                    <div class="right floated right aligned six wide column"><span>2,000,000 VND</span></div>
-                 </div>
-              </div>
-           </div>
-           <div class="filter-item languages">
-              <p class="filter-header">
-                 Ngôn ngữ dẫn dắt
-              </p>
-              <div class="columned three mobile-adaptive">
-                 <div class="item language">
-                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>English</label></div>
-                 </div>
-                 <div class="item language">
-                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Tiếng Việt</label></div>
-                 </div>
-              </div>
-           </div>
-           <div class="filter-item formats">
-              <p class="filter-header">
-                 Hình thức – Bạn thích nó thế nào?
-              </p>
-              <div class="columned three mobile-adaptive">
-                 <div class="item format">
-                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Hands on</label></div>
-                 </div>
-                 <div class="item format">
-                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Sit back &amp; enjoy</label></div>
-                 </div>
-                 <div class="item format">
-                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Conversational</label></div>
-                 </div>
-                 <div class="item format">
-                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Kids friendly</label></div>
-                 </div>
-                 <div class="item format">
-                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Private</label></div>
-                 </div>
-                 <div class="item format">
-                    <div class="ui checkbox"><input type="checkbox" tabindex="0" class="hidden"> <label>Small group</label></div>
-                 </div>
-              </div>
-           </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Du lịch & Cảm hứng
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Chung chung
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Kiến thức chuyên ngành
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Nghệ thuật & Thủ công
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Âm nhạc &amp; Nhảy múa
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Ăn uống
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Du lịch & Cảm hứng
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Chung chung
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Kiến thức chuyên ngành
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item interest">
+                        <label class="confir_res">
+                            Nghệ thuật & Thủ công
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="filter-item price-filter">
+                <p class="filter-header">
+                    Giá mỗi người
+                </p>
+                <div class="price-filter-container">
+                    <div class="row slider-labels">
+                        <div class="col-md-6 mb15">
+                            <div class="wrap">
+                                <div class="gray">Từ</div>
+                                <span id="slider-range-value1"></span> VNĐ
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="wrap">
+                                <div class="gray">Đến</div>
+                                <span id="slider-range-value2"></span> VNĐ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div id="slider-range"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form>
+                                <input type="hidden" name="min-value" value="">
+                                <input type="hidden" name="max-value" value="">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="price-fake-label row">
+                        <div class="col-6"><span>0 VND</span></div>
+                        <div class="col-6 text-right"><span>2,000,000 VND</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-item languages">
+                <p class="filter-header">
+                    Ngôn ngữ dẫn dắt
+                </p>
+                <div class="columned three mobile-adaptive">
+                    <div class="item language">
+                        <label class="confir_res">
+                            English
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item language">
+                        <label class="confir_res">
+                            Tiếng Việt
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-item formats">
+                <p class="filter-header">
+                    Hình thức – Bạn thích nó thế nào?
+                </p>
+                <div class="columned three mobile-adaptive">
+                    <div class="item format">
+                        <label class="confir_res">
+                            Hands on
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item format">
+                        <label class="confir_res">
+                            Sit back & enjoy
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item format">
+                        <label class="confir_res">
+                            Hands on
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item format">
+                        <label class="confir_res">
+                            Sit back & enjoy
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item format">
+                        <label class="confir_res">
+                            Hands on
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="item format">
+                        <label class="confir_res">
+                            Sit back & enjoy
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="actions"><button class="button-default">Show results</button></div>
-     </div>
+    </div>
+    <script>
+        var header = document.getElementById("tp1-pin-top");
+        var sticky = header.offsetTop - 61;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("pin");
+            } else {
+                header.classList.remove("pin");
+            }
+        }
+
+        $(".dropdown").find(".dropbtn").click(function () {
+            $(".dropdown").find('.dropdown-content').slideUp();
+            if ($(this).next().css('display') == 'none') {
+                $('.dropdown-content').slideUp();
+                $(this).next().stop(true, true).slideDown();
+                $('.dropdown').removeClass('active');
+                $(this).parent().addClass('active');
+            } else {
+                $(this).parent().find('.dropdown-content').slideUp();
+                $('.dropdown').removeClass('active');
+            }
+        });
+        $(".dropdown-content").find("li").click(function () {
+            var html = $(this).html();
+            $(".dropbtn").html(html);
+        });
+        $(document).click(function () {
+            $(".dropdown .dropbtn").removeClass('active');
+            $(".dropdown").find('.dropdown-content').slideUp();
+        });
+        $(".dropdown .dropbtn").click(function (event) {
+            event.stopPropagation();
+        });
+
+
+        $('.filters-btn').click(function () {
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active');
+                $('.filters').addClass('open');
+            } else {
+                $(this).removeClass('active');
+                $('.filters').removeClass('open');
+            }
+        });
+        $('.filters .close').click(function () {
+            $('.filters-btn').removeClass('active');
+            $('.filters').removeClass('open');
+        });
+    </script>
 
 </section>
 
@@ -559,6 +690,88 @@
     </div>
 </section>
 
+<section class="tp1-box13 mt20 clearfix">
+    <div class="container">
+        <h2 class="heading-tile">Diễn ra tuần này, tham gia ngay ✨</h2>
+        <p>Những cảm hứng cho riêng bạn đến từ sự lựa chọn của Vibeji</p>
+        <div class="wrap relative">
+            <div id="tp1-box13-slide" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <h4>Kĩ năng cho thế giới </h4>
+                            <div class="illus-vibe-hand"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <h4>Kĩ năng cho thế giới </h4>
+                            <div class="illus-vibe-hand"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <h4>Kĩ năng cho thế giới </h4>
+                            <div class="illus-vibe-hand"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <h4>Kĩ năng cho thế giới </h4>
+                            <div class="illus-vibe-hand"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <h4>Kĩ năng cho thế giới </h4>
+                            <div class="illus-vibe-hand"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <h4>Kĩ năng cho thế giới </h4>
+                            <div class="illus-vibe-hand"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-box13-next"><i class="fa fa-chevron-right"></i></div>
+            <div class="swiper-button-prev swiper-box13-prev"><i class="fa fa-chevron-left"></i></div>
+        </div>
+    </div>
+    <script>
+        var swipertp1box3 = new Swiper('#tp1-box13-slide', {
+            slidesPerView: 5.5,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-box13-next',
+                prevEl: '.swiper-box13-prev',
+            },
+            breakpoints: {
+                375: {
+                    slidesPerView: 1.5,
+                },
+                767: {
+                    slidesPerView: 2.5,
+                },
+                991: {
+                    slidesPerView: 3.5,
+                },
+                1199: {
+                    slidesPerView: 4.5,
+                }
+            }
+        });
+    </script>
+</section>
+
+
 
     <!--Footer-->
     <footer id="u_footer" class="tp1-footer">
@@ -630,16 +843,6 @@
     </a>
 
     <!--End Lightbox thông báo-->
-    <!--Jquery lib-->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <!-- build:script -->
-    
-
-    <div class="clearfix"></div>
 </body>
 
 </html>

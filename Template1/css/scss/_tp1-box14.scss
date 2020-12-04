@@ -1,0 +1,90 @@
+.tp1-box14 {
+    .ui-container {
+        padding: 100px 0;
+        background-color: #1d1d1d;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    @media (min-width: 1900px) {
+        font-size: 45px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .title {
+        font-size: 34px;
+        margin-bottom: 20px;
+        font-weight: bold
+    }
+
+    .u-banner--right {
+        padding-left: 120px;
+    }
+
+    .heading-tile {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        line-height: 1.4;
+        color: #4b4b4b;
+    }
+
+    .view-all {
+        color: #7e6fda;
+        font-size: 16px;
+        display: block;
+        margin-top: 2.5rem;
+        font-weight: 600
+    }
+
+    .our-story {
+        padding: 70px 0 50px;
+        position: relative;
+        font-size: 17px;
+        font-family: var(--font2);
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+    .rotage {
+        img {
+            transform: scaleX(-1);
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .ui-container {
+            padding: 50px 0
+        }
+    }
+
+    @media (max-width: 991px) {
+        .title {
+            font-size: 25px
+        }
+
+        .u-banner--left {
+            order: 2
+        }
+
+        .u-banner--right {
+            order: 1;
+            padding-left: 15px;
+            margin-bottom: 30px;
+
+            img {
+                width: 70%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .our-story {
+            padding: 30px 0 20px;
+        }
+    }
+
+}
