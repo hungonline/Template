@@ -10,10 +10,11 @@
         color: #4b4b4b;
     }
 
-    .swiper-button-next{
+    .swiper-button-next {
         right: -10px;
     }
-    .swiper-button-prev{
+
+    .swiper-button-prev {
         left: -10px;
     }
 
@@ -35,22 +36,22 @@
             overflow: hidden;
             padding-left: 4px;
 
-            &::before {
-                content: "";
-                position: absolute;
-                z-index: 1;
-                top: 0;
-                left: 4px;
-                right: 0;
-                bottom: 0;
-                border-radius: 12px 0 0 12px;
-                background: #000;
-                background: linear-gradient(0deg, #000 0, rgba(0, 0, 0, .22452731) 75%, rgba(1, 7, 21, 0) 100%);
-            }
-
             .thumb_img {
                 padding-bottom: 73%;
                 border-radius: 12px 0 0 12px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 12px 0 0 12px;
+                    background: linear-gradient(0deg, #000 0, rgba(0, 0, 0, .22452731) 75%, rgba(1, 7, 21, 0) 100%);
+                }
+
             }
 
             .online-mark {
@@ -148,26 +149,46 @@
             }
         }
     }
-    @media (max-width: 991px){
+
+    @media (max-width: 991px) {
         padding-bottom: 0;
-        .heading-tile{
+
+        .heading-tile {
             font-size: 25px;
         }
+
+        .swiper-slide {
+            .content {
+                padding: 10px;
+            }
+        }
     }
-    @media (max-width: 767px){
-        .swiper-container{
+
+    @media (max-width: 767px) {
+        .swiper-container {
             padding-right: 0;
         }
     }
-    @media (max-width: 576px){
-        .heading-tile{
+
+    @media (max-width: 576px) {
+        .heading-tile {
             font-size: 20px;
         }
-        .swiper-slide{
-            .image,.content{width: 100%;}
-            .image{
+
+        .swiper-slide {
+
+            .image,
+            .content {
+                width: 100%;
+            }
+
+            .image {
                 padding-left: 0;
-                &::before{border-radius: 0;left: 0;}
+
+                &::before {
+                    border-radius: 0;
+                    left: 0;
+                }
             }
         }
     }
