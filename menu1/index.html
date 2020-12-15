@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description"
+        content="chuyên trang tổng hợp tin tức giải trí showbiz, đời sống, chiêm tinh, tử vi, xu hướng thời trang và các sự kiện nổi bật trong và ngoài nước dành cho giới trẻ.">
+    <meta name="keywords" content="Việt Nam">
+    <title>
+        Menu1
+    </title>
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link rel="stylesheet" href="css/bootstrap.css" media="all" />
+    <link rel="stylesheet" href="css/menu.css" media="all" />
+</head>
+
+<body class="homepage">
+    <section id="wrap-main-nav" class="section wrap-main-nav">
+        <div class="container flex">
+            <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
+            <a href="javascript:;" class="home">
+                <img src="images/icons/icon_home.png" />
+            </a>
+            <nav class="main-nav">
+                <ul class="parent">
+                    <li class="active">
+                        <a href="#" title="">Khỏe đẹp +</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Sản phẩm</a>
+                        <span class="sub-icon">+</span>
+                        <ul class="level2">
+                            <li>
+                                <a href="">Hãng sản xuất</a>
+                                <span class="sub-icon2">+</span>
+                                <ul class="level3">
+                                    <li><a href="">Apple (iPhone)</a></li>
+                                    <li><a href="">Samsung</a></li>
+                                    <li><a href="">OPPO</a></li>
+                                    <li><a href="">Huawei</a></li>
+                                    <li><a href="">Xiaomi</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Mức giá</a>
+                                <span class="sub-icon2">+</span>
+                                <ul class="level3">
+                                    <li><a href="">Dưới 1 triệu</a></li>
+                                    <li><a href="">Từ 1 - 3 triệu</a></li>
+                                    <li><a href="">Từ 3 - 6 triệu</a></li>
+                                    <li><a href="">Từ 6 - 10 triệu</a></li>
+                                    <li><a href="">Từ 10 - 15 triệu</a></li>
+                                    <li><a href="">Trên 15 triệu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="">Sinh dưỡng</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Làm đẹp</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Gia đình khỏe</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Sống tâm lý</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">chăm con</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">giảm béo</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(".all-menu-tablet").click(function () {
+            $(this).toggleClass("close-menu-tablet");
+            $('body').toggleClass("open");
+        });
+        $(".all-menu").click(function () {
+            $(".main-nav").toggleClass("show-all-menu");
+        });
+        $('.sub-icon').click(function () {
+            if ($(this).next('ul').css('display') == 'none') {
+                $(this).html('-');
+            } else {
+                $(this).html('+');
+            };
+            $(this).next('ul').slideToggle("slow", function () {});
+        });
+
+        $('.sub-icon2').click(function () {
+            if ($(this).next('ul').css('display') == 'none') {
+                $(this).html('-');
+            } else {
+                $(this).html('+');
+            };
+            $(this).next('ul').slideToggle("slow", function () {});
+        });
+    </script>
+</body>
+
+</html>
