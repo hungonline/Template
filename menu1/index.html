@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/menu.css" media="all" />
 </head>
 
-<body class="homepage">
+<body style="height: 1000px">
     <section id="wrap-main-nav" class="section wrap-main-nav">
         <div class="container flex">
             <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
@@ -80,12 +80,51 @@
                     </li>
                 </ul>
             </nav>
+            <a class="img_logo" href="">
+                <img class="logo_web" src="images/graphics/logo.png" alt="Trang chủ" data-was-processed="true">
+            </a>
+
+            <div class="right-head">
+                <a href="#" class="gio-hang">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#cart"></use>
+                    </svg>
+                    <b class="fs-cartic countTotalCart">3</b>
+                </a>
+                <div class="search-btn">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#search"></use>
+                    </svg>
+                    <svg class="icon-svg close">
+                        <use xlink:href="images/icons/icon.svg#close2"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="search-wrap">
+                <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
+                <button type="submit" class="search-box__btn">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#search"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </section>
 
     <!--Jquery lib-->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script>
+        $('.search-btn').click(function () {
+            if (!$(this).hasClass('is-clicked')) {
+                $(this).addClass('is-clicked');
+                $('.search-wrap').fadeIn();
+                $('.search-wrap input').focus();
+            } else {
+                $(this).removeClass('is-clicked');
+                $('.search-wrap').fadeOut();
+            }
+        });
+
         $(".all-menu-tablet").click(function () {
             $(this).toggleClass("close-menu-tablet");
             $('body').toggleClass("open");
