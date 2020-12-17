@@ -117,6 +117,7 @@
         $('.search-btn').click(function () {
             $('.main-nav').removeClass('show-all-menu');
             $('.all-menu-tablet').removeClass('close-menu-tablet');
+            $('body').removeClass("open");
             if (!$(this).hasClass('is-clicked')) {
                 $(this).addClass('is-clicked');
                 $('.search-wrap').fadeIn();
