@@ -115,6 +115,8 @@
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script>
         $('.search-btn').click(function () {
+            $('.main-nav').removeClass('show-all-menu');
+            $('.all-menu-tablet').removeClass('close-menu-tablet');
             if (!$(this).hasClass('is-clicked')) {
                 $(this).addClass('is-clicked');
                 $('.search-wrap').fadeIn();
@@ -125,12 +127,14 @@
             }
         });
 
-        $(".all-menu-tablet").click(function () {
-            $(this).toggleClass("close-menu-tablet");
+        $('.all-menu-tablet').click(function () {
+            $(this).toggleClass('close-menu-tablet');
             $('body').toggleClass("open");
+            $('.search-btn').removeClass('is-clicked');
+            $('.search-wrap').fadeOut();
         });
-        $(".all-menu").click(function () {
-            $(".main-nav").toggleClass("show-all-menu");
+        $('.all-menu').click(function () {
+            $('.main-nav').toggleClass('show-all-menu');
         });
         $('.sub-icon').click(function () {
             if ($(this).next('ul').css('display') == 'none') {
