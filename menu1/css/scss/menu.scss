@@ -54,6 +54,7 @@
         align-items: center;
         padding: 0 15px;
         height: 50px;
+        overflow: visible !important;
     }
 
     .main-nav {
@@ -186,6 +187,7 @@
     .gio-hang {
         position: relative;
         margin-right: 15px;
+        display: none;
 
         .countTotalCart {
             color: #fff;
@@ -204,7 +206,7 @@
     }
 
     .search-btn {
-        display: inline-block;
+        display: none;
         cursor: pointer;
         height: 19px;
         position: relative;
@@ -308,7 +310,8 @@
             display: block
         }
 
-        .gio-hang {
+        .gio-hang,
+        .search-btn {
             display: inline-block;
         }
 
