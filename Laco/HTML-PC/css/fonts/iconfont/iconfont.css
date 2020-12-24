@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1608090233518');
-	src: url('iconfont.eot?#iefix-1608090233518') format('embedded-opentype'),
-		url('iconfont.woff2?1608090233518') format('woff2'),
-		url('iconfont.woff?1608090233518') format('woff'),
-		url('iconfont.ttf?1608090233518') format('truetype');
+	src: url('iconfont.eot?1608821061701');
+	src: url('iconfont.eot?#iefix-1608821061701') format('embedded-opentype'),
+		url('iconfont.woff2?1608821061701') format('woff2'),
+		url('iconfont.woff?1608821061701') format('woff'),
+		url('iconfont.ttf?1608821061701') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -220,48 +220,52 @@ Glyphs list
 			content: '\ea2f';
 		}
 
-		 .iconfont-star-full:before {
+		 .iconfont-shopping-cart:before {
 			content: '\ea30';
 		}
 
-		 .iconfont-star-left:before {
+		 .iconfont-star-full:before {
 			content: '\ea31';
 		}
 
-		 .iconfont-star-right:before {
+		 .iconfont-star-left:before {
 			content: '\ea32';
 		}
 
-		 .iconfont-sync:before {
+		 .iconfont-star-right:before {
 			content: '\ea33';
 		}
 
-		 .iconfont-Trend:before {
+		 .iconfont-sync:before {
 			content: '\ea34';
 		}
 
-		 .iconfont-Twitter:before {
+		 .iconfont-Trend:before {
 			content: '\ea35';
 		}
 
-		 .iconfont-twitter2:before {
+		 .iconfont-Twitter:before {
 			content: '\ea36';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-twitter2:before {
 			content: '\ea37';
 		}
 
-		 .iconfont-view:before {
+		 .iconfont-user:before {
 			content: '\ea38';
 		}
 
-		 .iconfont-Youtube:before {
+		 .iconfont-view:before {
 			content: '\ea39';
 		}
 
-		 .iconfont-zoom:before {
+		 .iconfont-Youtube:before {
 			content: '\ea3a';
+		}
+
+		 .iconfont-zoom:before {
+			content: '\ea3b';
 		}
 
 		
