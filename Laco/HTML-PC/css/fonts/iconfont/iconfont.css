@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1608821061701');
-	src: url('iconfont.eot?#iefix-1608821061701') format('embedded-opentype'),
-		url('iconfont.woff2?1608821061701') format('woff2'),
-		url('iconfont.woff?1608821061701') format('woff'),
-		url('iconfont.ttf?1608821061701') format('truetype');
+	src: url('iconfont.eot?1608907799017');
+	src: url('iconfont.eot?#iefix-1608907799017') format('embedded-opentype'),
+		url('iconfont.woff2?1608907799017') format('woff2'),
+		url('iconfont.woff?1608907799017') format('woff'),
+		url('iconfont.ttf?1608907799017') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -232,40 +232,44 @@ Glyphs list
 			content: '\ea32';
 		}
 
-		 .iconfont-star-right:before {
+		 .iconfont-star-none:before {
 			content: '\ea33';
 		}
 
-		 .iconfont-sync:before {
+		 .iconfont-star-right:before {
 			content: '\ea34';
 		}
 
-		 .iconfont-Trend:before {
+		 .iconfont-sync:before {
 			content: '\ea35';
 		}
 
-		 .iconfont-Twitter:before {
+		 .iconfont-Trend:before {
 			content: '\ea36';
 		}
 
-		 .iconfont-twitter2:before {
+		 .iconfont-Twitter:before {
 			content: '\ea37';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-twitter2:before {
 			content: '\ea38';
 		}
 
-		 .iconfont-view:before {
+		 .iconfont-user:before {
 			content: '\ea39';
 		}
 
-		 .iconfont-Youtube:before {
+		 .iconfont-view:before {
 			content: '\ea3a';
 		}
 
-		 .iconfont-zoom:before {
+		 .iconfont-Youtube:before {
 			content: '\ea3b';
+		}
+
+		 .iconfont-zoom:before {
+			content: '\ea3c';
 		}
 
 		
