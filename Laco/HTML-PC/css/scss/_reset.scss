@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto',
         sans-serif;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.5;
     background: var(--white);
 
     &::after {
@@ -61,7 +61,7 @@ body.hidden {
 }
 
 a {
-    color: var(--colormain);
+    color: #222;
     text-decoration: none;
     outline: none;
 }
@@ -303,6 +303,10 @@ html {
 
 .relative {
     position: relative;
+}
+
+.absolute {
+    position: absolute !important;
 }
 
 .space_bottom_5 {

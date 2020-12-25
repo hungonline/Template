@@ -177,7 +177,7 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 40%;
   width: 30px;
@@ -187,8 +187,10 @@
   text-align: center;
   outline: 0;
   line-height: 70px;
-  svg{
-    color:#fff;width: 18px;
+
+  svg {
+    color: #fff;
+    width: 18px;
     height: 18px;
   }
 }
@@ -310,8 +312,8 @@
 }
 
 .swiper-pagination-bullet {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   display: inline-block;
   border-radius: 100%;
   background: #DCC8BC;

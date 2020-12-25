@@ -11,13 +11,17 @@
         content="iOne.net chuyên trang tổng hợp tin tức giải trí showbiz, đời sống, chiêm tinh, tử vi, xu hướng thời trang và các sự kiện nổi bật trong và ngoài nước dành cho giới trẻ.">
     <meta name="keywords" content="iOne, Việt Nam">
     <title>
-        <!-- build:title -->
+        Thương mại điện tử Laco
+
     </title>
     <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
         rel="shortcut icon" />
     <link rel="stylesheet" href="css/bootstrap.css" media="all" />
     <link rel="stylesheet" href="css/general.css" media="all" />
-    <!-- build:head2 -->
+    
+<link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+<link href="css/detail.css" rel="stylesheet" type="text/css" />
+
     <!-- build:head -->
 </head>
 
@@ -119,7 +123,113 @@
 
 
 
-    <!-- build:content -->
+    
+<section class="product_detail container clearfix fixed-height mb24">
+    <div class="product-info flex mb20">
+        <div class="col_left">
+            <div class="PD_Media">
+                <div id="lightgallery" class="lightgallery swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide item" data-src=" images/graphics/image1.jpg"
+                            data-sub-html="<p>Mô tả của ảnh số 1</p>">
+                            <div class="swiper-slide-container">
+                                <div class="ava">
+                                    <img class="zoom_01" src="images/graphics/image1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item" data-src=" images/graphics/big1.png"
+                            data-sub-html="<p>Mô tả của ảnh số 2</p>">
+                            <div class="swiper-slide-container">
+                                <div class="ava">
+                                    <img src="images/graphics/big1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="video-container" style="display: block;">
+                                    <div class="thumb_img video-wrap">
+                                        <video id="videoPlayer" class="video">
+                                            <source
+                                                src="https://d2y5sgsy8bbmb8.cloudfront.net/36eeeaa4-0ffa-4751-a854-d4d5c9f3a06a/default.jobtemplate.mp4.480.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                        <div class="playpause"><i class="iconfont-next1"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item" data-src=" images/graphics/big2.png"
+                            data-sub-html="<p>Mô tả của ảnh số 3</p>">
+                            <div class="swiper-slide-container">
+                                <div class="ava">
+                                    <img src="images/graphics/big2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide item" data-src=" images/graphics/big3.png"
+                            data-sub-html="<p>Mô tả của ảnh số 4</p>">
+                            <div class="swiper-slide-container">
+                                <div class="ava">
+                                    <img src="images/graphics/big3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <img src="images/graphics/image1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <img src="images/graphics/big1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <img src="images/graphics/big2.png" alt="">
+                                <span class="play-icon">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#next1"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <img src="images/graphics/big3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <img src="images/graphics/big1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="center">
+                <img src="images/graphics/banner_300.png" alt="">
+            </div>
+        </div>
+
+        <div class="col_right tt_sp_chitiet"></div>
+
+
+    </div>
+</section>
+
+
+
+
 
     <!--Footer-->
     <footer class="footer clearfix">
@@ -212,7 +322,11 @@
     <script type="text/javascript" src="js/css-vars-ponyfill.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
-    <!-- build:script2 -->
+    
+<script type="text/javascript" src="js/detail.js"></script>
+<script type="text/javascript" src='js/jquery.ez-plus.js'></script>
+<script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+
     <div class="clearfix"></div>
     <script>
         $(window).scroll(function () {

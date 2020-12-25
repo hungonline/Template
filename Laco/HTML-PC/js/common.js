@@ -63,6 +63,7 @@
             $(this).toggleClass("close-menu-tablet");
         });
         $(".all-menu").click(function () {
+            $('body').toggleClass('open');
             $('.search-btn').removeClass('is-clicked');
             $('.search-wrap').fadeOut();
             $(".main-nav").toggleClass("show-all-menu");
@@ -84,52 +85,26 @@
     }
     //scrollBar
     function slideSwiper() {
-        var slide_style_slide = new Swiper('.box_style_slide.slide1 .swiper-container', {
-            slidesPerView: 4,
-            spaceBetween: 20,
+        var swiper_banner = new Swiper('.section-banner-home .swiper-container', {
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        var swiper_customer = new Swiper('.section-customer .swiper-container', {
+            spaceBetween: 30,
             loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            breakpoints: {
-                414: {
-                    slidesPerView: 2,
-                },
-                576: {
-                    slidesPerView: 3,
-                }
-            }
-        });
-        var slide_style_slide2 = new Swiper('.box_style_slide.slide2 .swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
             },
-            breakpoints: {
-                414: {
-                    slidesPerView: 2,
-                },
-                576: {
-                    slidesPerView: 3,
-                }
-            }
         });
 
-
-    }
-    var header = document.getElementById("wrap-main-nav");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("pin");
-        } else {
-            header.classList.remove("pin");
-        }
     }
 
 
@@ -139,9 +114,6 @@
         slideSwiper();
         cssVars({});
     });
-    window.onscroll = function () {
-        myFunction()
-    };
     $(window).on('load resize', function () {
         resizeSite()
     });

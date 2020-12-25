@@ -4,83 +4,15 @@
     }
 }
 
-@media (max-width: 1025px) {
-    .box_stream {
-        width: 100%;
-        padding-right: 0;
-    }
-
-    .box_300 {
-        display: none;
-    }
-}
+@media (max-width: 1025px) {}
 
 @media (max-width: 576px) {
-    .box_300 {
-        display: block;
-        width: 100%;
+    section {
+        overflow: hidden;
     }
 
     .hidden-mobile {
         display: none;
     }
 
-    .title-page {
-        margin-top: 15px;
-        font-size: 18px;
-    }
-
-    .breadcrumb {
-        margin-top: 15px;
-    }
-
-    .wrap-main-nav>.container {
-        margin-bottom: 0;
-    }
-
-    // .box_stream {
-    //     margin-top: -15px;
-    // }
-
-    .col-left {
-        order: 2;
-        width: 100%;
-
-        .line-bottom {
-            display: none;
-        }
-    }
-
-    .col-right {
-        width: 100%;
-        padding-left: 0;
-        order: 1;
-
-        .item-news {
-            margin-bottom: 20px;
-
-            .thumb-art {
-                width: 140px;
-                margin: 0 10px 0 0;
-            }
-
-            .title-news {
-                font-size: 16px;
-            }
-
-            .description {
-                display: none;
-            }
-        }
-    }
-
-    .reset-order {
-        .col-left {
-            order: 1;
-        }
-
-        .col-right {
-            order: 2
-        }
-    }
 }
