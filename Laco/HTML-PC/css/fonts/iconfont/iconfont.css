@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1608907799017');
-	src: url('iconfont.eot?#iefix-1608907799017') format('embedded-opentype'),
-		url('iconfont.woff2?1608907799017') format('woff2'),
-		url('iconfont.woff?1608907799017') format('woff'),
-		url('iconfont.ttf?1608907799017') format('truetype');
+	src: url('iconfont.eot?1608991614893');
+	src: url('iconfont.eot?#iefix-1608991614893') format('embedded-opentype'),
+		url('iconfont.woff2?1608991614893') format('woff2'),
+		url('iconfont.woff?1608991614893') format('woff'),
+		url('iconfont.ttf?1608991614893') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -108,168 +108,172 @@ Glyphs list
 			content: '\ea13';
 		}
 
-		 .iconfont-Flip-Image:before {
+		 .iconfont-filter:before {
 			content: '\ea14';
 		}
 
-		 .iconfont-Flip:before {
+		 .iconfont-Flip-Image:before {
 			content: '\ea15';
 		}
 
-		 .iconfont-Infographic:before {
+		 .iconfont-Flip:before {
 			content: '\ea16';
 		}
 
-		 .iconfont-inforgraphic:before {
+		 .iconfont-Infographic:before {
 			content: '\ea17';
 		}
 
-		 .iconfont-Instagram:before {
+		 .iconfont-inforgraphic:before {
 			content: '\ea18';
 		}
 
-		 .iconfont-Interactive:before {
+		 .iconfont-Instagram:before {
 			content: '\ea19';
 		}
 
-		 .iconfont-like:before {
+		 .iconfont-Interactive:before {
 			content: '\ea1a';
 		}
 
-		 .iconfont-like2:before {
+		 .iconfont-like:before {
 			content: '\ea1b';
 		}
 
-		 .iconfont-Link:before {
+		 .iconfont-like2:before {
 			content: '\ea1c';
 		}
 
-		 .iconfont-Mail:before {
+		 .iconfont-Link:before {
 			content: '\ea1d';
 		}
 
-		 .iconfont-Minus:before {
+		 .iconfont-Mail:before {
 			content: '\ea1e';
 		}
 
-		 .iconfont-New-Tab:before {
+		 .iconfont-Minus:before {
 			content: '\ea1f';
 		}
 
-		 .iconfont-next:before {
+		 .iconfont-New-Tab:before {
 			content: '\ea20';
 		}
 
-		 .iconfont-picture:before {
+		 .iconfont-next:before {
 			content: '\ea21';
 		}
 
-		 .iconfont-Pin:before {
+		 .iconfont-picture:before {
 			content: '\ea22';
 		}
 
-		 .iconfont-play:before {
+		 .iconfont-Pin:before {
 			content: '\ea23';
 		}
 
-		 .iconfont-play2:before {
+		 .iconfont-play:before {
 			content: '\ea24';
 		}
 
-		 .iconfont-Plus:before {
+		 .iconfont-play2:before {
 			content: '\ea25';
 		}
 
-		 .iconfont-prev:before {
+		 .iconfont-Plus:before {
 			content: '\ea26';
 		}
 
-		 .iconfont-Quiz:before {
+		 .iconfont-prev:before {
 			content: '\ea27';
 		}
 
-		 .iconfont-review:before {
+		 .iconfont-Quiz:before {
 			content: '\ea28';
 		}
 
-		 .iconfont-Rss:before {
+		 .iconfont-review:before {
 			content: '\ea29';
 		}
 
-		 .iconfont-Save-1:before {
+		 .iconfont-Rss:before {
 			content: '\ea2a';
 		}
 
-		 .iconfont-Save:before {
+		 .iconfont-Save-1:before {
 			content: '\ea2b';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-Save:before {
 			content: '\ea2c';
 		}
 
-		 .iconfont-sent2:before {
+		 .iconfont-search:before {
 			content: '\ea2d';
 		}
 
-		 .iconfont-share:before {
+		 .iconfont-sent2:before {
 			content: '\ea2e';
 		}
 
-		 .iconfont-share2:before {
+		 .iconfont-share:before {
 			content: '\ea2f';
 		}
 
-		 .iconfont-shopping-cart:before {
+		 .iconfont-share2:before {
 			content: '\ea30';
 		}
 
-		 .iconfont-star-full:before {
+		 .iconfont-shopping-cart:before {
 			content: '\ea31';
 		}
 
-		 .iconfont-star-left:before {
+		 .iconfont-star-full:before {
 			content: '\ea32';
 		}
 
-		 .iconfont-star-none:before {
+		 .iconfont-star-left:before {
 			content: '\ea33';
 		}
 
-		 .iconfont-star-right:before {
+		 .iconfont-star-none:before {
 			content: '\ea34';
 		}
 
-		 .iconfont-sync:before {
+		 .iconfont-star-right:before {
 			content: '\ea35';
 		}
 
-		 .iconfont-Trend:before {
+		 .iconfont-sync:before {
 			content: '\ea36';
 		}
 
-		 .iconfont-Twitter:before {
+		 .iconfont-Trend:before {
 			content: '\ea37';
 		}
 
-		 .iconfont-twitter2:before {
+		 .iconfont-Twitter:before {
 			content: '\ea38';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-twitter2:before {
 			content: '\ea39';
 		}
 
-		 .iconfont-view:before {
+		 .iconfont-user:before {
 			content: '\ea3a';
 		}
 
-		 .iconfont-Youtube:before {
+		 .iconfont-view:before {
 			content: '\ea3b';
 		}
 
-		 .iconfont-zoom:before {
+		 .iconfont-Youtube:before {
 			content: '\ea3c';
+		}
+
+		 .iconfont-zoom:before {
+			content: '\ea3d';
 		}
 
 		

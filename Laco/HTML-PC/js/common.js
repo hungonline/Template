@@ -69,6 +69,22 @@
             $(".main-nav").toggleClass("show-all-menu");
         });
 
+        $(".filter-control").click(function () {
+            $('.product_categories').toggleClass('open');
+            $('.close-show').addClass('active');
+            $(".mask-content").toggle();
+        });
+		$(".mask-content").click(function () {
+			$(this).hide();
+            $(".product_categories").removeClass("open");
+            $('.close-show').removeClass('active');
+		});
+		$(".close-show").click(function () {
+            $(this).removeClass('active');
+            $(".product_categories").removeClass("open");
+            $(".mask-content").toggle();
+		});
+
         $(".tab-default a").click(function (event) {
             $(".tab-default a").removeClass("active")
             if (!$(this).hasClass("active")) {

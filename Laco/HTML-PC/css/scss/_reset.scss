@@ -31,7 +31,9 @@ body {
     flex-wrap: wrap;
     clear: both;
 }
-
+.align-center{
+    align-items: center;
+}
 .d-flex {
     display: flex;
 }
@@ -61,7 +63,7 @@ body.hidden {
 }
 
 a {
-    color: #222;
+    color: #334862;
     text-decoration: none;
     outline: none;
 }
@@ -116,8 +118,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-textarea,
-select {
+textarea {
     background: #fff;
     width: 100%;
     height: 35px;
@@ -447,19 +448,6 @@ html {
     overflow: hidden;
 }
 
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-
-    svg {
-        color: #fff;
-        width: 50px;
-        height: 50px;
-    }
-}
 
 .thumb_5x5,
 .thumb-1x1 {
@@ -487,6 +475,7 @@ html {
         width: 23px;
         height: 23px;
         transform: rotate(-90deg);
+        fill: #fff;
     }
 
     i {

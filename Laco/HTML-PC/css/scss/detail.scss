@@ -36,6 +36,11 @@
 
 .product_detail {
 	margin-top: 30px;
+	.title_name {
+		font-size: 22px;
+		font-weight: 500;
+		margin-bottom: 15px;color: #555;
+	}
 	.product-info {
 		background: #fff;
 		.col_left {
@@ -136,6 +141,7 @@
 	.playpause {
 		width: 50px;
 		height: 50px;
+		line-height: 31px;
 		padding: 6px 0 0 6px;
 		cursor: pointer;
 		position: absolute;
@@ -144,13 +150,14 @@
 		top: 0%;
 		bottom: 0%;
 		margin: auto;
-		border: 2px solid rgba(255, 255, 255, .6);
+		border: 1px solid #fff;
 		border-radius: 50%;
 		text-align: center;
 
-		i {
-			color: rgba(255, 255, 255, .9);
-			font-size: 25px
+		svg {
+			color: #fff;
+			width: 22px;
+			height: 22px;
 		}
 	}
 
@@ -267,18 +274,23 @@
 			.play-icon {
 				position: absolute;
 				top: 50%;
+				left: 50%;
 				width: 30px;
 				height: 30px;
 				margin-top: -15px;
+				margin-left: -15px;
 				text-align: center;
-				line-height: 28px;
-				background: rgba(255, 255, 255, 0.35);
+				line-height: 30px;
+				background: rgba(0,0,0,0.5);
 				border-radius: 50%;
 
 				svg {
-					width: 12px;
-					height: 12px;
+					color: #fff;
+					width: 13px;
+					height: 13px;
 				}
+
+
 			}
 			&:hover{
 				border-color: rgba(0,0,0,0.2);
@@ -356,7 +368,7 @@
 
 		.ct_danhgia {
 			color: #666;
-
+			font-size: 14px;
 			a {
 				color: var(--color1);
 				margin-right: 5px;
@@ -368,12 +380,12 @@
 
 			.price-old {
 				font-weight: 300;
-				color: #666;
 				margin-bottom: 5px;
 
 				span {
 					text-decoration: line-through;
 					margin-left: 6px;
+					color: #ccc;
 				}
 
 				strong {
@@ -389,7 +401,7 @@
 
 			.price {
 				&>strong {
-					font-size: 24px;
+					font-size: 26px;
 					color: var(--colormain);
 					margin-left: 10px;
 				}
@@ -503,18 +515,6 @@
 				margin: 0;
 			}
 		}
-		.box-text{
-			text-align: left;
-			padding: 10px 0;font-size: 15px;
-			.note{
-				color: #777;font-size: 10px;
-			}
-			h3{margin-bottom: 8px;}
-			.ct_star{margin-bottom: 5px;}
-			.price{
-				justify-content: flex-start;
-			}
-		}
 	}
 }
 
@@ -554,6 +554,7 @@
 			h4 {
 				font-weight: 500;
 				text-transform: uppercase;
+				margin-bottom: 0;
 			}
 
 			span {
@@ -587,7 +588,7 @@
 
 			&.active {
 				background: var(--colormain);
-				border: 1px solid #EBEBEB;
+				border: 1px solid var(--colormain);
 				color: #fff;
 			}
 
@@ -676,9 +677,10 @@
 		.devvn_cmt_submit {
 			margin-left: 5px;
 			button{
+				color: #fff;
 				width: 100%;
 				height: 35px;
-				background: #fbd648;
+				background: var(--colormain);
 				border: 0;
 				text-transform: uppercase;
 				font-weight: 700;
@@ -694,6 +696,16 @@
 				white-space: nowrap;
 			}
 		}
+		@media (max-width: 576px) {
+			flex-wrap: wrap;
+			.devvn_cmt_input{
+				width: 50%;
+				margin-bottom: 10px;
+			}
+			.devvn_cmt_submit{
+				width: 100%;
+			}
+		}
 	}
 	.devvn_cmt_radio {
 		-ms-flex: 1;
@@ -703,6 +715,7 @@
 		text-align: right;
 		padding-top: 7px;
 		white-space: nowrap;
+		padding-right: 10px;
 	}
 }
 
@@ -737,88 +750,24 @@
 }
 
 /*RESPONSIVE*/
-@media (max-width: 1199px) {
+
+
+
+@media (max-width: 991px) {
 	.product_detail {
-		.product-info {
-			.col_left {
-				width: 350px;
-			}
-
-			.col_right {
-				width: calc(100% - 350px)
-			}
-		}
-
-		.col_left {
-			width: 60%;
-			width: calc(100% - 320px)
-		}
-
-		.col_right {
-			width: 300px
-		}
-
-		.tt_sp_chitiet {
-			.sidebar_1 {
-				width: 63%;
-			}
-
-			.sidebar_2 {
-				width: 35%
-			}
-		}
+		margin-top: 15px;
 	}
 }
-
-@media (max-width: 1024px) {
-	.product_detail {
-		.tt_sp_chitiet {
-			.sidebar_1 {
-				width: 100%;
-			}
-
-			.sidebar_2 {
-				display: none;
-			}
-		}
-	}
-}
-
-@media (max-width: 900px) {
-	.product_detail {
-		.product-info {
-			.col_left {
-				width: 300px;
-			}
-
-			.col_right {
-				width: calc(100% - 300px)
-			}
-		}
-
-		.col_left {
-			width: 100%
-		}
-
-		.col_right {
+@media (max-width: 576px) {
+	.box-evaluate{
+		&__left{
 			width: 100%;
-			margin: 0;
+			h4{
+				margin-bottom: 3px!important;
+			}
 		}
-	}
-}
-
-@media (max-width: 760px) {
-	.product_detail {
-		.product-info {
-			.col_left {
-				width: 100%;
-				margin-bottom: 20px
-			}
-
-			.col_right {
-				width: 100%;
-				padding-left: 0;
-			}
+		&__right{
+			width: 100%;margin-bottom: 10px;
 		}
 	}
 }

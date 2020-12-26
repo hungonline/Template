@@ -4,7 +4,7 @@
 .detail_tin {
     position: relative;
     font-family: var(--font2);
-    color: #26282B;
+    color: #555;
     margin-top: 10px;
 
     .title_detail {
@@ -179,7 +179,8 @@
             max-width: 100%;
         }
     }
-
+    h2{font-size: 26px;}
+    h3{font-size: 20px;}
     p {
         line-height: 1.5;
         margin-bottom: 15px;

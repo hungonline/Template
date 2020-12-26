@@ -124,6 +124,7 @@
 
     
 <section class="product_detail container clearfix fixed-height mb24">
+    <h1 class="title_name d-md-none">DNA Toner – Toner Dưỡng Da Laco</h1>
     <div class="product-info row mb20">
         <div class="col_left col-md-6">
             <div class="PD_Media">
@@ -154,7 +155,11 @@
                                                 src="https://d2y5sgsy8bbmb8.cloudfront.net/36eeeaa4-0ffa-4751-a854-d4d5c9f3a06a/default.jobtemplate.mp4.480.mp4"
                                                 type="video/mp4">
                                         </video>
-                                        <div class="playpause"><i class="iconfont-next1"></i></div>
+                                        <div class="playpause">
+                                            <svg class="icon-svg">
+                                                <use xlink:href="images/icons/icon.svg#play2"></use>
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -195,7 +200,7 @@
                                 <img src="images/graphics/gallery3.jpg" alt="">
                                 <span class="play-icon">
                                     <svg class="icon-svg">
-                                        <use xlink:href="images/icons/icon.svg#next1"></use>
+                                        <use xlink:href="images/icons/icon.svg#play2"></use>
                                     </svg>
                                 </span>
                             </div>
@@ -225,7 +230,7 @@
             </div>
         </div>
         <div class="col-md-6 tt_sp_chitiet">
-            <h1 class="title_name">DNA Toner – Toner Dưỡng Da Laco</h1>
+            <h1 class="title_name d-md-block d-none">DNA Toner – Toner Dưỡng Da Laco</h1>
             <div class="sidebar_1_head flex">
                 <div class="ct_star">
                     <svg class="icon-svg">
@@ -679,7 +684,7 @@
         </div>
 
     </div>
-    <div class="list-product">
+    <div class="list-product list-product_new">
         <div class="title-main">
             <span>SẢN PHẨM TƯƠNG TỰ</span>
         </div>
@@ -1122,12 +1127,16 @@
             <use xlink:href="images/icons/icon.svg#arrow01"></use>
         </svg>
     </a>
+    <div class="mask-content"> </div>
+    <div class="close-show">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </div>
     <!--Jquery lib-->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/svgxuse.js"></script>
     <script type="text/javascript" src="js/css-vars-ponyfill.js"></script>
-
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
     
@@ -1137,23 +1146,22 @@
 
 <script>
     $(document).ready(function(){
-
-var quantitiy=0;
-   $('.quantity-right-plus').click(function(e){
-        e.preventDefault();
-        var quantity = parseInt($('#quantity').val());
-        $('#quantity').val(quantity + 1);
-        
-    });
-     $('.quantity-left-minus').click(function(e){
-        e.preventDefault();
-        var quantity = parseInt($('#quantity').val());
-            if(quantity>0){
-            $('#quantity').val(quantity - 1);
+        var quantitiy=0;
+        $('.quantity-right-plus').click(function(e){
+                e.preventDefault();
+                var quantity = parseInt($('#quantity').val());
+                $('#quantity').val(quantity + 1);
+                
+            });
+            $('.quantity-left-minus').click(function(e){
+                e.preventDefault();
+                var quantity = parseInt($('#quantity').val());
+                    if(quantity>0){
+                    $('#quantity').val(quantity - 1);
             }
-    });
+        });
     
-});
+    });
 </script>
 
     <div class="clearfix"></div>
