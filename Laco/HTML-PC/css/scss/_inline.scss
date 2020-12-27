@@ -568,3 +568,108 @@
     }
     label{font-weight: bold;}
 }
+
+.steep_booking{
+    text-align: center;
+    a{
+        font-size: 25px;
+        margin: 0 20px;
+        color: #ccc;
+        position: relative;
+        &::before{
+            content: "";
+            border-right: 2px solid #ccc;
+            border-bottom: 2px solid #ccc;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            right: -25px;
+            top: 12px;
+            transform: rotate(-45deg);
+        }
+        span{
+            display: inline-block;
+            background-color: #ccc;
+            color: #FFF;
+            font-weight: bolder;
+            text-align: center;
+            height: 1.5em;
+            width: 1.5em;
+            font-size: .7em;
+            line-height: 1.5em;
+            border-radius: 99px;
+            position: relative;
+            top: -3px;
+        }
+        &.current{
+            color: #222;
+            span{
+                background-color: #86b732;
+            }
+        }
+    }
+}
+.list-cart{
+    
+    .red-more{
+        border: 2px solid var(--colormain);
+        color: var(--colormain);
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 6px 10px;
+    }
+}
+.table-default{
+    thead th{
+        font-size: 16px;
+        border-top:0;
+        color: #777;
+        &:first-child{padding-left: 0;}
+    }
+    .remove{
+        width: 25px;
+        height: 25px;
+        border: 2px solid #ccc;
+        display: inline-block;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 50%;
+        svg{width: 10px;height: 10px;}
+    }
+    .ct_quantity{margin-bottom: 0;}
+    td{
+        vertical-align: middle;
+        border-bottom: 1px solid #dee2e6;
+        &:first-child{padding-left: 0;}
+    }
+    .san-pham{
+        display: flex;align-items: center;
+        .img{
+            width: 70px;
+            min-width: 70px;
+        }
+        .name{padding-left: 10px;min-width: 150px;}
+    }
+}
+.steep {
+    h2{
+        font-size: 18px;
+        font-weight: 500;color: #555;
+    }
+}
+.cart-sidebar{
+
+    .widget-title {
+        border-bottom: 3px solid #ececec;
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+}
+.form-group{
+    label{
+        font-weight: 500;
+    }
+}

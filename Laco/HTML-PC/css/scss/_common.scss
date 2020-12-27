@@ -215,3 +215,64 @@ span.widget-title {
 
     }
 }
+.ct_quantity{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    .input-group{
+        width: 120px;margin-right: 25px;
+    }
+    .input-group-btn{
+        button{
+            outline: 0;
+            background: #f4f4f4;
+            border-radius: 0;
+            border: 1px solid #e5e5e5;
+            height: 40px;
+            padding: 0 2px;
+            width: 30px;
+            svg{width: 12px;height: 12px;}
+        }
+
+    }
+    input{
+        max-width: 45px;height: 40px;text-align: center;
+        padding: 0 5px;
+    }
+    .single_add_to_cart_button{
+        padding: 5px 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+.btn-default {
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    background: #F2EEEE;
+    font-size: 16px;
+    padding: 10px 20px;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    &.full{width: 100%;}
+}
+.ul-default{
+    ul {
+        padding-left: 20px;
+
+        li {
+            margin-bottom: 5px;
+            list-style-type: disc;
+        }
+    }
+
+    ol {
+        padding-left: 20px;
+
+        li {
+            margin-bottom: 5px;
+            list-style-type: inherit;
+        }
+    }
+}

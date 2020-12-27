@@ -930,24 +930,4 @@
 <script type="text/javascript" src="js/detail.js"></script>
 <script type="text/javascript" src='js/jquery.ez-plus.js'></script>
 <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
-
-<script>
-    $(document).ready(function(){
-        var quantitiy=0;
-        $('.quantity-right-plus').click(function(e){
-                e.preventDefault();
-                var quantity = parseInt($('#quantity').val());
-                $('#quantity').val(quantity + 1);
-                
-            });
-            $('.quantity-left-minus').click(function(e){
-                e.preventDefault();
-                var quantity = parseInt($('#quantity').val());
-                    if(quantity>0){
-                    $('#quantity').val(quantity - 1);
-            }
-        });
-    
-    });
-</script>
 <!-- /build:script2 -->
