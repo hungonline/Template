@@ -36,7 +36,6 @@
 
 
     .main-nav {
-        text-align: center;
 
         .search-pc {
             position: relative;
@@ -63,11 +62,11 @@
             flex-wrap: wrap;
             margin-bottom: 0;
 
-            li {
+            &>li {
                 display: inline-block;
                 padding: 0 12px;
-
-                a {
+                position: relative;
+                &>a {
                     text-transform: uppercase;
                     font: 500 14px var(--font1);
                     color: #fff;
@@ -83,6 +82,90 @@
 
                 &:first-child {
                     padding-left: 0;
+                }
+                .sub-icon,
+                .sub-icon2 {
+                    position: absolute;
+                    right: 0;
+                    top: 2px;
+                    width: 30px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 24px;
+                    font-family: -webkit-body;
+                    color: #000;
+                    display: none
+                }
+                @media (min-width: 992px) {
+                    .level2 {
+                        width: 190px;
+                        background: #fff;
+                        opacity: 0;
+                        visibility: hidden;
+                        position: absolute;
+                        z-index: 2;
+                        left: 0;
+                        top: calc(100% + 20px);
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+                        transition-duration: 200ms;
+                        transition-property: opacity, top, visible;
+                        transition-timing-function: cubic-bezier(.7, 1, .7, 1);
+
+                        li {
+                            list-style: none;
+                            position: relative;
+
+                            a {
+                                display: block;
+                                color: #222;
+                                padding: 10px 15px;
+
+                                &:hover {
+                                    color: #fff;
+                                    background: var(--colormain);
+                                }
+                            }
+                        }
+                    }
+
+                    .level3 {
+                        width: 190px;
+                        background: #fff;
+                        opacity: 0;
+                        visibility: hidden;
+                        position: absolute;
+                        z-index: 2;
+                        left: 0;
+                        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+                        transition-duration: 200ms;
+                        transition-property: opacity, left, visible;
+                        transition-timing-function: cubic-bezier(.7, 1, .7, 1);
+                    }
+
+                    .level2 {
+                        &>li {
+                            &:hover {
+                                .level3 {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    left: 100%;
+                                    top: -1px;
+                                    border-top: 1px solid var(--colormain);
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .level2 {
+                            opacity: 1;
+                            visibility: visible;
+                            top: 100%;
+                            border-top: 1px solid var(--colormain);
+                        }
+
+                    }
                 }
             }
 
@@ -257,11 +340,14 @@
                 height: calc(100vh - 135px);
                 overflow: scroll;
 
-                li {
+                &>li {
                     width: 100%;
                     padding: 12px 0;
                     border-bottom: 1px solid #e5e5e5;
-
+                    .sub-icon,
+                    .sub-icon2 {
+                        display: block
+                    }
                     a {
                         color: #222;
                         background: none !important;
@@ -272,6 +358,32 @@
                     &.active {
                         a {
                             color: var(--green)
+                        }
+                    }
+                    .level2,
+                    .level3 {
+                        display: none;
+                        background: var(--green);
+                        margin-top: 10px;
+                        padding: 0 10px;
+
+                        &>li {
+                            position: relative;
+                            list-style: none;
+                            padding: 10px 0;
+                            border-top: 1px solid rgba(255, 255, 255, .5);
+
+                            a {
+                                color: #fff
+                            }
+
+                            &:first-child {
+                                border-top: 0;
+                            }
+                        }
+
+                        .sub-icon2 {
+                            color: #fff
                         }
                     }
                 }
