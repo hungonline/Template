@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description"
+        content="chuyên trang tổng hợp tin tức giải trí showbiz, đời sống, chiêm tinh, tử vi, xu hướng thời trang và các sự kiện nổi bật trong và ngoài nước dành cho giới trẻ.">
+    <meta name="keywords" content="Việt Nam">
+    <title>
+        Menu2
+    </title>
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link rel="stylesheet" href="css/menu.css" media="all" />
+</head>
+
+<body>
+    <div class="vm-doc-sidebar-col">
+        <a class="vm_toggle"  href="javascript:;">
+            <img alt="" src="images/icons/book.svg">
+            <img class="active" alt="" src="images/icons/book-active.svg">
+		</a>
+        
+        <div class="vm-doc-sidebar">
+            <h4 class="title">vSAN 2-Node Cluster Guide</h4>
+            <ul class="nav vm-doc-sidenav">
+                <li class="vm-nav-item">
+                    <a class="vm-nav-link" href="#section1" target="_self">Introduction</a>
+                </li>
+                <li class="vm-nav-item has-child">
+                    <button aria-hidden="true"></button>
+                    <a class="vm-nav-link" href="#section2" target="_self">Supportability</a>
+                    <ol class="nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub1" target="_self">
+                           <span class="text">vSphere Versions</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub2" target="_self">
+                           <span class="text">vSphere &amp; vSAN</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub3" target="_self">
+                           <span class="text">Hybrid and All-Flash Support</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub4" target="_self">
+                           <span class="text">vSAN Witness Host</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub5" target="_self">
+                           <span class="text">Supported on vSAN but not vSAN 2 Node Clusters</span>
+                           </a>
+                        </li>
+                     </ol>
+                </li>
+                <li class="vm-nav-item has-child">
+                    <button aria-hidden="true"></button>
+                    <a class="vm-nav-link active" href="#section2" target="_self">New Concepts in vSAN - 2 Node Clusters</a>
+                    <ol class="nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub1" target="_self">
+                           <span class="text">vSphere Versions</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub2" target="_self">
+                           <span class="text">vSphere &amp; vSAN</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub3" target="_self">
+                           <span class="text">Hybrid and All-Flash Support</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub4" target="_self">
+                           <span class="text">vSAN Witness Host</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub5" target="_self">
+                           <span class="text">Supported on vSAN but not vSAN 2 Node Clusters</span>
+                           </a>
+                        </li>
+                     </ol>
+                </li>
+
+                <li class="vm-nav-item has-child">
+                    <button aria-hidden="true"></button>
+                    <a class="vm-nav-link active" href="#section2" target="_self">Prerequisites</a>
+                    <ol class="nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub1" target="_self">
+                           <span class="text">vSphere Versions</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub2" target="_self">
+                           <span class="text">vSphere &amp; vSAN</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub3" target="_self">
+                           <span class="text">Hybrid and All-Flash Support</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub4" target="_self">
+                           <span class="text">vSAN Witness Host</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub5" target="_self">
+                           <span class="text">Supported on vSAN but not vSAN 2 Node Clusters</span>
+                           </a>
+                        </li>
+                     </ol>
+                </li>
+                <li class="vm-nav-item has-child">
+                    <button aria-hidden="true"></button>
+                    <a class="vm-nav-link active" href="#section2" target="_self">Configuration Minimums and Maximums</a>
+                    <ol class="nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub1" target="_self">
+                           <span class="text">vSphere Versions</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub2" target="_self">
+                           <span class="text">vSphere &amp; vSAN</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub3" target="_self">
+                           <span class="text">Hybrid and All-Flash Support</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub4" target="_self">
+                           <span class="text">vSAN Witness Host</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub5" target="_self">
+                           <span class="text">Supported on vSAN but not vSAN 2 Node Clusters</span>
+                           </a>
+                        </li>
+                     </ol>
+                </li>
+                <li class="vm-nav-item has-child">
+                    <button aria-hidden="true"></button>
+                    <a class="vm-nav-link active" href="#section2" target="_self">Design Considerations</a>
+                    <ol class="nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub1" target="_self">
+                           <span class="text">vSphere Versions</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub2" target="_self">
+                           <span class="text">vSphere &amp; vSAN</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub3" target="_self">
+                           <span class="text">Hybrid and All-Flash Support</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub4" target="_self">
+                           <span class="text">vSAN Witness Host</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub5" target="_self">
+                           <span class="text">Supported on vSAN but not vSAN 2 Node Clusters</span>
+                           </a>
+                        </li>
+                     </ol>
+                </li>
+                <li class="vm-nav-item has-child">
+                    <button aria-hidden="true"></button>
+                    <a class="vm-nav-link active" href="#section2" target="_self">Cluster Settings</a>
+                    <ol class="nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub1" target="_self">
+                           <span class="text">vSphere Versions</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub2" target="_self">
+                           <span class="text">vSphere &amp; vSAN</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub3" target="_self">
+                           <span class="text">Hybrid and All-Flash Support</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub4" target="_self">
+                           <span class="text">vSAN Witness Host</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub5" target="_self">
+                           <span class="text">Supported on vSAN but not vSAN 2 Node Clusters</span>
+                           </a>
+                        </li>
+                     </ol>
+                </li>
+                <li class="vm-nav-item has-child">
+                    <button aria-hidden="true"></button>
+                    <a class="vm-nav-link active" href="#section2" target="_self">Using a vSAN Witness Appliance</a>
+                    <ol class="nav">
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub1" target="_self">
+                           <span class="text">vSphere Versions</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub2" target="_self">
+                           <span class="text">vSphere &amp; vSAN</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub3" target="_self">
+                           <span class="text">Hybrid and All-Flash Support</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub4" target="_self">
+                           <span class="text">vSAN Witness Host</span>
+                           </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="#sec7390-sub5" target="_self">
+                           <span class="text">Supported on vSAN but not vSAN 2 Node Clusters</span>
+                           </a>
+                        </li>
+                     </ol>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="overlay"></div>    
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        $('.has-child .vm-nav-link').click(function () {
+            $('.has-child .vm-nav-link').removeClass("active");
+            $('.has-child').removeClass("active");
+            if (!$(this).hasClass("active")) {
+                $(this).addClass("active");
+                $(this).parents('.has-child').addClass("active");
+            } else {
+                $(this).removeClass("active");
+                $(this).removeClass('.has-child').addClass("active");
+            }
+        });       
+
+        $('.has-child .nav-link').click(function () {
+            $('.has-child .nav-link').removeClass("active");
+            if (!$(this).hasClass("active")) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+        });
+
+        $('.vm_toggle').click(function () {
+            $(this).toggleClass("active");
+            $('body').toggleClass("open-doc-sidebar");
+        }); 
+
+    </script>
+</body>
+
+</html>
