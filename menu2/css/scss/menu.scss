@@ -292,19 +292,20 @@ body{
         overflow: hidden;
     }
     .col-left{
-        width: 100%;
+        width: 320px;
+        max-width: 100%;
         position: fixed;
         top: 0;
         z-index: 998;
         bottom: 0;
-        left: 0;
-        padding-left: 10%;
+        right: 0;
         -webkit-transition-duration: 0.6s;
         transition-duration: 0.6s;
         transform: translate(100%, 0%);
         
         .vm-doc-sidebar-col{
             background: #f0f3f4;
+            padding-top: 0;
         }
     }
     .col-right{
@@ -313,11 +314,14 @@ body{
     }
     .vm-doc-sidebar{
         .title{
-            display: block;
+            display: flex;
+            height: 57px;
+            align-items: center;
+            justify-content: center;
         }
         .vm-doc-sidenav{
             height: 100vh;
-            height: calc(100vh - 48px);
+            height: calc(100vh - 67px);
             display: block;
             a{
                 font-size: 16px;
