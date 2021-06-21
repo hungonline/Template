@@ -830,22 +830,19 @@
             $('body').removeClass("open-doc-sidebar");
         }); 
         //Scroll active menu left
-
-         $(document).ready(function () {
+         $(document).ready(function() {
             $('.vm-doc-sidebar a[href*=#]').bind('click', function (e) {
-               e.preventDefault(); // prevent hard jump, the default behavior
+                  e.preventDefault();
+                  var target = $(this).attr("href");
+                  $('html, body').stop().animate({
+                        scrollTop: $(target).offset().top
+                  }, 0, function() {
+                        location.hash = target;
+                  });
 
-               var target = $(this).attr("href"); // Set the target as variable
-
-               // perform animated scrolling by getting top-position of target-element and set it as scroll target
-               $('html, body').stop().animate({
-                  scrollTop: $(target).offset().top + 0
-               }, 0);
-
-               return false;
+                  return false;
             });
-         });
-
+      });
 
          $(window).scroll(function() {
             var scrollDistance = $(window).scrollTop() + 20;
