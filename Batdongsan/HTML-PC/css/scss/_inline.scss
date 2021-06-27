@@ -1,0 +1,17 @@
+.section-banner-home {
+    .thumb{
+        padding-bottom: 30%;
+    }
+    .swiper-pagination{
+        text-align: right;
+        padding-right: 40px;
+    }
+    .swiper-pagination-bullet{
+        background:none;
+        border: 1px solid #fff;
+        margin: 0 3px!important;
+    }
+    .swiper-pagination-bullet-active{
+        background: #fff;
+    }
+}
