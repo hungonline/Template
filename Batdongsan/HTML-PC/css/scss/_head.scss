@@ -26,6 +26,7 @@
             margin-bottom: 0;
             position: relative;
             margin-top: 13px;
+            padding-left: 10px;
             &>li {
                 display: inline-block;
                 margin-left: 30px;
@@ -110,42 +111,6 @@
                             }
                         }
 
-
-                        .col-md-4 {
-                            position: relative;
-
-                            &::before {
-                                content: "";
-                                background: rgba(255, 255, 255, .3);
-                                position: absolute;
-                                width: 1px;
-                                height: 100%;
-                                left: -10px;
-                            }
-                        }
-
-                        @media (max-width: 1366px) {
-                            width: 800px;
-
-                            a {
-                                font-size: 14px
-                            }
-
-                            h3 {
-                                font-size: 24px;
-                                margin-bottom: 25px;
-
-                                svg {
-                                    width: 30px;
-                                    height: 30px;
-                                    margin-bottom: 10px;
-                                }
-                            }
-                        }
-
-                        @media (max-width: 1025px) {
-                            width: 100%;
-                        }
                     }
                     .level3{
                         min-width: 240px;
@@ -179,44 +144,6 @@
                         }
                     }
                 }
-
-                &.document {
-                    position: relative;
-                    padding-left: 30px;
-
-                    &::before {
-                        content: "";
-                        background: #E3E7EF;
-                        width: 1px;
-                        height: 30px;
-                        position: absolute;
-                        left: 0;
-                        top: 4px;
-                    }
-
-                    svg {
-                        margin-left: 2px;
-                    }
-                }
-            }
-        }
-
-        .btn-mobile {
-            display: none;
-            padding: 15px 10px;
-
-            .btn-default {
-                width: 50%;
-                padding: 0 8px;
-                font-size: 14px;
-                border: 1px;
-                margin: 0 5px;
-                color: #fff;
-                border: 1px solid #58595B;
-            }
-
-            .yellow {
-                color: #58595B
             }
         }
     }
@@ -226,7 +153,11 @@
         align-items: center;
         flex-grow: 2;
         justify-content: flex-end;
-
+        .my_bds{
+            .login-mb{
+                display: none;
+            }
+        }
         a {
             position: relative;
         }
@@ -352,96 +283,88 @@
         display: none !important
     }
 
-    @media only screen and (max-width: 1640px) and (min-width: 992px) {
-        .hidden_tablet {
-            display: none !important
-        }
-
-        .submenu {
-            display: inline-block !important
-        }
-    }
-
-    @media (max-width: 1600px) {
-
+    @media (max-width: 1480px) {
         .main-nav {
             .parent {
-                &>li {
-                    margin-left: 20px;
+                padding-left: 20px;
+                &>li{
+                    margin-left: 15px;
                 }
             }
         }
     }
 
-    @media (max-width: 1480px) {
-        padding: 0 15px;
-
-        .main-nav {
-            .parent {
-                padding-left: 15px;
-            }
-        }
-
-        .right-head {
-            right: 15px;
-        }
-    }
-
     @media (max-width: 1280px) {
-
+        padding: 0 15px;
+        .align-center{
+            height: 70px;
+        }
         .main-nav {
             .parent {
                 &>li {
                     margin-left: 10px;
-
-                    a {
-                        font-size: 15px
-                    }
-
                     .sub_menu::before {
                         right: -6px;
                     }
                 }
             }
         }
+        .right-head{
+            .login{
+                margin-right: 20px;
+                &::before{
+                    right: -10px;
+                }
+            }
+        }
     }
 
-    @media (max-width: 1025px) {
-        .right-head {
-            .btn-default {
-                padding: 0 12px;
+    @media (max-width: 1200px) {
+        .logo{
+            width: 100px;
+        }
+        .main-nav {
+            .parent{
+                padding-left: 10px;
+                &>li{
+                    margin-left: 8px;
+                }
             }
-
-            .hiden {
-                display: none
+        }
+        .right-head{
+            .my_bds{
+                margin:0 5px;
+                .login-mb{
+                    display: block;
+                }
+                .login-pc{display: none;}
+            }
+            .post{
+                margin-left: 10px;
+                padding: 6px 10px;
             }
         }
     }
 
     @media (max-width: 991px) {
-        padding: 0 15px;
-
         .align-center {
             height: 55px;
         }
-
         .logo {
             position: absolute;
             left: 50%;
-            margin-left: -80px;
+            margin-left: -50px;
         }
 
         .all-menu-tablet {
             display: block;
         }
 
-
-
         .main-nav {
             display: block;
             position: fixed;
-            width: 300px;
-            background: var(--dark);
+            width: 260px;
+            background: #004e7f;
             left: 0;
             top: 55px;
             bottom: 0;
@@ -451,7 +374,7 @@
             .parent {
                 display: block;
                 padding-left: 0;
-
+                margin-top: 0;
                 &>li {
                     width: 100%;
                     margin-left: 0;
@@ -459,7 +382,7 @@
 
                     a {
                         display: block;
-                        padding: 15px 20px;
+                        padding: 15px;
                         color: #fff;
                         font-weight: 400;
                         border-bottom: 1px solid rgba(255, 255, 255, 0.4)
@@ -482,12 +405,10 @@
                         }
                     }
 
-                    .level2 {
+                    .level2,.level3 {
                         position: static;
                         display: none;
                         background: #fff;
-                        border-top: 1px solid #eaeaea;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
                         margin: 0;
 
                         &>li {
@@ -512,18 +433,14 @@
 
                         a {
                             color: #222;
-                            font-size: 16px;
-                            font-weight: 500
                         }
-
-
                     }
-
-                    &.document {
-                        padding-left: 0;
-
-                        &::before {
-                            display: none;
+                    .level3{
+                        padding-left: 15px;
+                        li{
+                            a{
+                                padding-left: 0;
+                            }
                         }
                     }
                 }
@@ -596,6 +513,10 @@
     }
 
     @media (max-width: 480px) {
+        .logo {
+            left: 50px;
+            margin-left: 0;
+        }
         .search-btn {
             .icon-svg {
                 top: 12px;
@@ -620,18 +541,19 @@
     .hamburger {
         width: 20px;
         height: 2px;
-        background: var(--white);
+        background: #111;
         display: inline-block;
         position: relative;
-
+        transition: all .3s;
         &:before,
         &:after {
             content: '';
             width: 20px;
             height: 2px;
-            background: var(--white);
+            background: #111;
             position: absolute;
             left: 0;
+            transition: all .3s;
         }
 
         &:before {
@@ -644,7 +566,7 @@
     }
 
     &.close-menu-tablet {
-        padding-top: 5px;
+        padding-top: 9px;
 
         .hamburger {
             transform: rotate(45deg);

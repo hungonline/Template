@@ -98,13 +98,13 @@
             $(tab).fadeIn();
         });
 
-        $('.sub-icon').click(function () {
-            if ($(this).next('ul').css('display') == 'none') {
+        $('.sub_menu').click(function () {
+            if ($(this).next('.level2').css('display') == 'none') {
                 $(this).html('-');
             } else {
                 $(this).html('+');
             };
-            $(this).next('ul').slideToggle("slow", function () {});
+            $(this).next('.level2').slideToggle("slow", function () {});
         });
 
         $('.sub-icon2').click(function () {
