@@ -1,0 +1,452 @@
+.center {
+    text-align: center;
+}
+
+.footer {
+    background: #024073;
+    padding: 20px 0 25px;
+    color: #fff;
+
+    a {
+        color: #fff;
+        font-size: 13px
+    }
+
+    .footer-row {
+        border-bottom: 1px solid #055699;
+        position: relative;
+
+        &::before {
+            content: '';
+            border-bottom: 1px solid #032d4f;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+        }
+    }
+
+    .footer-col1 {
+        width: 325px;
+        margin-right: 10px;
+    }
+
+    .footer-col2 {
+        width: 740px;
+        margin: 60px 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .col-header {
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #055699;
+            padding-bottom: 18px;
+            margin-bottom: 8px;
+            position: relative;
+
+            &::after {
+                content: '';
+                border-bottom: 1px solid #032d4f;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+            }
+        }
+
+        ul {
+            li {
+                line-height: 20px;
+            }
+        }
+
+        .footer-sub-col1 {
+            width: 185px;
+        }
+
+        .footer-sub-col2 {
+            width: 165px;
+        }
+
+        .footer-sub-col3 {
+            width: 235px;
+
+            ul {
+                li {
+                    font-weight: bold;
+                    line-height: 32px;
+
+                    img {
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .footer-sub-col4 {
+            width: 155px;
+        }
+
+        .footer-sub-col5 {
+            width: 350px;
+        }
+
+        .footer-sub-col6 {
+            width: 380px;
+
+            input[type=text] {
+                border: none;
+                background: #fff;
+                border-radius: 3px 0 0 3px;
+                width: 100%;
+                height: 32px;
+                padding: 0 70px 0 14px;
+            }
+
+            a {
+                width: 64px;
+                height: 32px;
+                background: #3c9f10;
+                text-align: center;
+                font-weight: bold;
+                font-size: 14px;
+                display: inline-block;
+                line-height: 32px;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin: 20px 0;
+        display: inline-block
+    }
+
+    .footer-company-name {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 12px;
+
+        a {
+            display: block;
+            font-size: 14px;
+            color: #7ac6ea;
+            font-weight: normal;
+        }
+    }
+
+    .footer-add {
+        line-height: 16px;
+        margin-bottom: 14px;
+        position: relative;
+        padding-left: 25px;
+
+        img {
+            vertical-align: middle;
+        }
+
+        span {
+            width: 25px;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .footer-social {
+        .bct {
+            margin-right: 40px;
+            margin-left: 0;
+            width: 109px;
+        }
+
+        a {
+            img {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .list-international {
+        padding: 10px 0 0 0;
+
+        div {
+            font-size: 13px;
+        }
+
+        .vietnam {
+            width: 100%;
+            max-width: 150px;
+            height: 22px;
+            line-height: 22px;
+            background: #032d4f;
+            color: #fff;
+            margin: 10px 0;
+            position: relative;
+
+            &::after {
+                content: url(https://file4.batdongsan.com.vn/images/newhome/down-solid-arrow.png);
+                position: absolute;
+                width: 8px;
+                height: 6px;
+                right: 9px;
+                top: 0 !important;
+            }
+
+            img {
+                padding: 0 6px;
+                vertical-align: top;
+                margin-top: 3px;
+            }
+        }
+
+        #country {
+            display: none
+        }
+    }
+
+
+    .national {
+        position: relative;
+
+        #country {
+            position: absolute;
+            top: 22px;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            background: #032d4f;
+            z-index: 10;
+            padding-top: 5px;
+
+            li {
+                padding: 5px;
+
+                a {
+                    line-height: 16px;
+                    color: #fff;
+                    font-size: 12px;
+                }
+
+                img {
+                    padding-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    .language {
+        font-size: 12px;
+        line-height: 17px;
+
+        a {
+            margin-left: 20px;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    .footer-title {
+        margin: 18px 0 9px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .list-branch {
+        padding: 17px 0;
+    }
+
+    .branch-show {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    .branch-detail {
+        padding-top: 25px;
+        display: block;
+    }
+
+    .branch-col {
+        width: 340px;
+        float: left;
+        margin-left: 30px;
+
+        &:first-child {
+            margin-left: 0
+        }
+    }
+
+    .branch {
+        margin-bottom: 10px;
+    }
+
+    .branch-name {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .branch-add {
+        font-size: 13px;
+    }
+
+    .footer-infomation {
+        padding-top: 25px;
+    }
+
+    .footer-info-col1 {
+        width: 480px;
+        float: left;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .footer-info-col2 {
+        width: 360px;
+        float: left;
+        margin-right: 13px;
+        font-size: 12px;
+    }
+
+    .footer-info-col3 {
+        width: 245px;
+        float: left;
+        font-size: 12px;
+    }
+
+    @media (max-width: 1199px) {
+        .footer-col1 {
+            width: 300px;
+            margin-right: 0;
+        }
+
+        .footer-col2 {
+            width: calc(100% - 300px);
+            padding-left: 15px;
+
+            [class*="footer-sub-"] {
+                padding-left: 15px;
+                margin-bottom: 15px;
+            }
+
+            .footer-sub-col4 {
+                width: 200px;
+            }
+        }
+
+        .footer-logo {
+            display: block
+        }
+
+        .branch-detail {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        .branch-col {
+            width: 33.33%;
+            margin-left: 0;
+            padding: 0 15px;
+        }
+
+        .footer-infomation {
+            display: flex;
+            flex-wrap: wrap;
+
+            [class*="footer-info-"] {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .footer-col1 {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .footer-col2 {
+            width: 100%;
+            padding-left: 0;
+            margin: 20px 0 10px -15px;
+        }
+
+        .branch-col {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        .footer-info-col1 {
+            width: 100%;
+            margin: 0 0 15px 0;
+        }
+
+        .footer-info-col2 {
+            width: 50%;
+            margin: 0 0 15px 0;
+        }
+
+        .footer-info-col3 {
+            width: 50%;
+            margin: 0 0 15px 0;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .footer-col2 {
+            width: calc(100% + 15px);
+            margin: 20px 0 10px -15px;
+
+            .col-header {
+                padding-bottom: 10px;
+            }
+
+            [class*="footer-sub-"] {
+                width: 50%;
+            }
+
+            .footer-sub-col3,
+            .footer-sub-col4,
+            .footer-sub-col5,
+            .footer-sub-col6 {
+                width: 100%;
+            }
+        }
+
+        .branch-col {
+            width: 100%;
+        }
+
+        [class*="footer-info-"] {
+            font-size: 13px
+        }
+
+        .footer-info-col1 {
+            width: 100%;
+        }
+
+        .footer-info-col2 {
+            width: 100%;
+        }
+
+        .footer-info-col3 {
+            width: 100%;
+        }
+    }
+}

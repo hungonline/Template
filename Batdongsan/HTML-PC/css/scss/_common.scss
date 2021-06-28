@@ -23,25 +23,34 @@ h6 {
     font-weight: inherit;
 }
 
-.btn-green{
+.btn-green {
     background: var(--colormain);
     color: #fff;
     transition: 0.3s all;
-    &:hover{
-        background: #71a21d;color: #fff;
+
+    &:hover {
+        background: #71a21d;
+        color: #fff;
     }
 }
+
 .uppercase {
     text-transform: uppercase;
 }
-.medium{font-weight: 500;}
-.bold{
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
     font-weight: bold;
 }
-.hover-tooltip{
+
+.hover-tooltip {
     position: relative;
     border-radius: 50%;
-    .tooltip-s{
+
+    .tooltip-s {
         position: absolute;
         left: -60px;
         opacity: 0;
@@ -56,22 +65,34 @@ h6 {
         padding: 5px 5px;
         top: 20px;
         font-size: 13px;
-        &::before{
+
+        &::before {
             content: "";
-            border-left: 5px solid rgba(255,255,255,0);
-            border-right: 5px solid rgba(255,255,255,0);
+            border-left: 5px solid rgba(255, 255, 255, 0);
+            border-right: 5px solid rgba(255, 255, 255, 0);
             border-bottom: 6px solid #2c2f36;
             position: absolute;
             top: -6px;
             left: 49%;
         }
     }
-    &:hover{
+
+    &:hover {
         background: #e5e5e5;
-        .tooltip-s{
+
+        .tooltip-s {
             top: 50px;
             visibility: visible;
             opacity: 1;
         }
+    }
+}
+
+.home-small-more {
+    color: #055699;
+    line-height: 16px;
+
+    img {
+        width: 11px;
     }
 }

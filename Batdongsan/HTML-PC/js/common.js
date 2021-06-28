@@ -38,6 +38,13 @@
             });
             return false;
         });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('.wrap-main-nav ').addClass('pin');
+            } else {
+                $('.wrap-main-nav ').removeClass('pin');
+            }
+        });
     }
 
     //resizeSite
@@ -74,16 +81,16 @@
             $('.close-show').addClass('active');
             $(".mask-content").toggle();
         });
-		$(".mask-content").click(function () {
-			$(this).hide();
+        $(".mask-content").click(function () {
+            $(this).hide();
             $(".product_categories").removeClass("open");
             $('.close-show').removeClass('active');
-		});
-		$(".close-show").click(function () {
+        });
+        $(".close-show").click(function () {
             $(this).removeClass('active');
             $(".product_categories").removeClass("open");
             $(".mask-content").toggle();
-		});
+        });
 
         $(".tab-default a").click(function (event) {
             $(".tab-default a").removeClass("active")
