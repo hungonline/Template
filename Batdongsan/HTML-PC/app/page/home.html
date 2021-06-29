@@ -17,6 +17,56 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
+    <div class="home-search">
+        <div class="home-search-tool">
+            <div class="home-search-tab">
+
+            </div>
+            <div class="home-search-content">
+                <div class="home-search-control">
+                    <div class="search-cate">
+                       <div class="select-custom onclick-search">
+                          <o id="lblCurrCate">Loại nhà đất</o>
+                       </div>
+                       <div id="divCatagoryReOptions" class="advance-select-options on-open">
+                          <ul>
+                             <li vl="0"><span>Tất cả nhà đất</span></li>
+                             <li vl="324"><span><img src="images/icons/chungcu.png">Căn hộ chung cư</span></li>
+                             <li vl="362">
+                                <span><img src="images/icons/nhaban.png">Các loại nhà bán</span>
+                                <ul style="min-width: 210px !important;">
+                                   <li vl="41"><span>Nhà riêng</span></li>
+                                   <li vl="325"><span>Nhà biệt thự, liền kề</span></li>
+                                   <li vl="163"><span>Nhà mặt phố</span></li>
+                                </ul>
+                             </li>
+                             <li vl="361">
+                                <span><img src="images/icons/datban.png">Các loại đất bán</span>
+                                <ul style="min-width: 210px !important;">
+                                   <li vl="40"><span>Đất nền dự án</span></li>
+                                   <li vl="283"><span>Bán đất</span></li>
+                                </ul>
+                             </li>
+                             <li vl="44"><span><img src="images/icons/trangtrai.png">Trang trại, khu nghỉ dưỡng</span></li>
+                             <li vl="45"><span><img src="images/icons/khonhaxuong.png">Kho, nhà xưởng</span></li>
+                             <li vl="48"><span><img src="images/icons/bdskhac.png">Bất động sản khác</span></li>
+                          </ul>
+                       </div>
+                    </div>
+                    <div class="search-input">
+                       <input type="text" id="txtSearch" placeholder="Tìm kiếm địa điểm, khu vực" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" name="txtSearch" class="ui-autocomplete-input">
+                       <input type="hidden" name="Keyword">
+                    </div>
+                    <div class="search-button">
+                       <input type="button" class="btn-home-search" value="Tìm kiếm" id="btnSearch">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="home-filter"></div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <section class="buid-top-bds clearfix">
@@ -30,8 +80,89 @@
                     <a href="#">Phong thủy</a>
                 </div>
                 <a href="/tin-tuc" id="tabview" class="home-small-more">Xem thêm tin tức
-                    <img src="https://file4.batdongsan.com.vn/images/newhome/3x/icon-arrow-right.png">
+                    <img src="images/icons/icon-arrow-right.png">
                 </a>
+            </div>
+            <div id="news-slide" class="row">
+                <div class="col-md-6">
+                    <div class="thumb-article">
+                        <article class="art_item thumb-full">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x3" href="#">
+                                    <img src="images/graphics/img1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news"><a href="" title="#">Đón đúng thị hiếu, Venezia Beach thiết lập chuẩn sống "wellness" cho BĐS nghỉ dưỡng</a></h3>
+                                <div class="status">
+                                    <div class="itemt">
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#clock"></use>
+                                        </svg>
+                                        <span>22 giờ trước</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-news">
+                        <li class="active">
+                            <h3>
+                                <a title="" data-index="#hottab-0" href="">
+                                    Shophouse – muốn lời cao phải chọn kỹ
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#image"></use>
+                                    </svg>
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="">
+                            <h3>
+                                <a title="" data-index="#hottab-1" href="">
+                                    Đón đúng thị hiếu, Venezia Beach thiết lập chuẩn sống "wellness" cho BĐS nghỉ dưỡng
+                                    <svg class="icon-svg">
+                                        <use xlink:href="images/icons/icon.svg#video"></use>
+                                    </svg>
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="">
+                            <h3>
+                                <a title="" data-index="#hottab-2" href="">
+                                    Đánh giá dự án NHS Phương Canh: Dự án giá rẻ tại khu Tây Hà Nội
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="">
+                            <h3>
+                                <a title="" data-index="#hottab-3" href="">
+                                    Tuột đỉnh quan tâm quý 1, thị trường BĐS quý 2 diễn biến ra sao?
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="">
+                            <h3>
+                                <a title="" data-index="#hottab-4" href="">
+                                    Nhà thấp tầng Hà Nội giá cao ngất ngưởng
+                                </a>
+                            </h3>
+                        </li>
+                        <li class="">
+                            <h3>
+                                <a title="" data-index="#hottab-5" href="">
+                                    Nhà đầu tư “chạy không thoát” với gà đẻ trứng vàng
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="m_small-more">
+                    <a class="load-more active" href="#">
+                        Xem thêm
+                    </a>
+                </div>
             </div>
         </div>
         <div class="buid-top-bds__right">
@@ -45,6 +176,810 @@
     </div>
 </section>
 
+<section class="bg-agray clearfix mb30">
+    <div class="container">
+        <div class="header flex align-center space-between">
+            <h2 class="title-cate">Bất động sản dành cho bạn</h2>
+            <div class="tab-new">
+                <a href="#">Tin nhà đất bán mới nhất </a>
+                <span>|</span>
+                <a href="#">Tin nhà đất cho thuê mới nhất</a>
+            </div>
+        </div>
+        <div class="list-bds grid grid__4">
+            <article class="art_item thumb-full">
+                <div class="thumb_art">
+                    <a class="thumb_img thumb_5x3" href="#" href="#">
+                        <img src="images/graphics/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <h3 class="title_news"><a href="" title="#">Bán đất Mỹ Nội - Bắc Hồng - Đông Anh</a></h3>
+                    <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
+                    <div class="address">
+                        <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                    </div>
+                    <div class="status flex align-center space-between">
+                        <div class="itemt">
+                            <span>Hôm nay</span>
+                        </div>
+                        <div class="itemt">
+                            <a href="#" class="hover-tooltip">
+                                <i class="iconSave"></i>
+                                <div class="tooltip-s">Bấm để lưu tin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="art_item thumb-full">
+                <div class="thumb_art">
+                    <a class="thumb_img thumb_5x3" href="#" href="#">
+                        <img src="images/graphics/img1.jpg" alt="">
+                        <div class="icon">
+                            <span class="number">7</span>
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#image"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="content">
+                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT 4.6m</a></h3>
+                    <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
+                    <div class="address">
+                        <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                    </div>
+                    <div class="status flex align-center space-between">
+                        <div class="itemt">
+                            <span>Hôm nay</span>
+                        </div>
+                        <div class="itemt">
+                            <a href="#" class="hover-tooltip">
+                                <i class="iconSave active"></i>
+                                <div class="tooltip-s">Bấm để lưu tin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="art_item thumb-full">
+                <div class="thumb_art">
+                    <a class="thumb_img thumb_5x3" href="#" href="#">
+                        <img src="images/graphics/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <h3 class="title_news"><a href="" title="#">Bán đất Mỹ Nội - Bắc Hồng - Đông Anh</a></h3>
+                    <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
+                    <div class="address">
+                        <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                    </div>
+                    <div class="status flex align-center space-between">
+                        <div class="itemt">
+                            <span>Hôm nay</span>
+                        </div>
+                        <div class="itemt">
+                            <a href="#" class="hover-tooltip">
+                                <i class="iconSave"></i>
+                                <div class="tooltip-s">Bấm để lưu tin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="art_item thumb-full">
+                <div class="thumb_art">
+                    <a class="thumb_img thumb_5x3" href="#" href="#">
+                        <img src="images/graphics/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT 4.6m</a></h3>
+                    <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
+                    <div class="address">
+                        <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                    </div>
+                    <div class="status flex align-center space-between">
+                        <div class="itemt">
+                            <span>Hôm nay</span>
+                        </div>
+                        <div class="itemt">
+                            <a href="#" class="hover-tooltip">
+                                <i class="iconSave"></i>
+                                <div class="tooltip-s">Bấm để lưu tin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="art_item thumb-full">
+                <div class="thumb_art">
+                    <a class="thumb_img thumb_5x3" href="#" href="#">
+                        <img src="images/graphics/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <h3 class="title_news"><a href="" title="#">Bán đất Mỹ Nội - Bắc Hồng - Đông Anh</a></h3>
+                    <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
+                    <div class="address">
+                        <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                    </div>
+                    <div class="status flex align-center space-between">
+                        <div class="itemt">
+                            <span>Hôm nay</span>
+                        </div>
+                        <div class="itemt">
+                            <a href="#" class="hover-tooltip">
+                                <i class="iconSave"></i>
+                                <div class="tooltip-s">Bấm để lưu tin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="art_item thumb-full">
+                <div class="thumb_art">
+                    <a class="thumb_img thumb_5x3" href="#" href="#">
+                        <img src="images/graphics/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT 4.6m</a></h3>
+                    <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
+                    <div class="address">
+                        <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                    </div>
+                    <div class="status flex align-center space-between">
+                        <div class="itemt">
+                            <span>Hôm nay</span>
+                        </div>
+                        <div class="itemt">
+                            <a href="#" class="hover-tooltip">
+                                <i class="iconSave"></i>
+                                <div class="tooltip-s">Bấm để lưu tin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="art_item thumb-full">
+                <div class="thumb_art">
+                    <a class="thumb_img thumb_5x3" href="#" href="#">
+                        <img src="images/graphics/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <h3 class="title_news"><a href="" title="#">Bán đất Mỹ Nội - Bắc Hồng - Đông Anh</a></h3>
+                    <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
+                    <div class="address">
+                        <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                    </div>
+                    <div class="status flex align-center space-between">
+                        <div class="itemt">
+                            <span>Hôm nay</span>
+                        </div>
+                        <div class="itemt">
+                            <a href="#" class="hover-tooltip">
+                                <i class="iconSave"></i>
+                                <div class="tooltip-s">Bấm để lưu tin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="art_item thumb-full">
+                <div class="thumb_art">
+                    <a class="thumb_img thumb_5x3" href="#" href="#">
+                        <img src="images/graphics/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT 4.6m</a></h3>
+                    <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
+                    <div class="address">
+                        <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                    </div>
+                    <div class="status flex align-center space-between">
+                        <div class="itemt">
+                            <span>Hôm nay</span>
+                        </div>
+                        <div class="itemt">
+                            <a href="#" class="hover-tooltip">
+                                <i class="iconSave"></i>
+                                <div class="tooltip-s">Bấm để lưu tin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="text-center mt30">
+            <a class="load-more" href="#">
+                Mở rộng
+                <img class=" ls-is-cached lazyloaded" data-src="https://file4.batdongsan.com.vn/images/newhome/icon-down-blue.png" src="https://file4.batdongsan.com.vn/images/newhome/icon-down-blue.png">
+            </a>
+        </div>
+        <div class="text-center mt30">
+            <a class="load-more active" href="#">
+                Xem tiếp
+                <img class=" ls-is-cached lazyloaded" data-src="https://file4.batdongsan.com.vn/images/newhome/icon-down-blue.png" src="https://file4.batdongsan.com.vn/images/newhome/icon-down-blue.png">
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="container clearfix">
+    <h2 class="title-cate">Bất động sản theo địa điểm</h2>
+    
+    <div class="list-bds-address clearfix">
+        <div class="address-slide1">
+            <div class="swiper-container">
+                <div class="adrress">
+                    <h3>TP. Hồ Chí Minh</h3>
+                    <span>34022 tin đăng</span>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="thumb_img thumb_5x4" href="#">
+                            <img src="images/graphics/img5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="thumb_img thumb_5x4" href="#">
+                            <img src="images/graphics/img6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <div class="address-slide1">
+                    <div class="swiper-container">
+                        <div class="adrress">
+                            <h3>HÀ Nội</h3>
+                            <span>34022 tin đăng</span>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="thumb_img thumb_thumb_5x45x3" href="#">
+                                    <img src="images/graphics/img7.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="address-slide1">
+                    <div class="swiper-container">
+                        <div class="adrress">
+                            <h3>HÀ Nội</h3>
+                            <span>34022 tin đăng</span>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img8.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="address-slide1">
+                    <div class="swiper-container">
+                        <div class="adrress">
+                            <h3>HÀ Nội</h3>
+                            <span>34022 tin đăng</span>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="address-slide1">
+                    <div class="swiper-container">
+                        <div class="adrress">
+                            <h3>HÀ Nội</h3>
+                            <span>34022 tin đăng</span>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img4.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="tag-list">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">Vinhomes Grand Park</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Vinhomes Smart City</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Vũng Tàu Pearl</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Bcons Green View</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Grandeur Palace</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Vinhomes Grand Park</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Vinhomes Smart City</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Vũng Tàu Pearl</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Bcons Green View</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Grandeur Palace</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Vinhomes Smart City</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Vũng Tàu Pearl</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Bcons Green View</a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">Grandeur Palace</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb30 text-center">
+        <img src="https://via.placeholder.com/1200x250">
+    </div>
+
+    <!-- DỰ án nổi bật -->
+    <div class="header flex align-center space-between">
+        <h2 class="title-cate">Dự án nổi bật</h2>
+        <a href="/tin-tuc" id="tabview" class="home-small-more mb20">Xem thêm
+            <img src="images/icons/icon-arrow-right.png">
+        </a>
+    </div>
+    <div class="relative slide-duan mb30">
+        <div class="swiper-container" id="slide-duan">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3 class="title_news"><a href="" title="#">Tecco Elite City</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3 class="title_news"><a href="" title="#">Tecco Elite City</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3 class="title_news"><a href="" title="#">Tecco Elite City</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3 class="title_news"><a href="" title="#">Tecco Elite City</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <h3 class="title_news"><a href="" title="#">Tecco Elite City</a></h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-slide-duan-next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="swiper-button-prev swiper-slide-duan-prev">
+            <i class="fa fa-angle-left"></i>
+        </div>
+    </div>
+
+    <!-- TIn tiêu điểm -->
+    <h2 class="title-cate">Tin tiêu điểm</h2>
+    <div class="relative slide-duan mb40">
+        <div class="swiper-container" id="slide-tieudiem">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span>01.</span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span>02.</span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span>03.</span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span>04.</span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-tieudiem-next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="swiper-button-prev swiper-tieudiem-prev">
+            <i class="fa fa-angle-left"></i>
+        </div>
+    </div>
+
+    <!-- Hỗ trợ tiện ích -->
+    <div class="home-utility clearfix">
+        <h2 class="title-cate">Hỗ trợ tiện ích</h2>
+        <ul>
+            <li class="color-1">
+               <a href="/ho-tro-tien-ich/ht-xem-tuoi-xay-nha" rel="nofollow"><img src="https://file4.batdongsan.com.vn/images/newhome/fshome.png">Xem tuổi xây nhà</a>
+            </li>
+            <li class="color-2">
+               <a href="/ho-tro-tien-ich/ht-du-toan-chi-tiet" rel="nofollow"><img src="https://file4.batdongsan.com.vn/images/newhome/estimate.png">  Dự tính chi phí làm nhà </a>
+            </li>
+            <li class="color-3">
+               <a href="/ho-tro-tien-ich/ht-tinh-lai-suat" rel="nofollow"><img src="https://file4.batdongsan.com.vn/images/newhome/money.png">  Tính lãi suất </a>
+            </li>
+            <li class="color-4">
+               <a href="/ho-tro-tien-ich/ht-xem-huong-nha" rel="nofollow"><img src="https://file4.batdongsan.com.vn/images/newhome/fengshui.png">  Tư vấn phong thủy</a>
+            </li>
+         </ul>
+    </div>
+
+    <!-- Doanh nghiệp tiêu biểu -->
+    <div class="header flex align-center space-between">
+        <h2 class="title-cate">Doanh nghiệp tiêu biểu</h2>
+        <a href="/tin-tuc" id="tabview" class="home-small-more mb20">Xem thêm
+            <img src="images/icons/icon-arrow-right.png">
+        </a>
+    </div>
+    <div class="relative slide-doanhnhgiep mb40">
+        <div class="swiper-container" id="slide-doanhnghiep">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn1.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn2.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn3.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn1.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn2.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn3.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn1.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn2.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="itemt" href="#">
+                        <img src="images/graphics/doanhnghiep/dn3.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-doanhnghiep-next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="swiper-button-prev swiper-doanhnghiep-prev">
+            <i class="fa fa-angle-left"></i>
+        </div>
+    </div>
+
+    <!-- Báo chí nói về Batdongsan.com.vn -->
+    <div class="header flex align-center space-between">
+        <h2 class="title-cate">Báo chí nói về Batdongsan.com.vn</h2>
+        <a href="/tin-tuc" id="tabview" class="home-small-more mb20">Triệu lựa chọn nhà, một kênh tìm kiếm
+        </a>
+    </div>
+    
+    <div class="relative slide-duan mb40">
+        <div class="swiper-container" id="slide-baochi">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide">
+                    <article class="art_item thumb-full">
+                        <div class="thumb_art">
+                            <a class="thumb_img thumb_5x3" href="#">
+                                <img src="images/graphics/img5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="content content-article">
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-baochi-next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="swiper-button-prev swiper-baochi-prev">
+            <i class="fa fa-angle-left"></i>
+        </div>
+    </div>
+
+
+</section>
+
+<section class="boxLinkFooter">
+    <div class="container">
+        <div class="grid grid__4">
+            <div class="colum">
+                <h3>
+                    <a href="#">MUA BÁN NHÀ ĐẤT TP HCM</a>
+                </h3>
+                <ul>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                    <li><a href="#">Bán nhà Quận 1</a></li>
+                </ul>
+            </div>
+            <div class="colum">
+                <h3>
+                    <a href="#">MUA BÁN NHÀ ĐẤT HÀ NỘI</a>
+                </h3>
+                <ul>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà chính chủ Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                </ul>
+            </div>
+            <div class="colum">
+                <h3>
+                    <a href="#">MUA BÁN NHÀ ĐẤT</a>
+                </h3>
+                <ul>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà chính chủ Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                </ul>
+            </div>
+            <div class="colum">
+                <h3>
+                    <a href="#">NHÀ ĐẤT CHO THUÊ</a>
+                </h3>
+                <ul>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà chính chủ Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                    <li><a href="#">Bán nhà Hà Nội</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- /build:content -->
 

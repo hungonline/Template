@@ -49,49 +49,10 @@
 
     //resizeSite
     function resizeSite() {
-        var heightVideo = $('#player_playing').height() - 64;
-        $('.detail_right .scrollbar-inner').height(heightVideo);
+
     }
     //onCLick
     function onCLick() {
-        $('.search-btn').click(function () {
-            $('.main-nav').removeClass('show-all-menu');
-            $('.all-menu').removeClass('close-menu-tablet');
-            if (!$(this).hasClass('is-clicked')) {
-                $(this).addClass('is-clicked');
-                $('.search-wrap').fadeIn();
-                $('.search-wrap input').focus();
-            } else {
-                $(this).removeClass('is-clicked');
-                $('.search-wrap').fadeOut();
-            }
-        });
-        $(".all-menu-tablet").click(function () {
-            $(this).toggleClass("close-menu-tablet");
-        });
-        $(".all-menu").click(function () {
-            $('body').toggleClass('open');
-            $('.search-btn').removeClass('is-clicked');
-            $('.search-wrap').fadeOut();
-            $(".main-nav").toggleClass("show-all-menu");
-        });
-
-        $(".filter-control").click(function () {
-            $('.product_categories').toggleClass('open');
-            $('.close-show').addClass('active');
-            $(".mask-content").toggle();
-        });
-        $(".mask-content").click(function () {
-            $(this).hide();
-            $(".product_categories").removeClass("open");
-            $('.close-show').removeClass('active');
-        });
-        $(".close-show").click(function () {
-            $(this).removeClass('active');
-            $(".product_categories").removeClass("open");
-            $(".mask-content").toggle();
-        });
-
         $(".tab-default a").click(function (event) {
             $(".tab-default a").removeClass("active")
             if (!$(this).hasClass("active")) {
@@ -105,6 +66,19 @@
             $(tab).fadeIn();
         });
 
+
+        $(".all-menu-tablet").click(function () {
+            $(this).toggleClass("close-menu-tablet");
+        });
+        $(".all-menu").click(function () {
+            $(".overlay-bg").toggle();
+            $(".main-nav").toggleClass("show-all-menu");
+        });
+        $(".overlay-bg").click(function () {
+            $(this).hide();
+            $(".all-menu").removeClass("close-menu-tablet");
+            $(".main-nav").removeClass("show-all-menu");
+        });
         $('.sub_menu').click(function () {
             if ($(this).next('.level2').css('display') == 'none') {
                 $(this).html('-');
@@ -122,7 +96,13 @@
             };
             $(this).next('ul').slideToggle("slow", function () {});
         });
-
+        $('.onclick-search').click(function () {
+            if ($(this).next('.on-open').css('display') == 'none') {
+            } else {
+                
+            };
+            $(this).next('.on-open').slideToggle("slow", function () {});
+        });
 
     }
     //scrollBar
@@ -134,18 +114,97 @@
                 clickable: true,
             },
         });
-        var swiper_customer = new Swiper('.section-customer .swiper-container', {
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+        var swiperaddress_s1 = new Swiper('.address-slide1 .swiper-container', {
+            loop:true,
+            effect: "fade",
+            autoplay: {
+                delay: 5000,
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            
         });
+        var swipertaglist = new Swiper(".tag-list .swiper-container", {
+            slidesPerView: "auto",
+            spaceBetween: 11,
+        });
+
+        // Slide dự án
+        var swiperduan = new Swiper('#slide-duan', {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            navigation: {
+                nextEl: '.swiper-slide-duan-next',
+                prevEl: '.swiper-slide-duan-prev',
+            },
+            breakpoints: {
+                991: {
+                    slidesPerView: 3,
+                },
+                767: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                }
+            }
+        });
+        // Slide tieu điểm
+        var swipertieudiem = new Swiper('#slide-tieudiem', {
+            spaceBetween: 30,
+            slidesPerView: 3,
+            navigation: {
+                nextEl: '.swiper-tieudiem-next',
+                prevEl: '.swiper-tieudiem-prev',
+            },
+            breakpoints: {
+                991: {
+                    slidesPerView: 2,
+                },
+                767: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                }
+            }
+        });
+        // Slide slide-baochi
+        var swipersbaochi = new Swiper('#slide-baochi', {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            navigation: {
+                nextEl: '.swiper-baochi-next',
+                prevEl: '.swiper-baochi-prev',
+            },
+            breakpoints: {
+                991: {
+                    slidesPerView: 3,
+                },
+                767: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                }
+            }
+        });
+        // Slide doanh nghiệp
+        var swiperdoanhnghiep = new Swiper('#slide-doanhnghiep', {
+            spaceBetween: 20,
+            slidesPerView: 6,
+            navigation: {
+                nextEl: '.swiper-doanhnghiep-next',
+                prevEl: '.swiper-doanhnghiep-prev',
+            },
+            breakpoints: {
+                991: {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                },
+                767: {
+                    slidesPerView: 4,
+                },
+                576: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                }
+            }
+        });
+
+
 
     }
 
