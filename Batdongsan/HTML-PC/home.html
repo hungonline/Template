@@ -17,8 +17,8 @@
         rel="shortcut icon" />
     <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="css/bootstrap.css" media="all" />
-	<link rel="stylesheet" href="css/general-inline.css" media="all" />
-	<link rel="stylesheet" href="css/general-file.css" media="all" />
+    <link rel="stylesheet" href="css/general-inline.css" media="all" />
+    <link rel="stylesheet" href="css/general-file.css" media="all" />
     
 
 
@@ -29,7 +29,13 @@
     <section id="wrap-main-nav" class="section wrap-main-nav">
         <div class="align-center flex">
             <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
-            <h1 class="logo"><a href="#" title="#"><img src="images/graphics/logo.svg" /> </a></h1>
+            <h1 class="logo" style="opacity: 0"><a href="#" title="#">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="images/graphics/logo.svg">
+                        <img class="zoom" src="images/graphics/logo2.svg" alt="">
+                    </picture>
+                </a>
+            </h1>
             <nav class="main-nav">
                 <ul class="parent">
                     <li class="active">
@@ -110,7 +116,9 @@
             </nav>
             <div class="right-head">
                 <a href="#" class="hover-tooltip">
-                    <img src="images/icons/icon-heart.svg">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#heart"></use>
+                    </svg>
                     <div class="tooltip-s">Danh sách tin đã lưu</div>
                 </a>
                 <div class="my_bds">
@@ -128,14 +136,12 @@
             </div>
         </div>
         <div class="search-wrap">
-            <div class="container">
-                <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
-                <button type="submit" class="search-box__btn">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#search"></use>
-                    </svg>
-                </button>
-            </div>
+            <div class="input">Tìm kiếm bất động sản</div>
+            <button type="submit" class="search-box__btn">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#search"></use>
+                </svg>
+            </button>
         </div>
     </section>
 
@@ -155,55 +161,131 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
-    <div class="home-search">
-        <div class="home-search-tool">
-            <div class="home-search-tab">
-
-            </div>
-            <div class="home-search-content">
-                <div class="home-search-control">
-                    <div class="search-cate">
-                       <div class="select-custom onclick-search">
-                          <o id="lblCurrCate">Loại nhà đất</o>
-                       </div>
-                       <div id="divCatagoryReOptions" class="advance-select-options on-open">
-                          <ul>
-                             <li vl="0"><span>Tất cả nhà đất</span></li>
-                             <li vl="324"><span><img src="images/icons/chungcu.png">Căn hộ chung cư</span></li>
-                             <li vl="362">
-                                <span><img src="images/icons/nhaban.png">Các loại nhà bán</span>
-                                <ul style="min-width: 210px !important;">
-                                   <li vl="41"><span>Nhà riêng</span></li>
-                                   <li vl="325"><span>Nhà biệt thự, liền kề</span></li>
-                                   <li vl="163"><span>Nhà mặt phố</span></li>
+    <div class="open-search">
+        <a href="javascript:;" class="close-menu">
+            ×<span>Close Filter</span>
+        </a>
+        <div class="home-search">
+            <div class="home-search-tool">
+                <ul class="home-search-tab">
+                    <li class="actived" ptype="38">Nhà đất bán</li>
+                    <li ptype="49">Nhà cho thuê</li>
+                    <li ptype="351" class="project-tab">Dự án</li>
+                </ul>
+                <div class="home-search-content">
+                    <div class="home-search-control">
+                        <div class="search-cate">
+                            <div class="select-custom onclick-search">
+                                <o id="lblCurrCate">Loại nhà đất</o>
+                            </div>
+                            <div id="divCatagoryReOptions" class="advance-select-options on-open">
+                                <ul>
+                                    <li vl="0"><span>Tất cả nhà đất</span></li>
+                                    <li vl="324"><span><img src="images/icons/chungcu.png">Căn hộ chung cư</span>
+                                    </li>
+                                    <li vl="362">
+                                        <span><img src="images/icons/nhaban.png">Các loại nhà bán</span>
+                                        <ul style="min-width: 210px !important;">
+                                            <li vl="41"><span>Nhà riêng</span></li>
+                                            <li vl="325"><span>Nhà biệt thự, liền kề</span></li>
+                                            <li vl="163"><span>Nhà mặt phố</span></li>
+                                        </ul>
+                                    </li>
+                                    <li vl="361">
+                                        <span><img src="images/icons/datban.png">Các loại đất bán</span>
+                                        <ul style="min-width: 210px !important;">
+                                            <li vl="40"><span>Đất nền dự án</span></li>
+                                            <li vl="283"><span>Bán đất</span></li>
+                                        </ul>
+                                    </li>
+                                    <li vl="44"><span><img src="images/icons/trangtrai.png">Trang trại, khu nghỉ
+                                            dưỡng</span></li>
+                                    <li vl="45"><span><img src="images/icons/khonhaxuong.png">Kho, nhà xưởng</span>
+                                    </li>
+                                    <li vl="48"><span><img src="images/icons/bdskhac.png">Bất động sản khác</span>
+                                    </li>
                                 </ul>
-                             </li>
-                             <li vl="361">
-                                <span><img src="images/icons/datban.png">Các loại đất bán</span>
-                                <ul style="min-width: 210px !important;">
-                                   <li vl="40"><span>Đất nền dự án</span></li>
-                                   <li vl="283"><span>Bán đất</span></li>
-                                </ul>
-                             </li>
-                             <li vl="44"><span><img src="images/icons/trangtrai.png">Trang trại, khu nghỉ dưỡng</span></li>
-                             <li vl="45"><span><img src="images/icons/khonhaxuong.png">Kho, nhà xưởng</span></li>
-                             <li vl="48"><span><img src="images/icons/bdskhac.png">Bất động sản khác</span></li>
-                          </ul>
-                       </div>
+                            </div>
+                        </div>
+                        <div class="search-input">
+                            <input type="text" id="txtSearch" placeholder="Tìm kiếm địa điểm, khu vực"
+                                autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"
+                                name="txtSearch" class="ui-autocomplete-input">
+                            <input type="hidden" name="Keyword">
+                        </div>
+                        <div class="search-button">
+                            <input type="button" class="btn-home-search" value="Tìm kiếm" id="btnSearch">
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="search-input">
-                       <input type="text" id="txtSearch" placeholder="Tìm kiếm địa điểm, khu vực" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" name="txtSearch" class="ui-autocomplete-input">
-                       <input type="hidden" name="Keyword">
+                    <div class="home-filter">
+                        <div class="form-group">
+                            <select class="js-example-basic-single form-control" name="state">
+                                <option value="3620194" selected="selected">Trên toàn quốc</option>
+                                <option value="1">Hà Nội</option>
+                                <option value="2">Bắc Ninh</option>
+                                <option value="2">Bắc Giang</option>
+                                <option value="2">Hải Dương</option>
+                                <option value="2">Hưng Yên</option>
+                                <option value="2">Hưng Yên</option>
+                                <option value="2">Hưng Yên</option>
+                                <option value="2">Hưng Yên</option>
+                                <option value="2">Hưng Yên</option>
+                                <option value="2">Hưng Yên</option>
+                                <option value="2">Hưng Yên</option>
+                                <option value="2">Hưng Yên</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="js-example-basic-single form-control" name="state">
+                                <option value="3620194" selected="selected">Mức giá</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                                <option value="1">&#62;500 triệu</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="js-example-basic-single form-control" name="state">
+                                <option value="3620194" selected="selected">Diện tích</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                                <option value="1">&#62;100 m2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="js-example-basic-single form-control" name="state">
+                                <option value="3620194" selected="selected">Dự án</option>
+                                <option value="1"></option>
+                            </select>
+                        </div>
+                        <div class="search-action">
+                            <a href="javascript:void(0)" class="m-r-10 filter-more">
+                                <img src="images/icons/icon-down-arrow.png">
+                                Thêm
+                            </a>
+                            <a href="javascript:void(0)" class="action-reset-search-form">
+                                <img src="images/icons/search-reset.png">
+                                Xóa
+                            </a>
+                        </div>
                     </div>
-                    <div class="search-button">
-                       <input type="button" class="btn-home-search" value="Tìm kiếm" id="btnSearch">
-                    </div>
-                    <div class="clear"></div>
                 </div>
-                <div class="home-filter"></div>
             </div>
         </div>
-
     </div>
 </section>
 
@@ -231,7 +313,8 @@
                                 </a>
                             </div>
                             <div class="content">
-                                <h3 class="title_news"><a href="" title="#">Đón đúng thị hiếu, Venezia Beach thiết lập chuẩn sống "wellness" cho BĐS nghỉ dưỡng</a></h3>
+                                <h3 class="title_news"><a href="" title="#">Đón đúng thị hiếu, Venezia Beach thiết lập
+                                        chuẩn sống "wellness" cho BĐS nghỉ dưỡng</a></h3>
                                 <div class="status">
                                     <div class="itemt">
                                         <svg class="icon-svg">
@@ -363,7 +446,8 @@
                     </a>
                 </div>
                 <div class="content">
-                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT 4.6m</a></h3>
+                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT
+                            4.6m</a></h3>
                     <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
                     <div class="address">
                         <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
@@ -413,7 +497,8 @@
                     </a>
                 </div>
                 <div class="content">
-                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT 4.6m</a></h3>
+                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT
+                            4.6m</a></h3>
                     <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
                     <div class="address">
                         <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
@@ -463,7 +548,8 @@
                     </a>
                 </div>
                 <div class="content">
-                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT 4.6m</a></h3>
+                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT
+                            4.6m</a></h3>
                     <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
                     <div class="address">
                         <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
@@ -513,7 +599,8 @@
                     </a>
                 </div>
                 <div class="content">
-                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT 4.6m</a></h3>
+                    <h3 class="title_news"><a href="" title="#">Cần tiền bán gấp lô 51.2m2 Tiên Hùng - Nguyên Khê. MT
+                            4.6m</a></h3>
                     <div class="mb5"><b>26 triệu/m²·61.5 m²</b></div>
                     <div class="address">
                         <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
@@ -535,13 +622,15 @@
         <div class="text-center mt30">
             <a class="load-more" href="#">
                 Mở rộng
-                <img class=" ls-is-cached lazyloaded" data-src="https://file4.batdongsan.com.vn/images/newhome/icon-down-blue.png" src="https://file4.batdongsan.com.vn/images/newhome/icon-down-blue.png">
+                <img class=" ls-is-cached lazyloaded" data-src="images/icons/icon-down-blue.png"
+                    src="images/icons/icon-down-blue.png">
             </a>
         </div>
         <div class="text-center mt30">
             <a class="load-more active" href="#">
                 Xem tiếp
-                <img class=" ls-is-cached lazyloaded" data-src="https://file4.batdongsan.com.vn/images/newhome/icon-down-blue.png" src="https://file4.batdongsan.com.vn/images/newhome/icon-down-blue.png">
+                <img class=" ls-is-cached lazyloaded" data-src="images/icons/icon-down-blue.png"
+                    src="images/icons/icon-down-blue.png">
             </a>
         </div>
     </div>
@@ -549,7 +638,7 @@
 
 <section class="container clearfix">
     <h2 class="title-cate">Bất động sản theo địa điểm</h2>
-    
+
     <div class="list-bds-address clearfix">
         <div class="address-slide1">
             <div class="swiper-container">
@@ -661,7 +750,7 @@
                 </div>
             </li>
         </ul>
-        
+
     </div>
 
     <div class="tag-list">
@@ -812,7 +901,8 @@
                         </div>
                         <div class="content content-article">
                             <span>01.</span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -825,7 +915,8 @@
                         </div>
                         <div class="content content-article">
                             <span>02.</span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -838,7 +929,8 @@
                         </div>
                         <div class="content content-article">
                             <span>03.</span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -851,7 +943,8 @@
                         </div>
                         <div class="content content-article">
                             <span>04.</span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -871,18 +964,22 @@
         <h2 class="title-cate">Hỗ trợ tiện ích</h2>
         <ul>
             <li class="color-1">
-               <a href="/ho-tro-tien-ich/ht-xem-tuoi-xay-nha" rel="nofollow"><img src="https://file4.batdongsan.com.vn/images/newhome/fshome.png">Xem tuổi xây nhà</a>
+                <a href="/ho-tro-tien-ich/ht-xem-tuoi-xay-nha" rel="nofollow"><img src="images/icons/fshome.png">Xem
+                    tuổi xây nhà</a>
             </li>
             <li class="color-2">
-               <a href="/ho-tro-tien-ich/ht-du-toan-chi-tiet" rel="nofollow"><img src="https://file4.batdongsan.com.vn/images/newhome/estimate.png">  Dự tính chi phí làm nhà </a>
+                <a href="/ho-tro-tien-ich/ht-du-toan-chi-tiet" rel="nofollow"><img src="images/icons/estimate.png"> Dự
+                    tính chi phí làm nhà </a>
             </li>
             <li class="color-3">
-               <a href="/ho-tro-tien-ich/ht-tinh-lai-suat" rel="nofollow"><img src="https://file4.batdongsan.com.vn/images/newhome/money.png">  Tính lãi suất </a>
+                <a href="/ho-tro-tien-ich/ht-tinh-lai-suat" rel="nofollow"><img src="images/icons/money.png"> Tính lãi
+                    suất </a>
             </li>
             <li class="color-4">
-               <a href="/ho-tro-tien-ich/ht-xem-huong-nha" rel="nofollow"><img src="https://file4.batdongsan.com.vn/images/newhome/fengshui.png">  Tư vấn phong thủy</a>
+                <a href="/ho-tro-tien-ich/ht-xem-huong-nha" rel="nofollow"><img src="images/icons/fengshui.png"> Tư vấn
+                    phong thủy</a>
             </li>
-         </ul>
+        </ul>
     </div>
 
     <!-- Doanh nghiệp tiêu biểu -->
@@ -957,7 +1054,7 @@
         <a href="/tin-tuc" id="tabview" class="home-small-more mb20">Triệu lựa chọn nhà, một kênh tìm kiếm
         </a>
     </div>
-    
+
     <div class="relative slide-duan mb40">
         <div class="swiper-container" id="slide-baochi">
             <div class="swiper-wrapper">
@@ -969,8 +1066,11 @@
                             </a>
                         </div>
                         <div class="content content-article">
-                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40"
+                                    src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png"
+                                    is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -982,8 +1082,11 @@
                             </a>
                         </div>
                         <div class="content content-article">
-                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40"
+                                    src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png"
+                                    is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -995,8 +1098,11 @@
                             </a>
                         </div>
                         <div class="content content-article">
-                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40"
+                                    src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png"
+                                    is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -1008,8 +1114,11 @@
                             </a>
                         </div>
                         <div class="content content-article">
-                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40"
+                                    src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png"
+                                    is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -1021,8 +1130,11 @@
                             </a>
                         </div>
                         <div class="content content-article">
-                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40" src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png" is-lazy-image="true" lazy-id="41"></span>
-                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới nhất</a></h3>
+                            <span><img style="max-height: 40px; max-width: 40px" width="40" height="40"
+                                    src="https://staticfile.batdongsan.com.vn/images/article/icon-vnexpress.png"
+                                    is-lazy-image="true" lazy-id="41"></span>
+                            <h3 class="title_news"><a href="" title="#">Điều kiện, thủ tục tách sổ đỏ theo quy định mới
+                                    nhất</a></h3>
                         </div>
                     </article>
                 </div>
@@ -1126,7 +1238,7 @@
         <div class="container">
             <div class="footer-row flex">
                 <div class="footer-col1">
-                    <a class="footer-logo" href="#" title="#"><img
+                    <a class="footer-logo" style="opacity: 0" href="#" title="#"><img
                             src="images/graphics/logo-white.svg" /></a>
                     <div class="footer-company-name center">
                         Công ty Cổ phần PropertyGuru Việt Nam
@@ -1396,6 +1508,7 @@
     <script type="text/javascript" src="js/svgxuse.js"></script>
     <script type="text/javascript" src="js/css-vars-ponyfill.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
     

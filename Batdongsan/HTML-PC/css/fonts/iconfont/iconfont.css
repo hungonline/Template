@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1624931952074');
-	src: url('iconfont.eot?#iefix-1624931952074') format('embedded-opentype'),
-		url('iconfont.woff2?1624931952074') format('woff2'),
-		url('iconfont.woff?1624931952074') format('woff'),
-		url('iconfont.ttf?1624931952074') format('truetype');
+	src: url('iconfont.eot?1625045086777');
+	src: url('iconfont.eot?#iefix-1625045086777') format('embedded-opentype'),
+		url('iconfont.woff2?1625045086777') format('woff2'),
+		url('iconfont.woff?1625045086777') format('woff'),
+		url('iconfont.ttf?1625045086777') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -36,20 +36,32 @@ Glyphs list
 			content: '\ea01';
 		}
 
-		 .iconfont-image:before {
+		 .iconfont-Filter:before {
 			content: '\ea02';
 		}
 
-		 .iconfont-Twitter:before {
+		 .iconfont-heart:before {
 			content: '\ea03';
 		}
 
-		 .iconfont-User:before {
+		 .iconfont-image:before {
 			content: '\ea04';
 		}
 
-		 .iconfont-video:before {
+		 .iconfont-search:before {
 			content: '\ea05';
+		}
+
+		 .iconfont-Twitter:before {
+			content: '\ea06';
+		}
+
+		 .iconfont-User:before {
+			content: '\ea07';
+		}
+
+		 .iconfont-video:before {
+			content: '\ea08';
 		}
 
 		

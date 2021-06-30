@@ -51,6 +51,9 @@ h6 {
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    text-align: center;
+    line-height: 40px;
+
     .tooltip-s {
         position: absolute;
         left: -60px;
@@ -77,7 +80,8 @@ h6 {
             left: 49%;
         }
     }
-    .iconSave{
+
+    .iconSave {
         height: 40px;
         width: 40px;
         border-radius: 40px;
@@ -86,10 +90,12 @@ h6 {
         margin-top: 0 !important;
         cursor: pointer;
         background: url(images/icons/ic_save.svg) no-repeat center center;
-        &.active{
+
+        &.active {
             background: url(images/icons/ic_unsave.svg) no-repeat center center;
         }
     }
+
     &:hover {
         background: #e5e5e5;
 
@@ -172,15 +178,19 @@ h6 {
     font: bold 28px var(--font1);
     margin-bottom: 20px;
 }
-.tab-new{
+
+.tab-new {
     margin-bottom: 20px;
-    a{
+
+    a {
         color: #055699;
     }
-    span{
+
+    span {
         margin: 0 5px;
     }
 }
+
 .art_item {
     position: relative;
     display: flex;
@@ -191,13 +201,15 @@ h6 {
     .thumb_art {
         position: relative;
         width: 140px;
-        .icon{
+
+        .icon {
             position: absolute;
             color: #fff;
             right: 10px;
             bottom: 10px;
             z-index: 2;
-            .icon-svg{
+
+            .icon-svg {
                 color: #fff;
             }
         }
@@ -232,6 +244,7 @@ h6 {
             color: #757575;
             align-items: center;
             font-size: 14px;
+
             .itemt {
                 display: flex;
                 align-items: center;
@@ -334,10 +347,12 @@ h6 {
         }
 
     }
-    .content-article{
+
+    .content-article {
         display: flex;
         flex-wrap: wrap;
-        span{
+
+        span {
             font-weight: bold;
             font-size: 30px;
             line-height: 41px;
@@ -346,17 +361,20 @@ h6 {
             width: 52px;
             display: inline-block;
         }
-        h3{
+
+        h3 {
             font-weight: 600;
             font-size: 16px;
             width: calc(100% - 52px);
             margin-bottom: 0;
         }
     }
-    .hover-tooltip .tooltip-s{
+
+    .hover-tooltip .tooltip-s {
         width: 120px;
         left: -45px;
     }
+
     &.thumb-full {
         display: block;
 
@@ -372,18 +390,19 @@ h6 {
         }
     }
 }
-.swiper-container{
-    .art_item{
+
+.swiper-container {
+    .art_item {
         margin-bottom: 0;
     }
 }
 
-.bg-agray{
+.bg-agray {
     background: #f0f2f5;
     padding: 30px 0;
 }
 
-.load-more{
+.load-more {
     border: 1px solid #055699;
     box-sizing: border-box;
     border-radius: 5px;
@@ -392,11 +411,13 @@ h6 {
     font-size: 14px;
     line-height: 19px;
     color: #055699;
-    img{
+
+    img {
         margin-left: 5px;
     }
-    &.active{
-        img{
+
+    &.active {
+        img {
             display: none;
         }
     }
@@ -445,5 +466,155 @@ h6 {
         grid-template-columns: repeat(7, 1fr);
         column-gap: 8px;
         row-gap: 8px;
+    }
+}
+
+input[type="search"] {
+    outline: 0;
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        display: none;
+    }
+}
+
+.form-search {
+    position: relative;
+    width: 100%;
+
+    .input_search {
+        background: #F4F5F7;
+        border: 1px solid #F1F1F1;
+        border-radius: 4px;
+        height: 32px;
+        padding-left: 36px;
+        font-size: 14px;
+        width: 100%;
+        outline: 0;
+
+        @include placeholder {
+            color: #757575;
+        }
+    }
+
+    .icon_seach_web {
+        position: absolute;
+        background: none;
+        width: 32px;
+        height: 31px;
+        border-radius: 50%;
+        border: 0;
+        left: 0;
+        top: 0;
+        color: #fff;
+        cursor: pointer;
+
+        svg {
+            color: #000
+        }
+    }
+
+    .btn_reset {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        background: #e5e5e5;
+        border: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+        line-height: 10px;
+        display: none;
+    }
+
+    .suggest-search {
+        box-shadow: 0px 20px 34px rgba(13, 66, 38, 0.2);
+        background: #FFFFFF;
+        position: absolute;
+        z-index: 2;
+        top: 34px;
+        padding: 24px;
+        width: 100%;
+        display: none;
+
+        .key {
+            a {
+                background: #F7F7F7;
+                border-radius: 77px;
+                line-height: 32px;
+                padding: 0 10px;
+                margin-right: 12px;
+
+                svg {
+                    color: var(--green);
+                    margin-right: 6px;
+                }
+            }
+        }
+
+        .select-dish {
+            margin: -10px -24px;
+
+            .scrollbar-inner {
+                max-height: 160px;
+            }
+
+            label {
+                font-weight: bold;
+                display: block;
+                padding: 0 10px;
+                margin-bottom: 15px;
+            }
+
+            li {
+                padding: 5px 10px;
+                border-top: 1px solid #e5e5e5;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+
+                &:hover {
+                    background: rgba(196, 196, 196, .2);
+                }
+
+                .key {
+                    color: #757575;
+                }
+
+                .btn-default {
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    &.active {
+
+        .suggest-search,
+        .btn_reset {
+            display: block;
+        }
+    }
+
+    &__min {
+        .input_search {
+            background: #fff;
+        }
+
+        .icon_seach_web {
+            background: #fff;
+            color: #222;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }

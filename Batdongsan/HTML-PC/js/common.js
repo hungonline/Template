@@ -53,6 +53,21 @@
     }
     //onCLick
     function onCLick() {
+
+        $('.form-search input[name="keyword"]').on('keyup', (e) => {
+            let query = $(e.currentTarget).val();
+            if (query.length) {
+                $(e.currentTarget).parents('.form-search').addClass('active');
+                return;
+            } else {
+                $(e.currentTarget).parents('.form-search').removeClass('active');
+                return;
+            }
+        });
+        $('.form-search .btn_reset').click(function () {
+            $('.form-search').removeClass("active");
+        });
+
         $(".tab-default a").click(function (event) {
             $(".tab-default a").removeClass("active")
             if (!$(this).hasClass("active")) {
@@ -97,11 +112,20 @@
             $(this).next('ul').slideToggle("slow", function () {});
         });
         $('.onclick-search').click(function () {
-            if ($(this).next('.on-open').css('display') == 'none') {
-            } else {
-                
-            };
             $(this).next('.on-open').slideToggle("slow", function () {});
+        });
+        $('.select-control-label').click(function () {
+            $(this).next('.select-filter-dropbox').slideToggle("slow", function () {});
+        });
+
+        //Open menu
+        $('.search-wrap').click(function () {
+            $('body').addClass("open-filter");
+            $('html').css("overflow", "hidden");
+        });
+        $('.close-menu').click(function () {
+            $('body').removeClass("open-filter");
+            $('html').css("overflow", "visible");
         });
 
     }
@@ -115,12 +139,12 @@
             },
         });
         var swiperaddress_s1 = new Swiper('.address-slide1 .swiper-container', {
-            loop:true,
+            loop: true,
             effect: "fade",
             autoplay: {
                 delay: 5000,
             },
-            
+
         });
         var swipertaglist = new Swiper(".tag-list .swiper-container", {
             slidesPerView: "auto",
@@ -203,17 +227,24 @@
                 }
             }
         });
-
-
-
     }
 
+    //scrollBar
+    function scrollBar() {
+        // });
+        var scrollContainer = $(".scrollbar-inner");
+        if (scrollContainer.length > 0) {
+            scrollContainer.scrollbar();
+        }
+    }
 
     $(function () {
         backToTop();
         onCLick();
         slideSwiper();
         cssVars({});
+        scrollBar({});
+        $('.js-example-basic-single').select2();
     });
     $(window).on('load resize', function () {
         resizeSite()

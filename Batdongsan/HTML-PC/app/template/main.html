@@ -16,8 +16,8 @@
         rel="shortcut icon" />
     <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
     <link rel="stylesheet" href="css/bootstrap.css" media="all" />
-	<link rel="stylesheet" href="css/general-inline.css" media="all" />
-	<link rel="stylesheet" href="css/general-file.css" media="all" />
+    <link rel="stylesheet" href="css/general-inline.css" media="all" />
+    <link rel="stylesheet" href="css/general-file.css" media="all" />
     <!-- build:head2 -->
     <!-- build:head -->
 </head>
@@ -26,7 +26,13 @@
     <section id="wrap-main-nav" class="section wrap-main-nav">
         <div class="align-center flex">
             <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
-            <h1 class="logo"><a href="#" title="#"><img src="images/graphics/logo.svg" /> </a></h1>
+            <h1 class="logo" style="opacity: 0"><a href="#" title="#">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="images/graphics/logo.svg">
+                        <img class="zoom" src="images/graphics/logo2.svg" alt="">
+                    </picture>
+                </a>
+            </h1>
             <nav class="main-nav">
                 <ul class="parent">
                     <li class="active">
@@ -107,7 +113,9 @@
             </nav>
             <div class="right-head">
                 <a href="#" class="hover-tooltip">
-                    <img src="images/icons/icon-heart.svg">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#heart"></use>
+                    </svg>
                     <div class="tooltip-s">Danh sách tin đã lưu</div>
                 </a>
                 <div class="my_bds">
@@ -125,14 +133,12 @@
             </div>
         </div>
         <div class="search-wrap">
-            <div class="container">
-                <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
-                <button type="submit" class="search-box__btn">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#search"></use>
-                    </svg>
-                </button>
-            </div>
+            <div class="input">Tìm kiếm bất động sản</div>
+            <button type="submit" class="search-box__btn">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#search"></use>
+                </svg>
+            </button>
         </div>
     </section>
 
@@ -145,7 +151,7 @@
         <div class="container">
             <div class="footer-row flex">
                 <div class="footer-col1">
-                    <a class="footer-logo" href="#" title="#"><img
+                    <a class="footer-logo" style="opacity: 0" href="#" title="#"><img
                             src="images/graphics/logo-white.svg" /></a>
                     <div class="footer-company-name center">
                         Công ty Cổ phần PropertyGuru Việt Nam
@@ -415,6 +421,7 @@
     <script type="text/javascript" src="js/svgxuse.js"></script>
     <script type="text/javascript" src="js/css-vars-ponyfill.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/select2.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
     <!-- build:script2 -->
