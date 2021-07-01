@@ -26,10 +26,16 @@
 </head>
 
 <body style="height: 3000px">
-    <section id="wrap-main-nav" class="section wrap-main-nav wrap-main-nav__v2">
+    <section id="wrap-main-nav" class="section wrap-main-nav">
         <div class="align-center flex">
             <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
-            <h1 class="logo" style="opacity: 0"><a href="#" title="#"><img src="images/graphics/logo.svg" /> </a></h1>
+            <h1 class="logo"><a href="#" title="#">
+                    <picture>
+                        <source media="(min-width:992px)" srcset="images/graphics/logo.svg">
+                        <img class="zoom" src="images/graphics/logo2.svg" alt="">
+                    </picture>
+                </a>
+            </h1>
             <nav class="main-nav">
                 <ul class="parent">
                     <li class="active">
@@ -110,7 +116,9 @@
             </nav>
             <div class="right-head">
                 <a href="#" class="hover-tooltip">
-                    <img src="images/icons/icon-heart.svg">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#heart"></use>
+                    </svg>
                     <div class="tooltip-s">Danh sách tin đã lưu</div>
                 </a>
                 <div class="my_bds">
@@ -128,19 +136,17 @@
             </div>
         </div>
         <div class="search-wrap">
-            <div class="container">
-                <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
-                <button type="submit" class="search-box__btn">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#search"></use>
-                    </svg>
-                </button>
-            </div>
+            <div class="input">Tìm kiếm bất động sản</div>
+            <button type="submit" class="search-box__btn">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#search"></use>
+                </svg>
+            </button>
         </div>
-    </section>
-
-    <section class="fixed-height">
         <div class="search-bar">
+            <a href="javascript:;" class="close-menu">
+                ×<span>Close Filter</span>
+            </a>
             <div class="search-bar-tab">
                 <a class="actived" href="#">Bán</a>
                 <a href="#">Cho thuê</a>
@@ -335,12 +341,865 @@
         </div>
     </section>
 
+    <section class="flex-main flex clearfix">
+        <div class="banner-left">
+            
+        </div>
+        <div class="container main-container">
+            <div class="flex">
+                <div class="main-left">
+                    <div class="breadcrumb">
+                        <a href="/nha-dat-ban" level="1" title="Nhà đất bán tại Việt Nam">Bán</a><span>/</span><a href="/nha-dat-ban" level="2" title="Nhà đất bán tại Việt Nam">Tất cả BĐS trên toàn quốc</a>
+                    </div>
+                    <h1 class="title-page">Mua bán nhà đất toàn quốc</h1>
+                    <div class="color-gray mb15">Hiện có 152,797 bất động sản.</div>
+                    <div class="product-nav-bar">
+                        <div class="form-group relative">
+                            <select class="form-control">
+                                <option>Thông thường</option>
+                                <option>Giá cao nhất</option>
+                                <option>Giá thấp nhất</option>
+                                <option>Giá thấp nhất</option>
+                                <option>Giá thấp nhất</option>
+                                <option>Giá thấp nhất</option>
+                            </select>
+                            <span class="down"></span>
+                        </div>
+                    </div>
+                    <div class="list-bds list-bds__v2 mb30">
+                        <article class="art_item vip1">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item vip1">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="art_item">
+                            <div class="thumb_art">
+                                <a class="thumb_img thumb_5x4" href="#">
+                                    <img src="images/graphics/img5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h3 class="title_news">
+                                    <a href="" title="#">
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                    </a>
+                                </h3>
+                                <div class="mb5 flex">
+                                    <b>Giá thỏa thuận</b>
+                                    <b class="ml-4">125 m2</b>
+                                </div>
+                                <div class="address mb10">
+                                    <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
+                                </div>
+                                <div class="description">      
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                    Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
+                                    Hỗ trợ lãi suất 0% trong vòng 36 tháng.
+                                    Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
+                                    Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                </div>
+                                <div class="status flex align-center space-between">
+                                    <div class="itemt">
+                                        <span>Hôm nay</span>
+                                    </div>
+                                    <div class="itemt">
+                                        <a href="#" class="hover-tooltip">
+                                            <i class="iconSave"></i>
+                                            <div class="tooltip-s">Bấm để lưu tin</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </li>
+                    </ul>
+
+                    <div class="product-seo-tag">
+                        <h4 class="seo-tag-title">Tìm kiếm theo từ khóa</h4>
+                        <ul class="ul-round clearfix">
+                            <li><a title="Bán đất gần làng đại học Thủ Đức" href="/tags/ban/ban-dat-gan-lang-dai-hoc-thu-duc">Bán đất gần làng đại học Thủ Đức</a></li>
+                            <li><a title="Bán nhà chính chủ" href="/tags/ban/ban-nha-chinh-chu">Bán nhà chính chủ</a></li>
+                            <li><a title="Bán nhà gần công viên Lê Thị Riêng" href="/tags/ban/ban-nha-gan-cong-vien-le-thi-rieng">Bán nhà gần công viên Lê Thị Riêng</a></li>
+                            <li><a title="Bán chung cư chính chủ" href="/tags/ban/ban-chung-cu-chinh-chu">Bán chung cư chính chủ</a></li>
+                            <li><a title="Bán đất chính chủ" href="/tags/ban/ban-dat-chinh-chu">Bán đất chính chủ</a></li>
+                            <li><a title="Bán nhà mặt phố gIÁ RẺ" href="/tags/ban/ban-nha-mat-pho-gia-re">Bán nhà mặt phố gIÁ RẺ</a></li>
+                         </ul>
+                    </div>
+
+                    <div class="border-bottom mb10"></div>
+                    <div class="product-seo-text">
+                        <div>Hàng nghìn tin đăng <strong>mua bán nhà đất tại Việt Nam</strong> được rao trên <strong>Batdongsan.com.vn</strong> với đầy đủ các tiêu chí tìm kiếm của người mua và bán. 
+                           Các thông tin mua bán nhà đất khu vực Việt Nam được tổng hợp từ các nguồn tin rao về nhà đất bao gồm tin đăng chính chủ và tin đăng qua môi giới, 
+                           giúp đa dạng nguồn thông tin và sự lựa chọn đối với bất động sản đang quan tâm.
+                        </div>
+                        <div>Bằng những tiện ích mà Batdongsan.com.vn mang đến cho người dùng, bạn có thể dễ dàng thao tác và tìm kiếm thông tin bất động sản bạn đang quan tâm chỉ trong vài click chuột. 
+                           Batdongsan.com.vn sẽ là cầu nối giúp bạn tương tác và trao đổi với nhà cung cấp bất động sản bằng việc cung cấp thông tin chính xác, nhanh chóng..., 
+                           cùng với đó là đội ngũ nhân viên tư vấn chuyên nghiệp. Chắc chắn bạn sẽ thực sự hài lòng về  kênh thông tin và dịch vụ của <strong>Batdongsan.com.vn</strong>!
+                        </div>
+                     </div>
+                </div>
+                <div class="main-right">
+                    <div class="box-common box-common-border box-price">
+                        <h4 class="box-title">Lọc theo khoảng giá</h4>
+                        <div class="box-content">
+                           <ul class="link-hover-blue">
+                              <li><a href="/nha-dat-ban/gia-duoi-500-trieu" title="Mua bán nhà đất toàn quốc giá < 500 triệu">&lt; 500 triệu</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-500-trieu-den-800-trieu" title="Mua bán nhà đất toàn quốc giá 500 - 800 triệu">500 - 800 triệu</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-800-trieu-den-1-ty" title="Mua bán nhà đất toàn quốc giá 800 triệu - 1 tỷ">800 triệu - 1 tỷ</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-1-ty-den-2-ty" title="Mua bán nhà đất toàn quốc giá 1 - 2 tỷ">1 - 2 tỷ</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-2-ty-den-3-ty" title="Mua bán nhà đất toàn quốc giá 2 - 3 tỷ">2 - 3 tỷ</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-3-ty-den-5-ty" title="Mua bán nhà đất toàn quốc giá 3 - 5 tỷ">3 - 5 tỷ</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-5-ty-den-7-ty" title="Mua bán nhà đất toàn quốc giá 5 - 7 tỷ">5 - 7 tỷ</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-7-ty-den-10-ty" title="Mua bán nhà đất toàn quốc giá 7 - 10 tỷ">7 - 10 tỷ</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-10-ty-den-20-ty" title="Mua bán nhà đất toàn quốc giá 10 - 20 tỷ">10 - 20 tỷ</a></li>
+                              <li><a href="/nha-dat-ban/gia-tu-20-ty-den-30-ty" title="Mua bán nhà đất toàn quốc giá 20 - 30 tỷ">20 - 30 tỷ</a></li>
+                              <li><a href="/nha-dat-ban/gia-tren-30-ty" title="Mua bán nhà đất toàn quốc giá > 30 tỷ">&gt; 30 tỷ</a></li>
+                           </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-common box-common-border box-price">
+                        <h4 class="box-title">Lọc theo diện tích</h4>
+                        <div class="box-content">
+                           <ul class="link-hover-blue">
+                              <li><a href="/nha-dat-ban/dt-duoi-30m2" title="Mua bán nhà đất toàn quốc diện tích <= 30 m2">&lt;= 30 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tu-30m2-den-50m2" title="Mua bán nhà đất toàn quốc diện tích 30 - 50 m2">30 - 50 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tu-50m2-den-80m2" title="Mua bán nhà đất toàn quốc diện tích 50 - 80 m2">50 - 80 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tu-80m2-den-100m2" title="Mua bán nhà đất toàn quốc diện tích 80 - 100 m2">80 - 100 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tu-100m2-den-150m2" title="Mua bán nhà đất toàn quốc diện tích 100 - 150 m2">100 - 150 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tu-150m2-den-200m2" title="Mua bán nhà đất toàn quốc diện tích 150 - 200 m2">150 - 200 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tu-200m2-den-250m2" title="Mua bán nhà đất toàn quốc diện tích 200 - 250 m2">200 - 250 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tu-250m2-den-300m2" title="Mua bán nhà đất toàn quốc diện tích 250 - 300 m2">250 - 300 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tu-300m2-den-500m2" title="Mua bán nhà đất toàn quốc diện tích 300 - 500 m2">300 - 500 m2</a></li>
+                              <li><a href="/nha-dat-ban/dt-tren-500m2" title="Mua bán nhà đất toàn quốc diện tích >= 500 m2">&gt;= 500 m2</a></li>
+                           </ul>
+                        </div>
+                    </div>
+
+                    <div class="box-common box-common-filled box-max-item-cate">
+                        <h2 class="box-title">Mua bán nhà đất</h2>
+                        <div class="box-content link-hover-blue">
+                           <ul>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-ha-noi" title="Mua bán nhà đất tại Hà Nội">
+                                    Hà Nội (66072)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-tp-hcm" title="Mua bán nhà đất tại Hồ Chí Minh">
+                                    Hồ Chí Minh (33427)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-dong-nai" title="Mua bán nhà đất tại Đồng Nai">
+                                    Đồng Nai (6696)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-binh-duong" title="Mua bán nhà đất tại Bình Dương">
+                                    Bình Dương (6100)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-khanh-hoa" title="Mua bán nhà đất tại Khánh Hòa">
+                                    Khánh Hòa (5008)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-da-nang" title="Mua bán nhà đất tại Đà Nẵng">
+                                    Đà Nẵng (4542)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-ba-ria-vung-tau" title="Mua bán nhà đất tại Bà Rịa Vũng Tàu">
+                                    Bà Rịa Vũng Tàu (3984)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-hai-phong" title="Mua bán nhà đất tại Hải Phòng">
+                                    Hải Phòng (3295)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-lam-dong" title="Mua bán nhà đất tại Lâm Đồng">
+                                    Lâm Đồng (2661)
+                                    </a>
+                                 </h3>
+                              </li>
+                              <li>
+                                 <h3>
+                                    <a href="/nha-dat-ban-binh-thuan" title="Mua bán nhà đất tại Bình Thuận  ">
+                                    Bình Thuận   (2302)
+                                    </a>
+                                 </h3>
+                              </li>
+                           </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="banner-right">
+            
+        </div>
+    </section>
+
 
 
 
 
     <!--Footer-->
+    <footer class="footer clearfix">
+        <div class="container">
+            <div class="footer-row flex">
+                <div class="footer-col1">
+                    <a class="footer-logo" href="#" title="#"><img
+                            src="images/graphics/logo-white.svg" /></a>
+                    <div class="footer-company-name center">
+                        Công ty Cổ phần PropertyGuru Việt Nam
+                        <a href="https://www.propertygurugroup.com/" target="_blank" rel="nofollow">Một
+                            thành viên của tập
+                            đoàn PropertyGuru</a>
+                    </div>
+                    <div class="footer-add">
+                        <span>
+                            <img src="images/icons/placeholder-line.png" width="" height="">
+                        </span>Tầng 31, Keangnam Hanoi Landmark, Phạm Hùng, Nam Từ Liêm, Hà Nội
+                    </div>
+                    <div class="footer-add">
+                        <span>
+                            <img src="images/icons/phone-call.png" width="" height="">
+                        </span>(024) 3562 5939 - (024) 3562 5940
+                    </div>
+                    <div class="footer-add footer-social">
+                        <a href="#" rel="nofollow" target="_blank">
+                            <img src="images/graphics/da-dang-ki-bct.png" class="bct" width="109" height="42">
+                        </a>
+                        <a href="" rel="nofollow" target="_blank">
+                            <img src="images/icons/fb.png" width="11" height="17">
+                        </a>
+                        <a href="" rel="nofollow" target="_blank">
+                            <img src="images/icons/youtube.png" width="22" height="17">
+                        </a>
+                        <a href="" rel="nofollow" target="_blank">
+                            <img src="images/icons/zalo2.png" width="20" height="19">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <div class="footer-sub-col1">
+                        <div class="col-header">HƯỚNG DẪN</div>
+                        <div class="col-content">
+                            <ul>
+                                <li><a href="/bao-gia-quang-cao#a4" rel="nofollow">Báo giá &amp; hỗ trợ</a></li>
+                                <li><a href="/nhung-cau-hoi-thuong-gap" rel="nofollow">Câu hỏi thường gặp</a></li>
+                                <li><a href="/gioi-thieu" rel="nofollow">Về chúng tôi</a></li>
+                                <li><a href="/ve-batdongsancomvn" rel="nofollow">Thông báo</a></li>
+                                <li><a href="/lien-he" rel="nofollow">Liên hệ</a></li>
+                                <li><a href="/trang-sitemap" rel="nofollow">Sitemap</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-sub-col2">
+                        <div class="col-header">QUY ĐỊNH</div>
+                        <div class="col-content">
+                            <ul>
+                                <li><a href="/quy-dinh-dang-tin" rel="nofollow">Quy định đăng tin</a></li>
+                                <li><a href="/quy-dinh-su-dung" rel="nofollow">Quy chế hoạt động</a></li>
+                                <li><a href="/dieu-khoan-thoa-thuan" rel="nofollow">Điều khoản thỏa thuận</a></li>
+                                <li><a href="/chinh-sach-bao-mat-thong-tin" rel="nofollow">Chính sách bảo mật</a></li>
+                                <li><a href="/giai-quyet-khieu-nai" rel="nofollow">Giải quyết khiếu nại</a></li>
+                                <li><a href="" target="_blank" rel="nofollow">Góp ý báo lỗi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-sub-col3">
+                        <div class="col-header">Tổng đài hỗ trợ</div>
+                        <div class="col-content">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <img src="images/icons/hotline.png" width="16" height="16">
+                                    </span>Tổng đài CSKH: 1900 1881
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="images/icons/email.png" width="16" height="13">
+                                    </span><a href="mailto:hotro@batdongsan.com.vn">hotro@batdongsan.com.vn</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img src="images/icons/ic_mailbox1.png" width="16" height="16">
+                                    </span><a rel="nofollow"
+                                        href="mailto:cskh@batdongsan.com.vn">cskh@batdongsan.com.vn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-sub-col4">
+                        <div class="col-header">Quốc gia</div>
+                        <div class="col-content">
+                            <div class="list-international">
+                                <div>Chọn quốc gia</div>
+                                <div class="national">
+                                    <div class="vietnam">
+                                        <img
+                                            src="https://file4.batdongsan.com.vn/images/newhome/international/vietnam.png">
+                                        Việt Nam
+                                    </div>
+                                    <ul id="country" style="display: none;">
+                                        <li>
+                                            <a target="_blank" href="http://www.rumah.com"
+                                                title="Indonesia Real Estate">
+                                                <img src="https://file4.batdongsan.com.vn/images/newhome/international/indonesia.png"
+                                                    alt="Indonesia Real Estate">Indonesia
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="http://www.ddproperty.com"
+                                                title="Thailand Real Estate">
+                                                <img src="https://file4.batdongsan.com.vn/images/newhome/international/thailand.png"
+                                                    alt="Thailand Real Estate">Thailand
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="http://www.homeguru.com.my"
+                                                title="Malaysia Real Estate">
+                                                <img src="https://file4.batdongsan.com.vn/images/newhome/international/malaysia.png"
+                                                    alt="Malaysia Real Estate">Malaysia
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="language">
+                                Chọn ngôn ngữ&nbsp;&nbsp;<a href="/english">
+                                    <img src="https://file4.batdongsan.com.vn/images/newhome/eu.png">
+                                    En
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-sub-col5">
+                        <div class="footer-title">Tải ứng dụng Batdongsan.com.vn</div>
+                        <a href="" class="m-r-15" rel="nofollow" target="_blank">
+                            <img src="images/graphics/google-play.png" width="123" height="42">
+                        </a>
+                        <a href="" rel="nofollow" target="_blank">
+                            <img src="images/graphics/apple-app-store.png" width="115" height="42">
+                        </a>
+                    </div>
+                    <div class="footer-sub-col6">
+                        <div id="Footer_NewsletterForm_pnlHomepage">
+                            <div class="footer-title">Đăng kí ngay để nhận thông tin từ Batdongsan.com.vn</div>
+                            <div class="relative">
+                                <input type="text" id="email-footer" placeholder="Nhập email của bạn">
+                                <a href="javascript:void(0);" id="newsletterRegister-footer"
+                                    class="newsletter-register">Gửi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="footer-row list-branch">
+                <div class="branch-show">Xem tất cả chi nhánh của Batdongsan.com.vn&nbsp;&nbsp;<img
+                        src="https://file4.batdongsan.com.vn/images/newhome/down-arrow-grey.png" class="downarr"
+                        style="display: inline;"><img src="https://file4.batdongsan.com.vn/images/newhome/up-arrow.png"
+                        class="uparr hidden" style="display: none;"></div>
+                <div class="branch-detail" style="display: block;">
+                    <div class="branch-col">
+                        <div class="branch">
+                            <div class="branch-name">Chi nhánh TP. Hồ Chí Minh</div>
+                            <div class="branch-add">
+                                Tầng 8, Tòa nhà Xổ số Kiến thiết (Lottery Tower), Số 77 Trần Nhân Tôn, Phường 9, Quận 5,
+                                TP. Hồ Chí Minh<br>
+                                Điện thoại: 0904 893 279
+                            </div>
+                        </div>
+                        <div class="branch">
+                            <div class="branch-name">Văn phòng Quận 1 TP. Hồ Chí Minh</div>
+                            <div class="branch-add">
+                                Lầu 5 Sailing Tower, 111A Pasteur, phường Bến Nghé, Quận 1, TP. Hồ Chí Minh<br>
+                                Điện thoại: 090 494 6163
+                            </div>
+                        </div>
+                        <div class="branch">
+                            <div class="branch-name">Chi nhánh Đà Nẵng</div>
+                            <div class="branch-add">
+                                Tầng 9, tòa nhà Vĩnh Trung Plaza, số 255 – 257 Hùng Vương, phường Vĩnh Trung, quận Thanh
+                                Khê, TP. Đà Nẵng<br>
+                                Điện thoại: (0236) 3 666 968 - Mobile: 0904 907 279
+                            </div>
+                        </div>
+                    </div>
+                    <div class="branch-col">
+                        <div class="branch">
+                            <div class="branch-name">Chi nhánh Nha Trang</div>
+                            <div class="branch-add">
+                                Tầng 6, Tòa nhà CTCP Điện Lực Khánh Hòa, 11 Lý Thánh Tôn, Phường Vạn Thạnh, TP Nha
+                                Trang, Khánh Hòa<br>
+                                Điện thoại: (0258) 3 818 886 - Mobile: 0902 169 295
+                            </div>
+                        </div>
+                        <div class="branch">
+                            <div class="branch-name">Chi nhánh Hải Phòng</div>
+                            <div class="branch-add">
+                                Phòng 502, TD Business Center, lô 20A Lê Hồng Phong, quận Ngô Quyền, TP. Hải Phòng<br>
+                                Điện thoại: (0225) 3 246 848 - Mobile: 0903 456 322
+                            </div>
+                        </div>
+                        <div class="branch">
+                            <div class="branch-name">Chi nhánh Cần Thơ</div>
+                            <div class="branch-add">
+                                Lầu 8, số 8 đường Phan Văn Trị, phường An Phú, quận Ninh Kiều, TP. Cần Thơ<br>
+                                Điện thoại: (0292) 3 837 838 - Mobile: 0902 229 697
+                            </div>
+                        </div>
+                    </div>
+                    <div class="branch-col">
+                        <div class="branch">
+                            <div class="branch-name">Chi nhánh Vũng Tàu</div>
+                            <div class="branch-add">
+                                Tầng 4, tòa nhà ACB, số 111 Hoàng Hoa Thám, phường 2, TP. Vũng Tàu, tỉnh Bà Rịa - Vũng
+                                Tàu<br>
+                                Điện thoại: (0254) 3 511 339 - Mobile: 0904 509 293
+                            </div>
+                        </div>
+                        <div class="branch">
+                            <div class="branch-name">Chi nhánh Bình Dương</div>
+                            <div class="branch-add">
+                                Phòng 10, tầng 16, Becamex Tower, số 230 Đại lộ Bình Dương, P.Phú Hòa, TP.Thủ Dầu Một,
+                                tỉnh Bình Dương<br>
+                                Điện thoại: (0274) 22 21 201, Mobile: 0919 255 580
+                            </div>
+                        </div>
+                        <div class="branch">
+                            <div class="branch-name">Chi nhánh Đồng Nai</div>
+                            <div class="branch-add">
+                                Lầu 18, tòa Pegasus, số 53-55 đường Võ Thị Sáu, phường Quyết Thắng, TP. Biên Hoà, tỉnh
+                                Đồng Nai<br>
+                                Điện thoại: 0906 282 428
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="footer-infomation">
+                <div class="footer-info-col1">
+                    Giấy ĐKKD số 0104630479 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 02/06/2010<br>
+                    Giấy phép ICP số 2399/GP-STTTT do Sở TTTT Hà Nội cấp ngày 04/09/2014<br>
+                    Giấy phép GH ICP số 3832/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 08/08/2019<br>
+                    Giấy phép SĐ, BS GP ICP số 3833/GP-TTĐT do Sở TTTT Hà Nội cấp ngày 08/08/2019<br>
+                    Giấy xác nhận số 1728/GXN-TTĐT do Sở TTTT Hà Nội cấp ngày 23/06/2020
+                </div>
+                <div class="footer-info-col2">
+                    Chịu trách nhiệm nội dung GP ICP: Bà Đặng Thị Hường<br>
+                    Chịu trách nhiệm sàn GDTMĐT: Ông Vũ Triệu Vương<br>(Robert Vuong Trieu Vu)<br>
+                    Quy chế, quy định giao dịch có hiệu lực từ 23/02/2020
+                </div>
+                <div class="footer-info-col3">
+                    Copyright © 2007 - 2021 Batdongsan.com.vn<br>
+                    Ghi rõ nguồn "Batdongsan.com.vn" khi phát hành lại thông tin từ website này.
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+    </footer>
     <!--End Footer-->
 
 

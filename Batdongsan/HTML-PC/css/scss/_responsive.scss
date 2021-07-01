@@ -38,7 +38,7 @@
         }
     }
 
-    .open-search {
+    .open-search,.search-bar {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -53,10 +53,12 @@
         -webkit-transform: translate(0, 100%);
         -ms-transform: translate(0, 100%);
         transform: translate(0, 100%);
+        .close-menu{
+            width: 100%;
+        }
     }
-
     .open-filter {
-        .open-search {
+        .open-search,.search-bar {
             transform: translate(0, 0%);
         }
     }
@@ -67,6 +69,9 @@
         &.grid {
             grid-template-columns: repeat(2, 1fr);
         }
+    }
+    .select2-dropdown{
+        min-width: 200px
     }
 }
 
