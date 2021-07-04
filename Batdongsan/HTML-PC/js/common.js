@@ -227,6 +227,19 @@
                 }
             }
         });
+        // Slide dự án
+        var swiperduan1 = new Swiper('#slide-duan1', {
+            slidesPerView: 1,
+            autoplay: {
+                delay: 5000,
+            },
+            navigation: {
+                nextEl: '.swiper-duan1-next',
+                prevEl: '.swiper-duan1-prev',
+            }
+        });
+
+
     }
 
     //scrollBar
