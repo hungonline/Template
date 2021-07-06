@@ -238,7 +238,24 @@
                 prevEl: '.swiper-duan1-prev',
             }
         });
-
+        // Slide BDS khu vực
+        var swiperKhuvuc = new Swiper('#slide-bds-khuvuc', {
+            spaceBetween: 20,
+            slidesPerView: 3.4,
+            navigation: {
+                nextEl: '.swiper-slide-khuvuc-next',
+                prevEl: '.swiper-slide-khuvuc-prev',
+            },
+            breakpoints: {
+                991: {
+                    slidesPerView: 3,
+                },
+                767: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                }
+            }
+        });
 
     }
 

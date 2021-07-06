@@ -32,9 +32,11 @@
         align-items: center;
         justify-content: space-between;
     }
-    .logo{
+
+    .logo {
         width: 128px;
     }
+
     .main-nav {
         display: flex;
         flex-wrap: wrap;
@@ -421,6 +423,7 @@
             position: absolute;
             left: 50%;
             margin-left: -50px;
+            transition: 0.3s all;
         }
 
         .icon-svg {
@@ -441,7 +444,7 @@
             width: 260px;
             background: #004e7f;
             left: 0;
-            top: 55px;
+            top: 97px;
             bottom: 0;
             transform: translate(-110%, 0);
             transition: all .3s;
@@ -574,9 +577,17 @@
             }
 
             .search-wrap {
-                width: 200px;
+                width: 100%;
                 transform: translate(0px, -45px);
                 margin: 0 auto;
+
+                button {
+                    left: 70px;
+                }
+
+                .relative {
+                    padding: 0 70px
+                }
             }
 
         }
@@ -604,6 +615,7 @@
 
         .search-wrap {
             display: block;
+            transition: 0.3s all;
         }
     }
 

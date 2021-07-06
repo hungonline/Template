@@ -136,13 +136,18 @@
             </div>
         </div>
         <div class="search-wrap">
-            <div class="input">Tìm kiếm bất động sản</div>
-            <button type="submit" class="search-box__btn">
-                <svg class="icon-svg">
-                    <use xlink:href="images/icons/icon.svg#search"></use>
-                </svg>
-            </button>
+            <div class="relative">
+                <div class="input">Tìm kiếm bất động sản</div>
+                <button type="submit" class="search-box__btn">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#search"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
+    </section>
+
+    <section class="flex-main flex clearfix">
         <div class="search-bar">
             <a href="javascript:;" class="close-menu">
                 ×<span>Close Filter</span>
@@ -151,205 +156,202 @@
                 <a class="actived" href="#">Bán</a>
                 <a href="#">Cho thuê</a>
             </div>
-            <div class="search-bar-suggestion">
-                <form class="form-search">
-                    <input type="search" class="input_search" name="keyword" autocomplete="off" value=""
-                        placeholder="Tìm kiếm địa điểm, khu vực">
-                    <button type="submit" class="icon_seach_web">
-                        <svg class="icon-svg">
-                            <use xlink:href="images/icons/icon.svg#search"></use>
-                        </svg>
-                    </button>
-                    <button type="reset" class="btn_reset">×</button>
-                    <div class="suggest-search">
-                        <div class="select-dish">
-                            <ul class="scrollbar-inner">
-                                <label>Khu vực</label>
-                                <li>
-                                    <div>Hà Nội</div>
-                                </li>
-                                <li>
-                                    <div>TP. Hồ Chí Minh</div>
-                                </li>
-                                <li>
-                                    <div>Hà Nội</div>
-                                </li>
-                                <li>
-                                    <div>TP. Hồ Chí Minh</div>
-                                </li>
-                                <li>
-                                    <div>Hà Nội</div>
-                                </li>
-                                <li>
-                                    <div>TP. Hồ Chí Minh</div>
-                                </li>
-                                <li>
-                                    <div>Hà Nội</div>
-                                </li>
-                                <li>
-                                    <div>TP. Hồ Chí Minh</div>
-                                </li>
+            <div class="scroll">
+                <div class="search-bar-suggestion">
+                    <form class="form-search">
+                        <input type="search" class="input_search" name="keyword" autocomplete="off" value=""
+                            placeholder="Tìm kiếm địa điểm, khu vực">
+                        <button type="submit" class="icon_seach_web">
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#search"></use>
+                            </svg>
+                        </button>
+                        <button type="reset" class="btn_reset">×</button>
+                        <div class="suggest-search">
+                            <div class="select-dish">
+                                <ul class="scrollbar-inner">
+                                    <label>Khu vực</label>
+                                    <li>
+                                        <div>Hà Nội</div>
+                                    </li>
+                                    <li>
+                                        <div>TP. Hồ Chí Minh</div>
+                                    </li>
+                                    <li>
+                                        <div>Hà Nội</div>
+                                    </li>
+                                    <li>
+                                        <div>TP. Hồ Chí Minh</div>
+                                    </li>
+                                    <li>
+                                        <div>Hà Nội</div>
+                                    </li>
+                                    <li>
+                                        <div>TP. Hồ Chí Minh</div>
+                                    </li>
+                                    <li>
+                                        <div>Hà Nội</div>
+                                    </li>
+                                    <li>
+                                        <div>TP. Hồ Chí Minh</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="home-filter">
+                    <div class="form-group">
+                        <div class="lbl"><span>Loại nhà đất</span></div>
+                        <select class="js-example-basic-single form-control" name="state">
+                            <option value="3620194" selected="selected">Tất cả</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Bắc Ninh</option>
+                            <option value="2">Bắc Giang</option>
+                            <option value="2">Hải Dương</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="lbl"><span>Khu vực</span></div>
+                        <select class="js-example-basic-single form-control" name="state">
+                            <option value="3620194" selected="selected">Toàn quốc</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Bắc Ninh</option>
+                            <option value="2">Bắc Giang</option>
+                            <option value="2">Hải Dương</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="lbl"><span>Mức giá</span></div>
+                        <select class="js-example-basic-single form-control" name="state">
+                            <option value="3620194" selected="selected">Tất cả</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Bắc Ninh</option>
+                            <option value="2">Bắc Giang</option>
+                            <option value="2">Hải Dương</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="lbl"><span>Diện ích</span></div>
+                        <select class="js-example-basic-single form-control" name="state">
+                            <option value="3620194" selected="selected">Tất cả</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Bắc Ninh</option>
+                            <option value="2">Bắc Giang</option>
+                            <option value="2">Hải Dương</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="lbl"><span>Dự án</span></div>
+                        <select class="js-example-basic-single form-control" name="state">
+                            <option value="3620194" selected="selected">Tất cả</option>
+                            <option value="1">Hà Nội</option>
+                            <option value="2">Bắc Ninh</option>
+                            <option value="2">Bắc Giang</option>
+                            <option value="2">Hải Dương</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                            <option value="2">Hưng Yên</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-control">
+                        <div class="select-control-label">
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Filter"></use>
+                            </svg>
+                            <span class="re__text">Lọc thêm</span>
+                        </div>
+                        <div class="select-filter-dropbox">
+                            <label>Phường/ Xã</label>
+                            <div class="form-group relative">
+                                <select class="form-control">
+                                    <option>Country*</option>
+                                    <option>Country*</option>
+                                </select>
+                                <span class="down"></span>
+                            </div>
+                            <label>Đường phố</label>
+                            <div class="form-group relative">
+                                <select class="form-control">
+                                    <option>Country*</option>
+                                    <option>Country*</option>
+                                </select>
+                                <span class="down"></span>
+                            </div>
+                            <label>Phòng ngủ</label>
+                            <ul class="phong-ngu">
+                                <li vl="-1" class="advance-options">Tất cả</li>
+                                <li vl="1" class="advance-options">1+</li>
+                                <li vl="2" class="advance-options">2+</li>
+                                <li vl="3" class="advance-options">3+</li>
+                                <li vl="4" class="advance-options">4+</li>
                             </ul>
+                            <label>Hướng nhà</label>
+                            <div class="form-group relative">
+                                <select class="form-control">
+                                    <option>Tất cả hướng nhà</option>
+                                    <option>Country*</option>
+                                </select>
+                                <span class="down"></span>
+                            </div>
+
+                            <div class="border-top">
+                                <a href="#"><b>Đặt lại</b></a>
+                            </div>
                         </div>
                     </div>
-                </form>
+
+                    <a class="refesh" href="">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <input type="button" id="btnSearch" class="re__btn re__btn-pr-solid--md" value="Tìm kiếm">
+                </div>
             </div>
-            <div class="home-filter">
-                <div class="form-group">
-                    <div class="lbl"><span>Loại nhà đất</span></div>
-                    <select class="js-example-basic-single form-control" name="state">
-                        <option value="3620194" selected="selected">Tất cả</option>
-                        <option value="1">Hà Nội</option>
-                        <option value="2">Bắc Ninh</option>
-                        <option value="2">Bắc Giang</option>
-                        <option value="2">Hải Dương</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <div class="lbl"><span>Khu vực</span></div>
-                    <select class="js-example-basic-single form-control" name="state">
-                        <option value="3620194" selected="selected">Toàn quốc</option>
-                        <option value="1">Hà Nội</option>
-                        <option value="2">Bắc Ninh</option>
-                        <option value="2">Bắc Giang</option>
-                        <option value="2">Hải Dương</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <div class="lbl"><span>Mức giá</span></div>
-                    <select class="js-example-basic-single form-control" name="state">
-                        <option value="3620194" selected="selected">Tất cả</option>
-                        <option value="1">Hà Nội</option>
-                        <option value="2">Bắc Ninh</option>
-                        <option value="2">Bắc Giang</option>
-                        <option value="2">Hải Dương</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <div class="lbl"><span>Diện ích</span></div>
-                    <select class="js-example-basic-single form-control" name="state">
-                        <option value="3620194" selected="selected">Tất cả</option>
-                        <option value="1">Hà Nội</option>
-                        <option value="2">Bắc Ninh</option>
-                        <option value="2">Bắc Giang</option>
-                        <option value="2">Hải Dương</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <div class="lbl"><span>Dự án</span></div>
-                    <select class="js-example-basic-single form-control" name="state">
-                        <option value="3620194" selected="selected">Tất cả</option>
-                        <option value="1">Hà Nội</option>
-                        <option value="2">Bắc Ninh</option>
-                        <option value="2">Bắc Giang</option>
-                        <option value="2">Hải Dương</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                        <option value="2">Hưng Yên</option>
-                    </select>
-                </div>
-
-                <div class="filter-control">
-                    <div class="select-control-label">
-                        <svg class="icon-svg">
-                            <use xlink:href="images/icons/icon.svg#Filter"></use>
-                        </svg>
-                        <span class="re__text">Lọc thêm</span>
-                    </div>
-                    <div class="select-filter-dropbox">
-                        <label>Phường/ Xã</label>
-                        <div class="form-group relative">
-                            <select class="form-control">
-                                <option>Country*</option>
-                                <option>Country*</option>
-                            </select>
-                            <span class="down"></span>
-                        </div>
-                        <label>Đường phố</label>
-                        <div class="form-group relative">
-                            <select class="form-control">
-                                <option>Country*</option>
-                                <option>Country*</option>
-                            </select>
-                            <span class="down"></span>
-                        </div>
-                        <label>Phòng ngủ</label>
-                        <ul class="phong-ngu">
-                            <li vl="-1" class="advance-options">Tất cả</li>
-                            <li vl="1" class="advance-options">1+</li>
-                            <li vl="2" class="advance-options">2+</li>
-                            <li vl="3" class="advance-options">3+</li>
-                            <li vl="4" class="advance-options">4+</li>
-                        </ul>
-                        <label>Hướng nhà</label>
-                        <div class="form-group relative">
-                            <select class="form-control">
-                                <option>Tất cả hướng nhà</option>
-                                <option>Country*</option>
-                            </select>
-                            <span class="down"></span>
-                        </div>
-
-                        <div class="border-top">
-                            <a href="#"><b>Đặt lại</b></a>
-                        </div>
-                    </div>
-                </div>
-
-                <a class="refesh" href="">
-                    <i class="fa fa-refresh"></i>
-                </a>
-                <input type="button" id="btnSearch" class="re__btn re__btn-pr-solid--md" value="Tìm kiếm">
-            </div>
-        </div>
-    </section>
-
-    <section class="flex-main flex clearfix">
-        <div class="banner-left">
-            
         </div>
         <div class="container main-container">
             <div class="flex">
                 <div class="main-left">
                     <div class="breadcrumb">
-                        <a href="/nha-dat-ban" level="1" title="Nhà đất bán tại Việt Nam">Bán</a><span>/</span><a href="/nha-dat-ban" level="2" title="Nhà đất bán tại Việt Nam">Tất cả BĐS trên toàn quốc</a>
+                        <a href="/nha-dat-ban" level="1" title="Nhà đất bán tại Việt Nam">Bán</a><span>/</span><a
+                            href="/nha-dat-ban" level="2" title="Nhà đất bán tại Việt Nam">Tất cả BĐS trên toàn quốc</a>
                     </div>
                     <h1 class="title-page">Mua bán nhà đất toàn quốc</h1>
                     <div class="color-gray mb15">Hiện có 152,797 bất động sản.</div>
@@ -376,7 +378,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -386,13 +389,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -416,7 +420,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -426,13 +431,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -456,7 +462,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -466,13 +473,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -496,7 +504,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -506,13 +515,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -536,7 +546,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -546,13 +557,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -576,7 +588,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -586,13 +599,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -616,7 +630,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -626,13 +641,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -656,7 +672,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -666,13 +683,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -696,7 +714,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -706,13 +725,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -736,7 +756,8 @@
                             <div class="content">
                                 <h3 class="title_news">
                                     <a href="" title="#">
-                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC, 2%/HĐ, OCB CHO VAY 70%
+                                        ĐẤT VÀNG SÂN BAY LONG THÀNH CHỈ 18TR/M2 - TẠI CENTURY CITY, CK 20 CHỈ SJC,
+                                        2%/HĐ, OCB CHO VAY 70%
                                     </a>
                                 </h3>
                                 <div class="mb5 flex">
@@ -746,13 +767,14 @@
                                 <div class="address mb10">
                                     <a href="">Đông Anh</a>,<a href="">Hà Nội</a>
                                 </div>
-                                <div class="description">      
-                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT thành phố Đồng Xoài.
+                                <div class="description">
+                                    Thanh toán đợt 1 chỉ từ 360tr để sở hữu ngay đất nền đã có sổ hồng riêng tại TT
+                                    thành phố Đồng Xoài.
                                     Ưu đãi chưa từng có với Chiết khấu lên tới 13%.
                                     Hỗ trợ lãi suất 0% trong vòng 36 tháng.
                                     Hỗ trợ vay ngân hàng 70% thời hạn vay lên tới 20 năm (VietcomBank).
                                     Tặng 1 viên kim cương trị giá 25.000.000tr/sản phẩm.
-                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án 
+                                    Nhanh tay liên hệ để chọn vị trí đẹp nhất dự án
                                 </div>
                                 <div class="status flex align-center space-between">
                                     <div class="itemt">
@@ -771,159 +793,195 @@
 
                     <ul class="pagination">
                         <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                            <span class="sr-only">Previous</span>
-                          </a>
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
                         </li>
                         <li class="page-item active"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item">
-                          <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            <span class="sr-only">Next</span>
-                          </a>
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </li>
                     </ul>
 
                     <div class="product-seo-tag">
                         <h4 class="seo-tag-title">Tìm kiếm theo từ khóa</h4>
                         <ul class="ul-round clearfix">
-                            <li><a title="Bán đất gần làng đại học Thủ Đức" href="/tags/ban/ban-dat-gan-lang-dai-hoc-thu-duc">Bán đất gần làng đại học Thủ Đức</a></li>
-                            <li><a title="Bán nhà chính chủ" href="/tags/ban/ban-nha-chinh-chu">Bán nhà chính chủ</a></li>
-                            <li><a title="Bán nhà gần công viên Lê Thị Riêng" href="/tags/ban/ban-nha-gan-cong-vien-le-thi-rieng">Bán nhà gần công viên Lê Thị Riêng</a></li>
-                            <li><a title="Bán chung cư chính chủ" href="/tags/ban/ban-chung-cu-chinh-chu">Bán chung cư chính chủ</a></li>
-                            <li><a title="Bán đất chính chủ" href="/tags/ban/ban-dat-chinh-chu">Bán đất chính chủ</a></li>
-                            <li><a title="Bán nhà mặt phố gIÁ RẺ" href="/tags/ban/ban-nha-mat-pho-gia-re">Bán nhà mặt phố gIÁ RẺ</a></li>
-                         </ul>
+                            <li><a title="Bán đất gần làng đại học Thủ Đức"
+                                    href="/tags/ban/ban-dat-gan-lang-dai-hoc-thu-duc">Bán đất gần làng đại học Thủ
+                                    Đức</a></li>
+                            <li><a title="Bán nhà chính chủ" href="/tags/ban/ban-nha-chinh-chu">Bán nhà chính chủ</a>
+                            </li>
+                            <li><a title="Bán nhà gần công viên Lê Thị Riêng"
+                                    href="/tags/ban/ban-nha-gan-cong-vien-le-thi-rieng">Bán nhà gần công viên Lê Thị
+                                    Riêng</a></li>
+                            <li><a title="Bán chung cư chính chủ" href="/tags/ban/ban-chung-cu-chinh-chu">Bán chung cư
+                                    chính chủ</a></li>
+                            <li><a title="Bán đất chính chủ" href="/tags/ban/ban-dat-chinh-chu">Bán đất chính chủ</a>
+                            </li>
+                            <li><a title="Bán nhà mặt phố gIÁ RẺ" href="/tags/ban/ban-nha-mat-pho-gia-re">Bán nhà mặt
+                                    phố gIÁ RẺ</a></li>
+                        </ul>
                     </div>
 
                     <div class="border-bottom mb10"></div>
                     <div class="product-seo-text">
-                        <div>Hàng nghìn tin đăng <strong>mua bán nhà đất tại Việt Nam</strong> được rao trên <strong>Batdongsan.com.vn</strong> với đầy đủ các tiêu chí tìm kiếm của người mua và bán. 
-                           Các thông tin mua bán nhà đất khu vực Việt Nam được tổng hợp từ các nguồn tin rao về nhà đất bao gồm tin đăng chính chủ và tin đăng qua môi giới, 
-                           giúp đa dạng nguồn thông tin và sự lựa chọn đối với bất động sản đang quan tâm.
+                        <div>Hàng nghìn tin đăng <strong>mua bán nhà đất tại Việt Nam</strong> được rao trên
+                            <strong>Batdongsan.com.vn</strong> với đầy đủ các tiêu chí tìm kiếm của người mua và bán.
+                            Các thông tin mua bán nhà đất khu vực Việt Nam được tổng hợp từ các nguồn tin rao về nhà đất
+                            bao gồm tin đăng chính chủ và tin đăng qua môi giới,
+                            giúp đa dạng nguồn thông tin và sự lựa chọn đối với bất động sản đang quan tâm.
                         </div>
-                        <div>Bằng những tiện ích mà Batdongsan.com.vn mang đến cho người dùng, bạn có thể dễ dàng thao tác và tìm kiếm thông tin bất động sản bạn đang quan tâm chỉ trong vài click chuột. 
-                           Batdongsan.com.vn sẽ là cầu nối giúp bạn tương tác và trao đổi với nhà cung cấp bất động sản bằng việc cung cấp thông tin chính xác, nhanh chóng..., 
-                           cùng với đó là đội ngũ nhân viên tư vấn chuyên nghiệp. Chắc chắn bạn sẽ thực sự hài lòng về  kênh thông tin và dịch vụ của <strong>Batdongsan.com.vn</strong>!
+                        <div>Bằng những tiện ích mà Batdongsan.com.vn mang đến cho người dùng, bạn có thể dễ dàng thao
+                            tác và tìm kiếm thông tin bất động sản bạn đang quan tâm chỉ trong vài click chuột.
+                            Batdongsan.com.vn sẽ là cầu nối giúp bạn tương tác và trao đổi với nhà cung cấp bất động sản
+                            bằng việc cung cấp thông tin chính xác, nhanh chóng...,
+                            cùng với đó là đội ngũ nhân viên tư vấn chuyên nghiệp. Chắc chắn bạn sẽ thực sự hài lòng về
+                            kênh thông tin và dịch vụ của <strong>Batdongsan.com.vn</strong>!
                         </div>
-                     </div>
+                    </div>
                 </div>
                 <div class="main-right">
                     <div class="box-common box-common-border box-price">
                         <h4 class="box-title">Lọc theo khoảng giá</h4>
                         <div class="box-content">
-                           <ul class="link-hover-blue">
-                              <li><a href="/nha-dat-ban/gia-duoi-500-trieu" title="Mua bán nhà đất toàn quốc giá < 500 triệu">&lt; 500 triệu</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-500-trieu-den-800-trieu" title="Mua bán nhà đất toàn quốc giá 500 - 800 triệu">500 - 800 triệu</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-800-trieu-den-1-ty" title="Mua bán nhà đất toàn quốc giá 800 triệu - 1 tỷ">800 triệu - 1 tỷ</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-1-ty-den-2-ty" title="Mua bán nhà đất toàn quốc giá 1 - 2 tỷ">1 - 2 tỷ</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-2-ty-den-3-ty" title="Mua bán nhà đất toàn quốc giá 2 - 3 tỷ">2 - 3 tỷ</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-3-ty-den-5-ty" title="Mua bán nhà đất toàn quốc giá 3 - 5 tỷ">3 - 5 tỷ</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-5-ty-den-7-ty" title="Mua bán nhà đất toàn quốc giá 5 - 7 tỷ">5 - 7 tỷ</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-7-ty-den-10-ty" title="Mua bán nhà đất toàn quốc giá 7 - 10 tỷ">7 - 10 tỷ</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-10-ty-den-20-ty" title="Mua bán nhà đất toàn quốc giá 10 - 20 tỷ">10 - 20 tỷ</a></li>
-                              <li><a href="/nha-dat-ban/gia-tu-20-ty-den-30-ty" title="Mua bán nhà đất toàn quốc giá 20 - 30 tỷ">20 - 30 tỷ</a></li>
-                              <li><a href="/nha-dat-ban/gia-tren-30-ty" title="Mua bán nhà đất toàn quốc giá > 30 tỷ">&gt; 30 tỷ</a></li>
-                           </ul>
+                            <ul class="link-hover-blue">
+                                <li><a href="/nha-dat-ban/gia-duoi-500-trieu"
+                                        title="Mua bán nhà đất toàn quốc giá < 500 triệu">&lt; 500 triệu</a></li>
+                                <li><a href="/nha-dat-ban/gia-tu-500-trieu-den-800-trieu"
+                                        title="Mua bán nhà đất toàn quốc giá 500 - 800 triệu">500 - 800 triệu</a></li>
+                                <li><a href="/nha-dat-ban/gia-tu-800-trieu-den-1-ty"
+                                        title="Mua bán nhà đất toàn quốc giá 800 triệu - 1 tỷ">800 triệu - 1 tỷ</a>
+                                </li>
+                                <li><a href="/nha-dat-ban/gia-tu-1-ty-den-2-ty"
+                                        title="Mua bán nhà đất toàn quốc giá 1 - 2 tỷ">1 - 2 tỷ</a></li>
+                                <li><a href="/nha-dat-ban/gia-tu-2-ty-den-3-ty"
+                                        title="Mua bán nhà đất toàn quốc giá 2 - 3 tỷ">2 - 3 tỷ</a></li>
+                                <li><a href="/nha-dat-ban/gia-tu-3-ty-den-5-ty"
+                                        title="Mua bán nhà đất toàn quốc giá 3 - 5 tỷ">3 - 5 tỷ</a></li>
+                                <li><a href="/nha-dat-ban/gia-tu-5-ty-den-7-ty"
+                                        title="Mua bán nhà đất toàn quốc giá 5 - 7 tỷ">5 - 7 tỷ</a></li>
+                                <li><a href="/nha-dat-ban/gia-tu-7-ty-den-10-ty"
+                                        title="Mua bán nhà đất toàn quốc giá 7 - 10 tỷ">7 - 10 tỷ</a></li>
+                                <li><a href="/nha-dat-ban/gia-tu-10-ty-den-20-ty"
+                                        title="Mua bán nhà đất toàn quốc giá 10 - 20 tỷ">10 - 20 tỷ</a></li>
+                                <li><a href="/nha-dat-ban/gia-tu-20-ty-den-30-ty"
+                                        title="Mua bán nhà đất toàn quốc giá 20 - 30 tỷ">20 - 30 tỷ</a></li>
+                                <li><a href="/nha-dat-ban/gia-tren-30-ty"
+                                        title="Mua bán nhà đất toàn quốc giá > 30 tỷ">&gt; 30 tỷ</a></li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="box-common box-common-border box-price">
                         <h4 class="box-title">Lọc theo diện tích</h4>
                         <div class="box-content">
-                           <ul class="link-hover-blue">
-                              <li><a href="/nha-dat-ban/dt-duoi-30m2" title="Mua bán nhà đất toàn quốc diện tích <= 30 m2">&lt;= 30 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tu-30m2-den-50m2" title="Mua bán nhà đất toàn quốc diện tích 30 - 50 m2">30 - 50 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tu-50m2-den-80m2" title="Mua bán nhà đất toàn quốc diện tích 50 - 80 m2">50 - 80 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tu-80m2-den-100m2" title="Mua bán nhà đất toàn quốc diện tích 80 - 100 m2">80 - 100 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tu-100m2-den-150m2" title="Mua bán nhà đất toàn quốc diện tích 100 - 150 m2">100 - 150 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tu-150m2-den-200m2" title="Mua bán nhà đất toàn quốc diện tích 150 - 200 m2">150 - 200 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tu-200m2-den-250m2" title="Mua bán nhà đất toàn quốc diện tích 200 - 250 m2">200 - 250 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tu-250m2-den-300m2" title="Mua bán nhà đất toàn quốc diện tích 250 - 300 m2">250 - 300 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tu-300m2-den-500m2" title="Mua bán nhà đất toàn quốc diện tích 300 - 500 m2">300 - 500 m2</a></li>
-                              <li><a href="/nha-dat-ban/dt-tren-500m2" title="Mua bán nhà đất toàn quốc diện tích >= 500 m2">&gt;= 500 m2</a></li>
-                           </ul>
+                            <ul class="link-hover-blue">
+                                <li><a href="/nha-dat-ban/dt-duoi-30m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích <= 30 m2">&lt;= 30 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tu-30m2-den-50m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích 30 - 50 m2">30 - 50 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tu-50m2-den-80m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích 50 - 80 m2">50 - 80 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tu-80m2-den-100m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích 80 - 100 m2">80 - 100 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tu-100m2-den-150m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích 100 - 150 m2">100 - 150 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tu-150m2-den-200m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích 150 - 200 m2">150 - 200 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tu-200m2-den-250m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích 200 - 250 m2">200 - 250 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tu-250m2-den-300m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích 250 - 300 m2">250 - 300 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tu-300m2-den-500m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích 300 - 500 m2">300 - 500 m2</a></li>
+                                <li><a href="/nha-dat-ban/dt-tren-500m2"
+                                        title="Mua bán nhà đất toàn quốc diện tích >= 500 m2">&gt;= 500 m2</a></li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="box-common box-common-filled box-max-item-cate">
                         <h2 class="box-title">Mua bán nhà đất</h2>
                         <div class="box-content link-hover-blue">
-                           <ul>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-ha-noi" title="Mua bán nhà đất tại Hà Nội">
-                                    Hà Nội (66072)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-tp-hcm" title="Mua bán nhà đất tại Hồ Chí Minh">
-                                    Hồ Chí Minh (33427)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-dong-nai" title="Mua bán nhà đất tại Đồng Nai">
-                                    Đồng Nai (6696)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-binh-duong" title="Mua bán nhà đất tại Bình Dương">
-                                    Bình Dương (6100)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-khanh-hoa" title="Mua bán nhà đất tại Khánh Hòa">
-                                    Khánh Hòa (5008)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-da-nang" title="Mua bán nhà đất tại Đà Nẵng">
-                                    Đà Nẵng (4542)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-ba-ria-vung-tau" title="Mua bán nhà đất tại Bà Rịa Vũng Tàu">
-                                    Bà Rịa Vũng Tàu (3984)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-hai-phong" title="Mua bán nhà đất tại Hải Phòng">
-                                    Hải Phòng (3295)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-lam-dong" title="Mua bán nhà đất tại Lâm Đồng">
-                                    Lâm Đồng (2661)
-                                    </a>
-                                 </h3>
-                              </li>
-                              <li>
-                                 <h3>
-                                    <a href="/nha-dat-ban-binh-thuan" title="Mua bán nhà đất tại Bình Thuận  ">
-                                    Bình Thuận   (2302)
-                                    </a>
-                                 </h3>
-                              </li>
-                           </ul>
+                            <ul>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-ha-noi" title="Mua bán nhà đất tại Hà Nội">
+                                            Hà Nội (66072)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-tp-hcm" title="Mua bán nhà đất tại Hồ Chí Minh">
+                                            Hồ Chí Minh (33427)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-dong-nai" title="Mua bán nhà đất tại Đồng Nai">
+                                            Đồng Nai (6696)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-binh-duong" title="Mua bán nhà đất tại Bình Dương">
+                                            Bình Dương (6100)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-khanh-hoa" title="Mua bán nhà đất tại Khánh Hòa">
+                                            Khánh Hòa (5008)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-da-nang" title="Mua bán nhà đất tại Đà Nẵng">
+                                            Đà Nẵng (4542)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-ba-ria-vung-tau"
+                                            title="Mua bán nhà đất tại Bà Rịa Vũng Tàu">
+                                            Bà Rịa Vũng Tàu (3984)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-hai-phong" title="Mua bán nhà đất tại Hải Phòng">
+                                            Hải Phòng (3295)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-lam-dong" title="Mua bán nhà đất tại Lâm Đồng">
+                                            Lâm Đồng (2661)
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="/nha-dat-ban-binh-thuan" title="Mua bán nhà đất tại Bình Thuận  ">
+                                            Bình Thuận (2302)
+                                        </a>
+                                    </h3>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -931,7 +989,7 @@
             </div>
         </div>
         <div class="banner-right">
-            
+
         </div>
     </section>
 
@@ -944,8 +1002,7 @@
         <div class="container">
             <div class="footer-row flex">
                 <div class="footer-col1">
-                    <a class="footer-logo" href="#" title="#"><img
-                            src="images/graphics/logo-white.svg" /></a>
+                    <a class="footer-logo" href="#" title="#"><img src="images/graphics/logo-white.svg" /></a>
                     <div class="footer-company-name center">
                         Công ty Cổ phần PropertyGuru Việt Nam
                         <a href="https://www.propertygurugroup.com/" target="_blank" rel="nofollow">Một
