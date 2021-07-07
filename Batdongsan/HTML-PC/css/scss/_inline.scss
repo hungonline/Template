@@ -2015,3 +2015,53 @@
         right: 22px;
     }
 }
+
+//Page Đăng tin
+#gglbody {
+    clear: both;
+    border: 3px solid #055699;
+    margin: 10px 0 5px 0;
+    padding: 10px;
+    display: none;
+    font-size: 13px;
+    .redfont {
+        color: red;
+    }
+}
+
+.flatbox {
+    .box-header {
+        background: none repeat scroll 0 0 #055699;
+        width: 100%;
+        padding: 10px;
+    }
+    h3{
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .boxtext {
+        display: block;
+        margin: 0;
+        padding: 10px;
+    }
+}
+.page-post{
+    .post-bg-Title {
+        height: 50px;
+        margin-top: 30px;
+        background-image: url(https://content.batdongsan.com.vn/Images/userpage2016/icon-dang-tin.png);
+        background-position: 115px 0;
+        background-repeat: no-repeat;
+        text-align: center;
+        h1{
+            font-size: 22px;
+        }
+        div{
+            font-family: Arial;
+            font-size: 12px;
+        }
+    }
+}
