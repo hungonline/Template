@@ -2052,16 +2052,63 @@
     .post-bg-Title {
         height: 50px;
         margin-top: 30px;
-        background-image: url(https://content.batdongsan.com.vn/Images/userpage2016/icon-dang-tin.png);
-        background-position: 115px 0;
-        background-repeat: no-repeat;
         text-align: center;
+        margin-bottom: 20px;
+        .bg{
+            background-image: url(https://content.batdongsan.com.vn/Images/userpage2016/icon-dang-tin.png);
+            background-position: 0;
+            background-repeat: no-repeat;
+            display: inline-block;
+            padding: 0 60px;
+        }
         h1{
             font-size: 22px;
+            font-weight: 500;
+            text-transform: uppercase;
         }
         div{
-            font-family: Arial;
             font-size: 12px;
         }
     }
+}
+#divPostNews{
+    .rowHeader{
+        background-color: #055699;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        padding: 10px 15px;
+    }
+    .rowContent{
+        border: 1px solid #999; 
+        margin-bottom: 20px;
+        padding: 20px 20px 10px 20px;
+        .flex{
+            .lbl{
+                width: 130px;
+                margin-top: 5px;
+            }
+            .wrap-input{
+                width: 230px;
+                width: calc(100% - 130px);
+            }
+        }
+        .col-12{
+            .lbl{
+                width: 130px;
+            }
+            .wrap-input{
+                width: 620px;
+                width: calc(100% - 130px);
+            }
+        }
+        .row{
+            margin: 0 -8px;
+        }
+        [class*="col-"]{
+            padding: 0 8px;
+        }
+    }
+    
 }

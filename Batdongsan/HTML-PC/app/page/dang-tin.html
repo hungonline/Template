@@ -82,11 +82,333 @@
     <div class="flex">
         <div class="main-left">
             <div class="post-bg-Title">
-                <h1 class="bluecolor">Đăng tin rao bán, cho thuê nhà đất</h1>
-                <div class="graycolor">
-                   (Quý vị nhập thông tin nhà đất cần bán hoặc cho thuê vào các mục dưới đây)
+                <div class="bg">
+                    <h1 class="bluecolor">Đăng tin rao bán, cho thuê nhà đất</h1>
+                    <div class="graycolor">
+                       (Quý vị nhập thông tin nhà đất cần bán hoặc cho thuê vào các mục dưới đây)
+                    </div>
                 </div>
-             </div>
+            </div>
+            <div id="divPostNews">
+                <div class="rowHeader">
+                    <h2>Thông tin cơ bản</h2>
+                </div>
+                <div class="rowContent">
+                    <div class="row">
+                        <div class="col-12 tieu-de mb15">
+                            <div class="flex">
+                                <div class="lbl"><b>Tiêu đề (<span class="redfont">*</span>)</b></div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0">
+                                        <input type="text" class="form-control icon" id="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Hình thức(<span class="redfont">*</span>)</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Hình thức --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                        <span class="down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Loại(<span class="redfont">*</span>)</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Phân mục --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                        <span class="down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Tỉnh/Thành phố(<span class="redfont">*</span>)</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Tỉnh/Thành phố --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                        <span class="down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Quận/Huyện(<span class="redfont">*</span>)</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Quận/Huyện --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                        <span class="down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Phường/Xã</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Phường/Xã --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                        <span class="down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Đường/Phố</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Đường/Phố --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                        <span class="down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Dự án</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Dự án --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                        <span class="down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Diện tích</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative flex">
+                                        <input type="text" class="form-control icon" style="width:70%">
+                                        <div class="ml-1">m²</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Giá</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <input type="text" class="form-control icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Đơn vị</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <input type="text" class="form-control icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb15">
+                            Tổng giá tiền:
+                        </div>
+                        <div class="col-12 mb15">
+                            <div class="flex">
+                                <div class="lbl">Địa chỉ (<span class="redfont">*</span>)</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0">
+                                        <input type="text" class="form-control icon" id="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowHeader">
+                    <h2>THÔNG TIN MÔ TẢ</h2>
+                </div>
+                <div class="rowContent">
+                    <div class="color-gray txt_13 mb5">
+                        (<span class="redfont">*</span>)<span class="grayfont"> Tối đa chỉ 3000 ký tự</span>
+                    </div>
+                    <div class="row mb20">
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 150px;"></textarea>
+                        </div>
+                        <div class="col-md-4 txt_13">
+                            <div class="text">
+                                Giới thiệu chung về bất động sản của bạn. Ví dụ: Khu nhà có vị trí thuận lợi: Gần
+                                công viên, gần trường học ... Tổng diện tích 52m2, đường đi ô tô vào tận cửa.<br>
+                                <span style="color: #f00;">Lưu ý: tin rao chỉ để mệnh giá tiền Việt Nam Đồng.</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowHeader">
+                    <h2>THÔNG TIN KHÁC</h2>
+                </div>
+                <div class="rowContent">
+                    <p>Quý vị nên điền đầy đủ thông tin vào các mục dưới đây để tin đăng có hiệu quả hơn</p>
+                    <div class="row">
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Mặt tiền (m)</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <input type="text" class="form-control icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Đường vào (m)</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <input type="text" class="form-control icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Hướng nhà</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Dự án --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Hướng ban công</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <select class="form-control">
+                                            <option>-- Dự án --</option>
+                                            <option>Country*</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Số tầng</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <input type="text" class="form-control icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Số phòng ngủ</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <input type="text" class="form-control icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="flex">
+                                <div class="lbl">Số toilet</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <input type="text" class="form-control icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb15">
+                            <div class="flex">
+                                <div class="lbl">Nội thất</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="height: 100px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb15">
+                            <div class="flex">
+                                <div class="lbl">Thông tin pháp lý</div>
+                                <div class="wrap-input">
+                                    <div class="form-group mb0 relative">
+                                        <textarea class="form-control" placeholder="Ví dụ: Đã có sổ đỏ. Đã có sổ hồng. Đã được phê duyệt quyết định đầu tư..." rows="3" style="height: 50px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="rowHeader">
+                    <h2>HÌNH ẢNH VÀ VIDEO</h2>
+                </div>
+                <div class="rowContent">
+
+                </div>
+                <div class="rowHeader">
+                    <h2>BẢN ĐỒ</h2>
+                </div>
+                <div class="rowContent">
+
+                </div>
+                <div class="rowHeader">
+                    <h2>LIÊN HỆ</h2>
+                </div>
+                <div class="rowContent">
+
+                </div>
+                <div class="rowHeader">
+                    <h2>LỊCH ĐĂNG TIN</h2>
+                </div>
+                <div class="rowContent">
+
+                </div>
+                <div class="rowHeader">
+                    <h2>THÀNH TIỀN</h2>
+                </div>
+                <div class="rowContent">
+
+                </div>
+
+
+
+            </div>
         </div>
         <div class="main-right">
             <div class="container-commom flatbox mb20">
