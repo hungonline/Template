@@ -275,6 +275,7 @@
         cssVars({});
         scrollBar({});
         $('.js-example-basic-single').select2();
+        $('[data-toggle="tooltip"]').tooltip();
     });
     $(window).on('load resize', function () {
         resizeSite()
