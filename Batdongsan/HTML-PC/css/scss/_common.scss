@@ -1212,7 +1212,21 @@ input[type="search"] {
     padding: 5px;
     vertical-align: middle;
 }
+.table_2{
+    th,td{
+        padding: 10px;
+        border:0;
+        border-bottom: 1px solid #dee2e6;
 
+    }
+    tr{
+        &:first-child{
+            th,td{
+                border-top: 1px solid #dee2e6;
+            }
+        }
+    }
+}
 .blueborline {
     border-bottom: 2px solid #055699;
     background-color: #D4EBFD;
@@ -1300,4 +1314,40 @@ input[type="search"] {
     border-radius: 5px;
     height: 30px;
     padding: 0 22px;
+}
+.modal-dialog{
+    max-width: 650px;
+    padding: 15px;
+    background: #fff;
+    .close{
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        width: 30px;
+        height: 30px;
+        background: #055697;
+        opacity: 1;
+        color: #fff;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    .modal-header{
+        background-color: #d4ebfd;
+        color: #055697;
+        font-weight: bold;
+        text-align: center;
+        line-height: 27px;
+        padding: 12px;
+        font-size: 14px;
+        position: relative;
+        .modal-title{
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .modal-content{
+        border-radius:0
+    }
 }

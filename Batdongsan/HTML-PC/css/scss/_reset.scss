@@ -9,7 +9,7 @@ body {
     color: #222;
     font-family: 'Roboto',
         sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
     background: var(--white);
 
@@ -118,6 +118,7 @@ li {
 
 .form-control {
     font-size: 14px;
+    border: 1px solid #ccc;
 }
 
 input[type=date],
@@ -126,7 +127,7 @@ input[type=month],
 input[type=time] {
     height: 35px;
     width: 100%;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #ccc;
     padding: 0 12px;
     border-radius: 4px;
 
@@ -147,7 +148,7 @@ select.form-control {
     background: #fff;
     width: 100%;
     height: 35px;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #ccc;
     font-size: 14px;
     padding: 0 12px;
     outline: none;
@@ -219,7 +220,9 @@ select.form-control~.down {
     color: red;
 }
 
-
+.border-bottom{
+    border-bottom: 1px solid #ccc!important;
+}
 .error_mess {
     color: #9f224e;
     font-size: 13px;
