@@ -9,7 +9,7 @@ body {
     color: #222;
     font-family: 'Roboto',
         sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
     background: var(--white);
 
@@ -182,7 +182,8 @@ select.form-control {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-size: 13px
+    font-size: 13px;
+    height: 35px!important;
 }
 
 select.form-control~.down {

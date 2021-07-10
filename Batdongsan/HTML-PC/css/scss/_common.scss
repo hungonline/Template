@@ -532,9 +532,30 @@ h6 {
         }
     }
 
-    .hover-tooltip .tooltip-s {
-        width: 120px;
-        left: -45px;
+    .hover-tooltip {
+        .tooltip-s {
+            width: 120px;
+            left: -45px;
+            top: 0;
+            &::before{
+                display: none;
+            }
+            &::after{
+                content: "";
+                border-left: 5px solid rgba(255,255,255,0);
+                border-right: 5px solid rgba(255,255,255,0);
+                border-top: 6px solid #2c2f36;
+                position: absolute;
+                bottom: -6px;
+                left: 49%;
+
+            }
+        }
+        &:hover{
+            .tooltip-s{
+                top: -40px;
+            }
+        }
     }
 
     &.thumb-full {
@@ -577,7 +598,14 @@ h6 {
                 }
             }
         }
+        &__2{
+            .thumb_art{
+                padding: 10px;
+                margin-bottom: 0;
+            }
+        }
     }
+
 
     &.small {
         margin-bottom: 15px !important;
@@ -592,7 +620,7 @@ h6 {
             font-size: 12px;
 
             .title_news {
-                font-size: 12px;
+                font-size: 13px;
                 font-weight: 400;
                 margin-bottom: 5px;
 
@@ -1349,5 +1377,45 @@ input[type="search"] {
     }
     .modal-content{
         border-radius:0
+    }
+}
+.row__2{
+    margin: 0 -8px;
+    [class*="col-"]{
+        padding: 0 8px;
+    }
+}
+.form-default {
+    .form-group {
+        .form-control{
+            border: 1px solid #ccc;
+            height: 50px;
+        }
+        textarea.form-control {
+            height: 200px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            resize: none;
+
+            @include placeholder {
+                color: #505565;
+            }
+        }
+    }
+}
+.btn-default {
+    height: 48px;
+    line-height: 48px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0 30px;
+    background: #024073;
+    color: var(--white);
+    font-size: 14px;
+    text-align: center;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    &.full{
+        width: 100%;
     }
 }

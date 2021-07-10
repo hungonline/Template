@@ -1594,7 +1594,39 @@
             }
         }
     }
-
+    .box-doanhnghiep{
+        border: 1px solid #dfdfdf;
+        padding-top: 10px;
+        .art_item {
+            padding: 0 10px 15px 10px;
+            background-image: url(images/graphics/broker_line_bg.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            .thumb_art{
+                border: 1px solid #999;
+            }
+            .thumb_img{
+                img{
+                    max-height: 95%;
+                    max-width: 95%;
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+            .content{
+                padding-left: 20px;
+                .title_news a{
+                    color: #222;
+                }
+            }
+        }
+    }
     @media (max-width: 991px) {
         width: 100%;
     }
@@ -2863,5 +2895,142 @@
         color: #055699;
         font-weight: bold;
         font-size: 16px;
+    }
+}
+
+.name_tit{
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 5px;
+    cursor: default;
+    background: #055699;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+ul.bluecolor{
+    a{
+        color: #055699;
+    }
+}
+.sitemap{
+    ul{
+        list-style: none outside none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        margin-left: .4em;
+        a{
+            line-height: 1.7em;
+            margin: 0;
+            padding: 0;
+            color: #055699;
+            text-decoration: underline;
+        }
+        span{
+            font-weight: bold;
+            color: #055699;
+        }
+    }
+    .grid{
+        margin-bottom: 20px;
+    }
+    .dottedDivider{
+        border-top: 1px dashed #CCC;
+        clear: both;
+        padding-bottom: 16px;
+    }
+
+    ul.topLevel{
+        background-image: url(images/icons/squareDot.gif);
+        background-position: 0 6px;
+        background-repeat: no-repeat;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 1.5em;
+    }
+    ul.colIndent{
+        li{
+            background-image: url(images/icons/squareDot.gif);
+            background-position: .1em .5em;
+            background-repeat: no-repeat;
+            margin-left: 2em;
+            padding-left: 1.5em;
+        }
+    }
+    @media (max-width: 991px) {
+        .grid__3{
+            grid-template-columns: repeat(2, 1fr);
+        }   
+        .grid__4{
+            grid-template-columns: repeat(2, 1fr);
+        }   
+    }
+    @media (max-width: 575px) {
+        .grid__3{
+            grid-template-columns: repeat(1, 1fr);
+        }   
+        .grid__4{
+            grid-template-columns: repeat(1, 1fr);
+        }   
+    }
+}
+
+
+.page-contact {
+
+    .title-category{
+        position: relative;
+        .title{
+            color: #111111;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: inline-block;
+            position: relative;
+            padding-left: 0;
+        }
+        .line{
+            background: #143659;
+            width: 150px;
+            height: 1px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    .address {
+        margin-bottom: 20px;
+        padding: 0;
+
+        .item {
+            font-size: 14px;
+            color: #26282B;
+            width: 33.33%;
+            padding: 0 15px;
+            margin-bottom: 10px;
+
+            &:first-child {
+                width: 100%;
+            }
+
+            p {
+                margin-bottom: 8px;
+            }
+
+            @media (max-width:480px) {
+                width: 50%;
+            }
+        }
+    }
+
+    .map {
+        iframe {
+            width: 100%;
+            height: 100%
+        }
     }
 }

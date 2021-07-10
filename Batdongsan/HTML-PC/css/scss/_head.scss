@@ -52,23 +52,35 @@
                 display: inline-block;
                 margin-left: 30px;
                 position: relative;
-
-                h3 {
-                    margin-bottom: 0;
+                &>a{
+                    &::before{
+                        content: "";
+                        background: #004e7f;
+                        height: 2px;
+                        position: absolute;
+                        width: 0%;
+                        bottom: 6px;
+                        transition: 0.3s;
+                    }
                 }
-
                 a {
                     font: 500 14px var(--font1);
                     padding: 0 0 15px 0;
                     display: inline-block;
                     position: relative;
                 }
-
-                &.active {
-                    h3 a {
-                        font-weight: bold;
-                        color: var(--yellow);
+                &:hover{
+                    &>a{
+                        &::before{
+                            width: 100%;
+                        }
                     }
+                }
+                &.active {
+                    &>a{
+                        color: #004e7f;
+                    }
+
                 }
 
                 .sub_menu {
@@ -98,12 +110,12 @@
                         min-width: 240px;
                         border-radius: 8px;
                         padding: 10px 0;
-                        top: 110px;
+                        top: 50px;
                         left: 0;
                         z-index: 10;
                         background: #fff;
                         box-shadow: 0 8px 32px rgba(3, 44, 71, .24);
-                        transition: .25s ease-out;
+                        transition: .5s ease-out;
 
                         a {
                             display: block;

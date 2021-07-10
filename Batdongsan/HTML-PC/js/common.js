@@ -114,6 +114,14 @@
         $('.onclick-search').click(function () {
             $(this).next('.on-open').slideToggle("slow", function () {});
         });
+        $(document).click(function () {
+            $('.onclick-search').next('.on-open').slideUp();
+        });
+        $('.onclick-search').click(function (event) {
+            event.stopPropagation();
+        });
+
+
         $('.select-control-label').click(function () {
             $(this).next('.select-filter-dropbox').slideToggle("slow", function () {});
         });
